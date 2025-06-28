@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Price Pulse COPO POT</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.bundle - admin.css">
+  <link rel="stylesheet" href="css/theme_style.css">
+</head>
+
+<body id="kt_body" class="header-extended header-fixed header-tablet-and-mobile-fixed ">
+  <!--begin::Main-->
+  <!--begin::Root-->
+  <div class="d-flex flex-column flex-root">
+    <!--begin::Page-->
+    <div class="page d-flex flex-row flex-column-fluid">
+      <!--begin::Wrapper-->
+      <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+        <!--begin::Header-->
+        <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header"
+          data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+          <!--begin::Header top-->
+          <div class="header-top d-flex align-items-stretch flex-grow-1">
+            <!--begin::Container-->
+            <div class="d-flex container-xl container-xxxl align-items-stretch">
+              <!--begin::Brand-->
+              <div class="d-flex align-items-center align-items-lg-stretch me-5 flex-row-fluid">
+                <!--begin::Heaeder navs toggle-->
+                <button
+                  class="d-lg-none btn btn-icon btn-color-white bg-hover-white bg-hover-opacity-10 w-35px h-35px h-md-40px w-md-40px ms-n2 me-2"
+                  id="kt_header_navs_toggle">
+                  <span style="position:relative;top:1px" class="svg-icon svg-icon-primary svg-icon-2x">
+                    <!--begin::Svg Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+                        <path
+                          d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z"
+                          fill="#000000" opacity="0.3" />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </button>
+                <!--end::Header navs toggle-->
+                <!--begin::Logo-->
+                <a href="#" class="d-flex align-items-center logo">
+                  <span class="logo text-white">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 83" width="7.5rem">
+                      <path fill="currentColor"
+                        d="M28.54,24.15h35.13v14.16c0,8.12-2.96,15.48-17.56,15.48s-17.56-7.25-17.56-15.48H0c0,26.79,14.49,39.63,46.11,39.63s46.11-12.95,46.11-39.63V0H28.54v24.15Z">
+                      </path>
+                      <polygon fill="currentColor"
+                        points="264.14 45.34 230.99 0 193.66 0 193.66 54.89 130.88 54.89 130.88 47.75 183.58 47.75 183.58 29.09 130.88 29.09 130.88 21.96 183.58 21.96 183.58 0 102.34 0 102.34 76.85 193.66 76.85 197.09 76.85 222.2 76.85 222.2 31.51 255.36 76.85 292.68 76.85 292.68 0 264.14 0 264.14 45.34">
+                      </polygon>
+                      <path fill="currentColor"
+                        d="M359.89,0h-57.09v76.85h57.09c18.55,0,36.01-12.3,36.01-38.42S378.45,0,359.89,0ZM351.11,52.69h-19.76v-28.54h19.76c6.15,0,16.25,0,16.25,14.27s-10.1,14.27-16.25,14.27Z">
+                      </path>
+                      <path fill="currentColor"
+                        d="M468.16,0h-42.38l-31.84,76.85h31.4l5.27-13.83h32.71l5.27,13.83h31.4L468.16,0ZM438.08,43.25l8.89-23.49,8.89,23.49h-17.78Z">
+                      </path>
+                    </svg>
+                  </span>
+                </a>
+                <!--end::Logo-->
+                <!--begin::Tabs wrapper-->
+                <div class="align-self-center overflow-auto" id="kt_brand_tabs">
+                  <!--begin::Header tabs wrapper-->
+                  <div class="header-tabs overflow-auto mx-4 ms-lg-7 mb-5 mb-lg-0" id="kt_header_tabs"
+                    data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                    data-kt-swapper-parent="{default: '#kt_header_navs_wrapper', lg: '#kt_brand_tabs'}">
+                    <!--begin::Header tabs-->
+                    <ul class="nav flex-nowrap text-nowrap fs-6">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_header_navs_tab_1">Price Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_2">Promo Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_3">Brand Command</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_4">Share of Shelf</a>
+                      </li>
+                    </ul>
+                    <!--begin::Header tabs-->
+                  </div>
+                  <!--end::Header tabs wrapper-->
+                </div>
+                <!--end::Tabs wrapper-->
+              </div>
+              <!--end::Brand-->
+              <!--begin::Topbar-->
+              <div class="d-flex align-items-center flex-row-auto">
+                <!--begin::User-->
+                <div class="d-flex align-items-center ms-1" id="kt_header_user_menu_toggle">
+                  <!--begin::User info-->
+                  <div
+                    class="my-2 btn btn-flex btn-color-white align-items-center bg-hover-white bg-hover-opacity-10 py-2 px-2 px-md-3 d-flex align-items-center justify-content-center "
+                    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+                    style="border: 2px solid #ffffff1f; border-radius:100%;width:33px;height:33px;">
+                    <!-- <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-4" ><span class="text-white opacity-75 fs-8 fw-bold lh-1 mb-1">Max</span><span class="text-white fs-8 fw-bolder lh-1">UX Designer</span></div> -->
+                    <!--begin::Symbol-->
+                    <div class="symbol symbol-30px symbol-md-40px ">
+                      <span class="svg-icon svg-icon-4 m-0">
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                          height="24px" viewBox="0 0 24 24" version="1.1">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                            <path
+                              d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                              fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                            <path
+                              d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                              fill="#000000" fill-rule="nonzero"></path>
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                      </span>
+                    </div>
+                    <!--end::Symbol-->
+                  </div>
+                  <!--end::User info-->
+                  <!--begin::User account menu-->
+                  <div
+                    class=" menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fs-6 w-275px fw-bold "
+                    data-kt-menu="true" data-popper-placement="bottom-end"
+                    style="z-index: 105; position: fixed; inset: 0px 0px auto auto; margin: 0px; transform: translate(-134px, 40px);">
+                    <div class="menu-item px-3">
+                      <div class="menu-content d-flex align-items-center px-3 py-4">
+                        <!--begin::Avatar-->
+                        <div class="symbol symbol-50px me-3">
+                          <div class="symbol-label fs-2 fw-bold bg-blue text-inverse-primary "
+                            style="display: flex;align-items: center;justify-content: center;">M</div>
+                        </div>
+                        <!--end::Avatar-->
+                        <!--begin::Username-->
+                        <div class="d-flex flex-column text-break">
+                          <div class="fw-bolder d-flex align-items-center fs-5 lh-sm">Max Smith </div>
+                          <a href="#" class="fw-bold text-muted text-hover-primary fs-7 lh-sm mt-1">max@kt.com</a>
+                        </div>
+                        <!--end::Username-->
+                      </div>
+                    </div>
+                    <div class="separator mb-2"></div>
+                    <div class="menu-item px-3">
+                      <a href="#" onclick="reset_pswd()"
+                        class="menu-link px-5  d-flex justify-content-between text-hover-primary"> Reset Password </a>
+                    </div>
+                    <div class="menu-item px-3 my-1 mb-2">
+                      <a class="menu-link px-5 d-flex justify-content-between text-hover-primary" href="#"> Sign Out
+                      </a>
+                    </div>
+                  </div>
+                  <!--end::User account menu-->
+                </div>
+                <!--end::User -->
+              </div>
+              <!--end::Topbar-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header top-->
+          <!--begin::Header navs-->
+          <div class="header-navs d-flex align-items-stretch flex-stack w-100 py-5 py-lg-0 fw-bold" id="kt_header_navs"
+            data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}"
+            data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+            data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_navs_toggle" data-kt-swapper="true"
+            data-kt-swapper-mode="append" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header'}">
+            <!--begin::Container-->
+            <div class="d-lg-flex container-xl container-xxxl w-100">
+              <!--begin::Wrapper-->
+              <div class="d-lg-flex flex-column justify-content-lg-center w-100" id="kt_header_navs_wrapper">
+                <!--begin::Header tab content-->
+                <div class="tab-content" data-kt-scroll="true" data-kt-scroll-activate="{default: true, lg: false}"
+                  data-kt-scroll-height="auto" data-kt-scroll-offset="70px">
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade active show" id="kt_header_navs_tab_1">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-center flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item menu-item-active" aria-haspopup="true">
+                          <a href="copo-report.html" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="sku-detail.html">
+                            <span class="menu-text">SKU Detail </span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="listing-detail.html">
+                            <span class="menu-text">Listing Detail </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-4 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_2">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Feed</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Reports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_3">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row  px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">SKUs Reports </span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Portfolio Tracker </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_4">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item" aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">My Reports</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Exports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-3 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                </div>
+                <!--end::Header tab content-->
+              </div>
+              <!--end::Wrapper-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header navs-->
+        </div>
+        <!--end::Header-->
+        <!--Main content start-->
+        <div class="content d-flex flex-column flex-column-fluid" id="ktcontent">
+          <div class="d-flex flex-column-fluid">
+            <div class="container-xl">
+              <!--========Filters Section start========-->
+              <div class="row mb-5 mb-lg-9">
+                <div
+                  class="col-sm-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                  <div class="main-heading border-none w-auto  me-0 me-sm-4 my-2">
+                    <span class="d-flex align-items-center">
+                      <h1 class="fw-bold p-0 my-2 my-sm-0 text-center text-sm-start">Comprehensive Off-Premise Overview
+                      </h1>
+                    </span>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <span class="daterange-picker text-center text-lg-end mb-0 me-2 ">
+                      <div data-kt-daterangepicker="true" data-kt-daterangepicker-opens="left"
+                        class="btn btn-white d-inline-flex align-items-center fs-6 btn-active-white py-3">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon  svg-icon-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                              d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z"
+                              fill="black"></path>
+                            <path
+                              d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z"
+                              fill="black"></path>
+                            <path
+                              d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z"
+                              fill="black"></path>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                        <!--begin::Display range-->
+                        <div>30 Mar 2022 - 28 Apr 2022</div>
+                        <!--end::Display range-->
+                      </div>
+                    </span>
+
+                    <span class="">
+                      <div
+                        class="btn btn-white btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px me-1 my-1"
+                        id="kt_docs_sweetalert_html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Generate Report">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                              d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14V4H6V20H18V8H20V21C20 21.6 19.6 22 19 22Z"
+                              fill="black"></path>
+                            <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="black"></path>
+                            <rect opacity="0.5" x="11" y="18" width="9" height="2" rx="1" transform="rotate(-90 11 18)"
+                              fill="black"></rect>
+                            <rect x="8" y="12" width="9" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                      </div>
+                      <span class="dropdown custom-dropdown mw-40px d-inline-block me-2" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Download Report">
+                        <button class="btn btn-white btn-icon  btn-active-primary w-40px h-40px dropdown-toggle my-1 "
+                          type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-display="static"
+                          aria-expanded="true" data-bs-auto-close="outside">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <span class="svg-icon  svg-icon-2">
+                            <!--begin::Svg Icon-->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <rect fill="#000000" opacity="0.3" x="11" y="3" width="2" height="14" rx="1" />
+                                <path
+                                  d="M6.70710678,16.7071068 C6.31658249,17.0976311 5.68341751,17.0976311 5.29289322,16.7071068 C4.90236893,16.3165825 4.90236893,15.6834175 5.29289322,15.2928932 L11.2928932,9.29289322 C11.6714722,8.91431428 12.2810586,8.90106866 12.6757246,9.26284586 L18.6757246,14.7628459 C19.0828436,15.1360383 19.1103465,15.7686056 18.7371541,16.1757246 C18.3639617,16.5828436 17.7313944,16.6103465 17.3242754,16.2371541 L12.0300757,11.3841378 L6.70710678,16.7071068 Z"
+                                  fill="#000000" fill-rule="nonzero"
+                                  transform="translate(12.000003, 12.999999) scale(1, -1) translate(-12.000003, -12.999999) " />
+                                <rect fill="#000000" opacity="0.3" x="3" y="19" width="18" height="2" rx="1" />
+                              </g>
+                            </svg>
+                            <!--end::Svg Icon-->
+                          </span>
+                        </button>
+                        <div class="dropdown-menu p-0 fs-6 dropdown-menu-end">
+                          <div class="top-arrow text-center p-4 position-relative">
+                            <div class="form-check form-check-custom form-check-solid justify-content-between mb-2">
+                              <label class="form-check-label ms-0 me-2 text-start" for="flexCheckDefault1"> December 20,
+                                2021, 05:07 AM </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked />
+                            </div>
+                            <div
+                              class="form-check form-check-custom form-check-solid justify-content-between mb-2 pending">
+                              <label class="form-check-label ms-0 me-2 text-start " data-bs-toggle="tooltip"
+                                data-bs-original-title="Pending" for="flexCheckDefault2"> December 17, 2021, 08:14 AM
+                              </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"
+                                disabled />
+                            </div>
+                            <div
+                              class="form-check form-check-custom form-check-solid justify-content-between mb-2 failed">
+                              <label class="form-check-label ms-0 me-2 text-start " data-bs-toggle="tooltip"
+                                data-bs-original-title="Failed" for="flexCheckDefault3"> December 17, 2021, 02:09 AM
+                              </label>
+                              <input class="form-check-input" type="checkbox" tooltip="Failed" value=""
+                                id="flexCheckDefault3" disabled />
+                            </div>
+                            <div class="form-check form-check-custom form-check-solid justify-content-between ">
+                              <label class="form-check-label ms-0 me-2 text-start" for="flexCheckDefault4"> December 17,
+                                2021, 02:09 AM </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" />
+                            </div>
+                          </div>
+                          <div class="footer text-end px-4 py-3 bg-light-primary rounded-bottom">
+                            <button class="btn btn-primary fs-7 py-2 px-4">Download</button>
+                          </div>
+                        </div>
+                      </span>
+                    </span>
+                    <span class="d-inline-block my-1 me-2" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Report Configuration">
+                      <button class="btn btn-white btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px"
+                        data-bs-toggle="modal" data-bs-target="#report_config">
+                        <span class="svg-icon svg-icon-muted svg-icon-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                              d="M22.0318 8.59998C22.0318 10.4 21.4318 12.2 20.0318 13.5C18.4318 15.1 16.3318 15.7 14.2318 15.4C13.3318 15.3 12.3318 15.6 11.7318 16.3L6.93177 21.1C5.73177 22.3 3.83179 22.2 2.73179 21C1.63179 19.8 1.83177 18 2.93177 16.9L7.53178 12.3C8.23178 11.6 8.53177 10.7 8.43177 9.80005C8.13177 7.80005 8.73176 5.6 10.3318 4C11.7318 2.6 13.5318 2 15.2318 2C16.1318 2 16.6318 3.20005 15.9318 3.80005L13.0318 6.70007C12.5318 7.20007 12.4318 7.9 12.7318 8.5C13.3318 9.7 14.2318 10.6001 15.4318 11.2001C16.0318 11.5001 16.7318 11.3 17.2318 10.9L20.1318 8C20.8318 7.2 22.0318 7.59998 22.0318 8.59998Z"
+                              fill="black" />
+                            <path
+                              d="M4.23179 19.7C3.83179 19.3 3.83179 18.7 4.23179 18.3L9.73179 12.8C10.1318 12.4 10.7318 12.4 11.1318 12.8C11.5318 13.2 11.5318 13.8 11.1318 14.2L5.63179 19.7C5.23179 20.1 4.53179 20.1 4.23179 19.7Z"
+                              fill="black" />
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <span class="d-inline-block my-1 pe-3 me-3 border-end border-gray-300" data-bs-toggle="tooltip"
+                      data-bs-placement="bottom" title="Edit Report">
+                      <button class="btn btn-white btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px">
+                        <span class="svg-icon svg-icon-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z"
+                              fill="black"></path>
+                            <path
+                              d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z"
+                              fill="black"></path>
+                            <path
+                              d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z"
+                              fill="black"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <!--Filter Start-->
+                    <span class="my-1">
+                      <button class="btn py-3 fs-6 btn-primary filter-btn " data-bs-toggle="modal"
+                        data-bs-target="#filtertable" id="sku">
+                        <i class="fas fa-filter me-1 fs-7"></i>Filter </button>
+                    </span>
+                    <!--Filter End-->
+                  </div>
+                </div>
+              </div>
+              <!--Report Config modal start-->
+              <div class="modal fade" id="report_config" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content overflow-y-auto mw-700px">
+                    <div class="modal-header d-flex align-items-center">
+                      <h3 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Report Configuration </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row mb-1 mb-sm-5">
+                        <div class="col-sm-12 ms-auto d-flex align-items-center ">
+                          <div
+                            class="form-check form-check-custom form-check-solid form-check-sm fs-6 align-items-start">
+                            <input class="form-check-input mt-1" type="checkbox" value="" id="" checked disabled>
+                            <label class="form-check-label fs-6 p-0 opacity-100" for=""> All calculated values and
+                              Restock Opportunities in this report will include only store<>product combinations that
+                                are “in distribution,” meaning that the product has been in stock at the store for at
+                                least 1 day within the past <input type="number"
+                                  class="form-control form-control-sm fs-6 form-control-solid d-inline-block border border-gray-300 w-auto mw-80px mh-25px min-h-25px"
+                                  id="days_num_input" placeholder="" name="" value="10"> days. When you review data over
+                                a date range (e.g. past 30 days), then the product will only be considered “in
+                                distribution” at the store if it has been in stock at least once from <span
+                                  class="days_num"></span> days prior to the start date through the end date. </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-1 mb-sm-5 mt-4">
+                        <div class="col-sm-12 ms-auto d-flex align-items-center ">
+                          <div
+                            class="form-check form-check-custom form-check-solid form-check-sm fs-6 align-items-start">
+                            <input class="form-check-input mt-1" type="checkbox" value="" id="remove_assortment_bias"
+                              checked>
+                            <label class="form-check-label fs-6 p-0" for="remove_assortment_bias"> Remove Assortment
+                              Bias
+                              <!--begin::Hint-->
+                              <div class="form-text mt-0">For any store<>SKU combination that has never been available
+                                  according to Jenda’s data, this “out of stock” will be ignored and not counted as a
+                                  “0%” in calculations. Additionally, for any store<>SKU combination where the store
+                                    does not currently sell the category of product belonging to the SKU (spirits, wine,
+                                    etc.), this “out of stock” will also be ignored and not counted as a “0%” in
+                                    calculations. </div>
+                              <!--end::Hint-->
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn  btn-primary apply" data-bs-dismiss="modal"
+                        id="apply_config">Apply</button>
+                      <button type="button" class="btn  btn-light ml-2" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Report Config Modal end-->
+              <!--Summmary Table Confi modal start-->
+              <div class="modal fade" id="summary_table_config" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content overflow-y-auto mw-700px">
+                    <div class="modal-header d-flex align-items-center">
+                      <h3 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Show/Hide</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="" class="form-label fs-6">Data Display in Table:</label>
+                      <div class="col-sm-12">
+                        <div class="bg-gray-100 border p-5 pt-4 pb-2 rounded">
+                          <div class="row mb-0 mb-sm-0">
+                            <div class="col-sm-12 mb-3">
+                              <div>
+                                <label for="row-data-type" class="form-label fs-6 mb-1">State (Row)</label>
+                                <div>
+                                  <div
+                                    class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3 mt-2">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="row-data-type-distribution" checked>
+                                    <label class="form-check-label fs-6 p-0" for="row-data-type-distribution"> Show
+                                      State Summary Distribution </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="row-data-type-total-universe" checked>
+                                    <label class="form-check-label fs-6 p-0" for="row-data-type-total-universe"> Show
+                                      State Summary Total Universe Distribution Penetration </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="row-data-type-report-universe" checked>
+                                    <label class="form-check-label fs-6 p-0" for="row-data-type-report-universe"> Show
+                                      State Summary Report Universe Distribution Penetration </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="row-data-type-accounts-surveyed" checked>
+                                    <label class="form-check-label fs-6 p-0" for="row-data-type-accounts-surveyed"> Show
+                                      State Summary Accounts Surveyed Metric </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="row-data-type-overall-availability" checked>
+                                    <label class="form-check-label fs-6 p-0" for="row-data-type-overall-availability">
+                                      Show State Summary Overall Availability </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                              <div>
+                                <label for="row-data-type" class="form-label fs-6 mb-1">Supplier(Column)</label>
+                                <div>
+                                  <div
+                                    class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3 mt-2">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="parent-column-data-type-distribution" checked>
+                                    <label class="form-check-label fs-6 p-0" for="parent-column-data-type-distribution">
+                                      Show Supplier Summary Distribution </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="parent-column-data-type-total-universe" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="parent-column-data-type-total-universe"> Show Supplier Summary Total Universe
+                                      Distribution Penetration </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="parent-column-data-type-report-universe" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="parent-column-data-type-report-universe"> Show Supplier Summary Report
+                                      Universe Distribution Penetration </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="parent-column-data-type-accounts-surveyed" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="parent-column-data-type-accounts-surveyed"> Show Supplier Summary Accounts
+                                      Surveyed Metric </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="parent-column-data-type-overall-availability" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="parent-column-data-type-overall-availability"> Show Supplier Summary Overall
+                                      Availability</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div>
+                                <label for="row-data-type" class="form-label fs-6 mb-1">Category (Child Column)</label>
+                                <div>
+                                  <div
+                                    class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3 mt-2">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="child-column-data-type-availability-col" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="child-column-data-type-availability-col"> Show Supplier<>Category
+                                        Availability Rate Column </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="child-column-data-type-distribution-col" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="child-column-data-type-distribution-col"> Show Supplier<>Category
+                                        Distribution Column </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="child-column-data-type-accounts-total-universe-col" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="child-column-data-type-accounts-total-universe-col"> Show Supplier<>Category
+                                        Total Universe Distribution Penetration Column </label>
+                                  </div>
+                                  <div class="form-check form-check-custom form-check-sm fs-6 align-items-start my-3">
+                                    <input class="form-check-input " type="checkbox" value=""
+                                      id="child-column-data-type-report-universe" checked>
+                                    <label class="form-check-label fs-6 p-0"
+                                      for="child-column-data-type-report-universe"> Show Supplier<>Category Report
+                                        Universe Distribution Penetration Column </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                      <div class="form-check form-check-solid form-check-custom form-check-sm fs-6 align-items-start">
+                        <input class="form-check-input " type="checkbox" value="" id="remember-selection">
+                        <label class="form-check-label fs-6 p-0" for="remember-selection">Remember Selection </label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn  btn-primary apply" data-bs-dismiss="modal"
+                          id="apply_config">Apply</button>
+                        <button type="button" class="btn  btn-light ml-2" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Summary Table Config Modal end-->
+              <!--Filter Table Modal Start-->
+              <div class="modal fade " id="filtertable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center">
+                      <h3 class="modal-title fw-bolder fs-3er fs-3 " id="exampleModalLabel"> Filters </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                      <div class="modal-body">
+                        <div class="mb-1 mb-sm-5 row">
+                          <label for="marketplace_retailer"
+                            class="form-label col-form-label col-sm-4 col-md-3 fs-6">Retailers/Marketplaces</label>
+                          <div class="col-sm-8 col-md-9">
+                            <select id="marketplace_retailer" class="form-select form-select-solid"
+                              data-control="select2" multiple="multiple"></select>
+                          </div>
+                        </div>
+                        <div class="mb-1 mb-sm-5 row">
+                          <label for="states" class="form-label col-form-label col-sm-4 col-md-3 fs-6">States</label>
+                          <div class="col-sm-8 col-md-9">
+                            <select id="states" class="form-select form-select-solid" data-control="select2"
+                              multiple="multiple"></select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn  btn-primary apply" data-bs-dismiss="modal">Apply</button>
+                        <button type="button" class="btn  btn-light ml-2" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--Filter Table Modal End-->
+              <!--========Filters Section End========-->
+
+              <!--========Out of distribution days start========-->
+              <div
+                class="border p-5 rounded bg-white fs-6 border border-dashed border-success bg-light-success w-100 mt-3 mb-4 cursor-pointer"
+                data-bs-toggle="modal" data-bs-target="#report_config">
+                <h4 class="fs-7 m-0 fw-bold text-gray-800 ">In Stock at Least Once Within <span class="fw-bolder">
+                    <span class="dis_days_num">60</span> Days </span> of Jan 6, 2024 </h4>
+              </div>
+              <!--========Out of distribution days end========-->
+
+              <!--========Summary Table Section Start========-->
+              <div class="summary-table-section">
+                <!--Skeleton Card Start-->
+                <div class="card card-xxl-stretch skeleton-card mb-8">
+                  <!--begin::Header-->
+                  <div class="card-header">
+                    <div class="row w-100 align-items-center justify-content-between gx-0">
+                      <div class="col-3">
+                        <div class="skeleton-line  min-h-25px min-h-sm-30px"></div>
+                      </div>
+                      <div class="col-5 ms-auto text-end">
+                        <div class="skeleton-line min-h-25px min-h-sm-30px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Header-->
+                  <!--begin::Body-->
+                  <div class="card-body ">
+                    <div class="position-relative min-h-250px ">
+                      <!--skeleton content start-->
+                      <table class="skeleton-table align-middle m-0" style="width:100%; overflow: hidden;">
+                        <col span="1" class="bg-gray-200">
+                        <thead class=" h-35px h-sm-55px bg-gray-200">
+                          <tr class="">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--skeleton content end-->
+                      <!--loader popup start-->
+                      <div class="skeleton-loader-popup bg-white rounded shadow max-w-275px min-w-275px p-5 pb-4">
+                        <div class="mb-3">
+                          <div class="circle-loader">
+                            <div class="status draw"></div>
+                          </div>
+                        </div>
+                        <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-1">Loading...</div>
+                        <div class="progress-message fs-6 text-muted">Please wait while the data loads.</div>
+                      </div>
+                      <!--loader popup start-->
+                    </div>
+                  </div>
+                  <!--end::Body-->
+                </div>
+                <!--Skeleton Card End-->
+                <!--Content Card Start-->
+                <div class="row content-card d-none flex-xl-nowrap overflow-hidden">
+                  <div class="col-sm-12 summary-table-view">
+                    <div class="card card-xxl-stretch min-h-100">
+                      <!--begin::Header-->
+                      <div class="card-header border-0 pt-5 flex-xl-nowrap">
+                        <h3 class="card-title align-items-start flex-column">
+                          <span class="card-label fw-bolder fs-3">Summary by Suppliers and Brands</span>
+                        </h3>
+                        <div class="card-toolbar flex-nowrap">
+                          <div class="toolbar-btn d-flex align-items-center">
+                            <div class="btn-group me-3 border-end border-gray-300 pe-3" data-kt-buttons="true"
+                              data-kt-buttons-target="[data-kt-button]">
+                              <!--begin::Radio-->
+                              <label
+                                class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-end border-gray-300 d-flex align-items-center justify-content-center active"
+                                data-kt-button="true">
+                                <!--begin::Input-->
+                                <input class="btn-check" type="radio" name="method" value="1" id="expand_view"
+                                  checked="">
+                                <!--end::Input--> Expand
+                              </label>
+                              <!--end::Radio-->
+                              <!--begin::Radio-->
+                              <label
+                                class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-start border-gray-300 d-flex align-items-center justify-content-center"
+                                data-kt-button="true">
+                                <!--begin::Input-->
+                                <input class="btn-check" type="radio" name="method" value="2" id="compact_view">
+                                <!--end::Input--> Collapse
+                              </label>
+                              <!--end::Radio-->
+                            </div>
+                            <span class="d-inline-block my-1 me-2" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                              title="" data-bs-original-title="Show/Hide">
+                              <button
+                                class="btn btn-light btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px"
+                                data-bs-toggle="modal" data-bs-target="#summary_table_config">
+                                <span class="svg-icon svg-icon-muted svg-icon-2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                      d="M20 7H3C2.4 7 2 6.6 2 6V3C2 2.4 2.4 2 3 2H20C20.6 2 21 2.4 21 3V6C21 6.6 20.6 7 20 7ZM7 9H3C2.4 9 2 9.4 2 10V20C2 20.6 2.4 21 3 21H7C7.6 21 8 20.6 8 20V10C8 9.4 7.6 9 7 9Z"
+                                      fill="black" />
+                                    <path opacity="0.3"
+                                      d="M20 21H11C10.4 21 10 20.6 10 20V10C10 9.4 10.4 9 11 9H20C20.6 9 21 9.4 21 10V20C21 20.6 20.6 21 20 21Z"
+                                      fill="black" />
+                                  </svg>
+                                </span>
+                              </button>
+                            </span>
+                            <div class="">
+                              <!--begin::Option-->
+                              <input type="checkbox" class="btn-check" name="" value="" id="transposeButton">
+                              <label
+                                class="btn btn-light btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px"
+                                for="transposeButton" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Transpose">
+                                <span class="svg-icon svg-icon-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 798.41 804.19"
+                                    style="width: 1.05078125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;transform: rotate(180deg);">
+                                    <defs></defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                      <g id="Layer_1-2" data-name="Layer 1">
+                                        <path
+                                          d="M299.75,0V88.5c-72.57-1.16-143.88,39.57-177.37,104.36C97.41,240,87,294.1,87,347.18h55.61c.18-63.28,14.48-134.4,65.71-176.54,25.93-20,59.24-27.23,91.42-27.68V228Q368,171.54,435.32,114q-67.8-57-135.57-114Z" />
+                                        <path
+                                          d="M89.74,319.11l-88.5.42h0q57.36,67.47,114.66,135,57.18-67.64,113.36-136.11l-85.08.41" />
+                                        <path opacity="0.3"
+                                          d="M565.56,1.29C532.48.21,513.75,34.63,518.68,64.21c.16,232.39-.33,464.82.23,697.18,2.21,32.61,36.5,46.23,64.94,42.08,58.84-.61,117.8,1.27,176.52-.94,31.83-5.27,40.65-39.1,37.41-66.53-.16-230.86.33-461.77-.23-692.61-2.2-32.63-36.5-46.25-64.94-42.1Z" />
+                                        <path
+                                          d="M49.83,520.68c-33.15-1-54.11,33.24-49.09,63.53.63,60-1.29,120.22,1,180.13,5,29.94,36.81,42.95,64.12,39.13H445.42V520.71H49.83Z" />
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </span>
+                              </label>
+                              <!--end::Option-->
+                            </div>
+                          </div>
+
+                          <div class="">
+                            <button type="button"
+                              class="btn btn-light btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px ms-4 d-none"
+                              id="slide-full-right">
+                              <span class="svg-icon svg-icon-2x">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                  fill="none">
+                                  <path
+                                    d="M11.375 4.375V23.625C11.375 23.8571 11.2828 24.0796 11.1187 24.2437C10.9546 24.4078 10.7321 24.5 10.5 24.5C10.2679 24.5 10.0454 24.4078 9.88128 24.2437C9.71719 24.0796 9.625 23.8571 9.625 23.625V4.375C9.625 4.14294 9.71719 3.92038 9.88128 3.75628C10.0454 3.59219 10.2679 3.5 10.5 3.5C10.7321 3.5 10.9546 3.59219 11.1187 3.75628C11.2828 3.92038 11.375 4.14294 11.375 4.375ZM23.3691 13.3809L19.8691 9.88094C19.7049 9.71675 19.4822 9.62451 19.25 9.62451C19.0178 9.62451 18.7951 9.71675 18.6309 9.88094C18.4668 10.0451 18.3745 10.2678 18.3745 10.5C18.3745 10.7322 18.4668 10.9549 18.6309 11.1191L20.638 13.125H14C13.7679 13.125 13.5454 13.2172 13.3813 13.3813C13.2172 13.5454 13.125 13.7679 13.125 14C13.125 14.2321 13.2172 14.4546 13.3813 14.6187C13.5454 14.7828 13.7679 14.875 14 14.875H20.638L18.6309 16.8809C18.4668 17.0451 18.3745 17.2678 18.3745 17.5C18.3745 17.7322 18.4668 17.9549 18.6309 18.1191C18.7951 18.2832 19.0178 18.3755 19.25 18.3755C19.4822 18.3755 19.7049 18.2832 19.8691 18.1191L23.3691 14.6191C23.4504 14.5378 23.515 14.4413 23.559 14.3351C23.603 14.2288 23.6257 14.115 23.6257 14C23.6257 13.885 23.603 13.7712 23.559 13.6649C23.515 13.5587 23.4504 13.4622 23.3691 13.3809Z"
+                                    fill="#8A8A8A" />
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="">
+                            <button type="button" class="btn btn-primary min-h-40px btn-disabled-light py-3 ms-4 d-none"
+                              id="slide-half-left-top-btn">
+                              <span class="svg-icon svg-icon-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                  fill="none">
+                                  <path
+                                    d="M14.875 4.375V23.625C14.875 23.8571 14.7828 24.0796 14.6187 24.2437C14.4546 24.4078 14.232 24.5 14 24.5C13.7679 24.5 13.5453 24.4078 13.3812 24.2437C13.2171 24.0796 13.125 23.8571 13.125 23.625V4.375C13.125 4.14294 13.2171 3.92038 13.3812 3.75628C13.5453 3.59219 13.7679 3.5 14 3.5C14.232 3.5 14.4546 3.59219 14.6187 3.75628C14.7828 3.92038 14.875 4.14294 14.875 4.375ZM10.5 13.125H3.86199L5.86902 11.1191C6.0332 10.9549 6.12544 10.7322 6.12544 10.5C6.12544 10.2678 6.0332 10.0451 5.86902 9.88094C5.70483 9.71675 5.48215 9.62451 5.24996 9.62451C5.01776 9.62451 4.79508 9.71675 4.63089 9.88094L1.13089 13.3809C1.04954 13.4622 0.985 13.5587 0.940966 13.6649C0.896932 13.7712 0.874268 13.885 0.874268 14C0.874268 14.115 0.896932 14.2288 0.940966 14.3351C0.985 14.4413 1.04954 14.5378 1.13089 14.6191L4.63089 18.1191C4.79508 18.2832 5.01776 18.3755 5.24996 18.3755C5.48215 18.3755 5.70483 18.2832 5.86902 18.1191C6.0332 17.9549 6.12544 17.7322 6.12544 17.5C6.12544 17.2678 6.0332 17.0451 5.86902 16.8809L3.86199 14.875H10.5C10.732 14.875 10.9546 14.7828 11.1187 14.6187C11.2828 14.4546 11.375 14.2321 11.375 14C11.375 13.7679 11.2828 13.5454 11.1187 13.3813C10.9546 13.2172 10.732 13.125 10.5 13.125ZM26.869 13.3809L23.369 9.88094C23.2048 9.71675 22.9821 9.62451 22.75 9.62451C22.5178 9.62451 22.2951 9.71675 22.1309 9.88094C21.9667 10.0451 21.8745 10.2678 21.8745 10.5C21.8745 10.7322 21.9667 10.9549 22.1309 11.1191L24.1379 13.125H17.5C17.2679 13.125 17.0453 13.2172 16.8812 13.3813C16.7171 13.5454 16.625 13.7679 16.625 14C16.625 14.2321 16.7171 14.4546 16.8812 14.6187C17.0453 14.7828 17.2679 14.875 17.5 14.875H24.1379L22.1309 16.8809C21.9667 17.0451 21.8745 17.2678 21.8745 17.5C21.8745 17.7322 21.9667 17.9549 22.1309 18.1191C22.2951 18.2832 22.5178 18.3755 22.75 18.3755C22.9821 18.3755 23.2048 18.2832 23.369 18.1191L26.869 14.6191C26.9504 14.5378 27.0149 14.4413 27.0589 14.3351C27.103 14.2288 27.1256 14.115 27.1256 14C27.1256 13.885 27.103 13.7712 27.0589 13.6649C27.0149 13.5587 26.9504 13.4622 26.869 13.3809Z"
+                                    fill="white" />
+                                </svg>
+                              </span> Show Performance Over Time </button>
+                          </div>
+                          <div class="">
+                            <button type="button"
+                              class="btn btn-primary btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px ms-4 d-none"
+                              id="slide-half-right">
+                              <span class="svg-icon svg-icon-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                  fill="none">
+                                  <path
+                                    d="M14.875 4.375V23.625C14.875 23.8571 14.7828 24.0796 14.6187 24.2437C14.4546 24.4078 14.232 24.5 14 24.5C13.7679 24.5 13.5453 24.4078 13.3812 24.2437C13.2171 24.0796 13.125 23.8571 13.125 23.625V4.375C13.125 4.14294 13.2171 3.92038 13.3812 3.75628C13.5453 3.59219 13.7679 3.5 14 3.5C14.232 3.5 14.4546 3.59219 14.6187 3.75628C14.7828 3.92038 14.875 4.14294 14.875 4.375ZM10.5 13.125H3.86199L5.86902 11.1191C6.0332 10.9549 6.12544 10.7322 6.12544 10.5C6.12544 10.2678 6.0332 10.0451 5.86902 9.88094C5.70483 9.71675 5.48215 9.62451 5.24996 9.62451C5.01776 9.62451 4.79508 9.71675 4.63089 9.88094L1.13089 13.3809C1.04954 13.4622 0.985 13.5587 0.940966 13.6649C0.896932 13.7712 0.874268 13.885 0.874268 14C0.874268 14.115 0.896932 14.2288 0.940966 14.3351C0.985 14.4413 1.04954 14.5378 1.13089 14.6191L4.63089 18.1191C4.79508 18.2832 5.01776 18.3755 5.24996 18.3755C5.48215 18.3755 5.70483 18.2832 5.86902 18.1191C6.0332 17.9549 6.12544 17.7322 6.12544 17.5C6.12544 17.2678 6.0332 17.0451 5.86902 16.8809L3.86199 14.875H10.5C10.732 14.875 10.9546 14.7828 11.1187 14.6187C11.2828 14.4546 11.375 14.2321 11.375 14C11.375 13.7679 11.2828 13.5454 11.1187 13.3813C10.9546 13.2172 10.732 13.125 10.5 13.125ZM26.869 13.3809L23.369 9.88094C23.2048 9.71675 22.9821 9.62451 22.75 9.62451C22.5178 9.62451 22.2951 9.71675 22.1309 9.88094C21.9667 10.0451 21.8745 10.2678 21.8745 10.5C21.8745 10.7322 21.9667 10.9549 22.1309 11.1191L24.1379 13.125H17.5C17.2679 13.125 17.0453 13.2172 16.8812 13.3813C16.7171 13.5454 16.625 13.7679 16.625 14C16.625 14.2321 16.7171 14.4546 16.8812 14.6187C17.0453 14.7828 17.2679 14.875 17.5 14.875H24.1379L22.1309 16.8809C21.9667 17.0451 21.8745 17.2678 21.8745 17.5C21.8745 17.7322 21.9667 17.9549 22.1309 18.1191C22.2951 18.2832 22.5178 18.3755 22.75 18.3755C22.9821 18.3755 23.2048 18.2832 23.369 18.1191L26.869 14.6191C26.9504 14.5378 27.0149 14.4413 27.0589 14.3351C27.103 14.2288 27.1256 14.115 27.1256 14C27.1256 13.885 27.103 13.7712 27.0589 13.6649C27.0149 13.5587 26.9504 13.4622 26.869 13.3809Z"
+                                    fill="white" />
+                                </svg>
+                              </span>
+                            </button>
+                            <!--end::Option-->
+                          </div>
+                        </div>
+                      </div>
+                      <!--end::Header-->
+                      <!--begin::Body-->
+                      <div class="card-body pt-5">
+                        <div class="datatable-style overflow-hidden compress-table">
+                          <table id="summary_table"
+                            class="table thead_span table-row-dashed table-row-gray-300 th_border colored__perc_td clickable-cell cell-hover-primary  column_mw_200px column_mw_80_not_first td_center_not_first align-middle fs-6 table-scroll fixed_column table_mw_max_content cellpadding-sm"
+                            style="width:100%">
+                            <thead>
+                              <tr>
+                                <th rowspan="3">State</th>
+                                <th colspan="9"> Pernod Ricard <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm  p-1 px-2 rounded bg-gray-100 border border-gray-200 ">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th colspan="9"> Diageo <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm  p-1 px-2 rounded bg-gray-100 border border-gray-200 ">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th rowspan="2">Pernod Ricard Overall Availability <span class="bg-gray d-none"></span>
+                                </th>
+                                <th colspan="4"> Vodka <span class="bg-warning-200 d-none"></span>
+                                  <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm border-gray-300 p-1 px-2 rounded bg-light-warning">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th colspan="4"> American Whiskey <span class="bg-danger-200 d-none"></span>
+                                  <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm border-gray-300 p-1 px-2 rounded bg-light-danger">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th rowspan="2">Diageo Overall Availability <span class="bg-gray d-none"></span>
+                                </th>
+                                <th colspan="4"> Vodka <span class="bg-warning-200 d-none"></span>
+                                  <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm border-gray-300 p-1 px-2 rounded bg-light-warning">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th colspan="4"> American Whiskey <span class="bg-danger-200 d-none"></span>
+                                  <div class="col-sub-text">
+                                    <ul
+                                      class="fs-7 mt-2 mb-0 list-inline d-inline-flex align-items-center justify-content-center flex-wrap list-border-separator list-border-separator-sm border-gray-300 p-1 px-2 rounded bg-light-danger">
+                                      <li class="my-1 col-sub-text-distribution">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Distribution
+                                          <span class=" ms-2 text-gray-800 fw-boldest fs-7">18</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-tudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Total Universe Distribution Penetration">TUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">12%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-rudp">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center cursor-help  justify-content-center lh-sm fs-7"
+                                          data-bs-toggle="tooltip" data-bs-placement="top"
+                                          title="Report Universe Distribution Penetration">RUDP <span
+                                            class=" ms-2 text-gray-800 fw-boldest fs-7">20%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-accounts-surveyed">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Accounts
+                                          Surveyed <span class=" ms-2 text-gray-800 fw-boldest fs-7">23%</span>
+                                        </span>
+                                      </li>
+                                      <li class="my-1 col-sub-text-overall-availability">
+                                        <span
+                                          class="d-flex flex-wrap align-items-center justify-content-center lh-sm fs-7">Overall
+                                          Availability <span class=" ms-2 text-gray-800 fw-boldest fs-7">18%</span>
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th class="availability-col">
+                                  <span class="bg-warning-200 d-none"></span>Availability
+                                </th>
+                                <!--Spririts-->
+                                <th class="sub-col distribution-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Distribution " data-bs-custom-class="tooltip-dark" style="display:none">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-gray-700 m-0">
+                                      <svg style="margin-left: -5px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 178.79 143.57">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="Dis">
+                                              <g id="Layer_1-2-3" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M158,82.35H83.13a3.41,3.41,0,0,0-3.4,3.41v34a3.41,3.41,0,0,0,3.4,3.41H158a3.41,3.41,0,0,0,3.4-3.41v-34A3.41,3.41,0,0,0,158,82.35Zm-3.44,34h-68V89.17h68Z" />
+                                                <path fill="black"
+                                                  d="M175.42,48.33H25.71a3.4,3.4,0,0,0-3.4,3.4v13.6a3.41,3.41,0,0,0,3.4,3.41h3.4v71.44a3.41,3.41,0,0,0,3.41,3.4H168.59a3.4,3.4,0,0,0,3.4-3.4V68.74h3.4a3.41,3.41,0,0,0,3.4-3.41V51.73A3.4,3.4,0,0,0,175.42,48.33Zm-109,88.44H46V96H66.4Zm98.79,0h-92V92.55a3.4,3.4,0,0,0-3.4-3.4H42.59a3.4,3.4,0,0,0-3.4,3.4v44.22H35.92v-68H165.19ZM172,61.93H29.11v-6.8H172Z" />
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Distribution <span class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col total-univers-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Total Universe Distribution Penetration " data-bs-custom-class="tooltip-dark"
+                                    style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx  svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.64 143.81">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="universe">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M175.24,48.56H132.48a3,3,0,0,0-3,3v.82a3,3,0,0,0,3,3h39.36v6.8h-39a3,3,0,0,0-3,3V66a3,3,0,0,0,3,3H165v68H73V101.78a3.41,3.41,0,0,0-2.25-3.2,3.08,3.08,0,0,0-.68-.08h-.82a3,3,0,0,0-3,3V137H45.84V104.18h.07V95.8H49a3,3,0,0,0,3-3V92a3,3,0,0,0-3-3h-6.6a3,3,0,0,0-1.18.25h-.06a3,3,0,0,0-2,2.84v8.07a3.26,3.26,0,0,0-.06.62V137H35.76V108.5a.38.38,0,0,0,0-.15V84.85a3,3,0,0,0-3-3H32a3,3,0,0,0-3,3v55.56a3.4,3.4,0,0,0,3.4,3.4h136a3.41,3.41,0,0,0,3.41-3.4V69h3.4a3.4,3.4,0,0,0,3.4-3.4V52A3.4,3.4,0,0,0,175.24,48.56Z" />
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black"
+                                                      d="M161.05,85.83v34a3.41,3.41,0,0,1-3.41,3.4H82.8a3.4,3.4,0,0,1-3.4-3.4v-34a3.4,3.4,0,0,1,3.4-3.4H97.74a3,3,0,0,1,3,3v.82a3,3,0,0,1-2.7,3H86.4v0l-.1,0h.1v27.22h67.84V89.24H123.58a3,3,0,0,1-3-3v-.82a3,3,0,0,1,2.7-3h34.36A3.41,3.41,0,0,1,161.05,85.83Z" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <path fill="black"
+                                                      d="M128.29,6.76A4.34,4.34,0,0,0,128.1,6a3.83,3.83,0,0,0-3.57-2.54,3.77,3.77,0,0,0-2.06.64l-.35.23L118,6.94l-1.83,1.2-3.59,2.36-1.15.75L108,13.5l-.51.34h0l-6.2,4H93.18l-.09-.21L90,11.22l-.31-.64-.11-.22a3.78,3.78,0,0,0-3.39-2.13H79.28V3.74A3.8,3.8,0,0,0,75.53,0h-.19L68.92.08,62.5.17,53.61.29h-4L43.18.41l-7.92.1H32.7A3.76,3.76,0,0,0,29.7,2L28.18,4l-.48.63h-.1l-.46-.49-.41-.44L24.91,1.77c-.09-.11-.2-.2-.31-.31a3.93,3.93,0,0,0-2.45-.9h-8.7A3.83,3.83,0,0,0,9.91,3.31L.21,31.05A3.79,3.79,0,0,0,.32,33.8L11.25,58.5A3.28,3.28,0,0,0,12.38,60l.94.73,1,.76,5,3.88,7.27,5.62.15.1.41.32.74.56.3.2a3.45,3.45,0,0,0,2,.59H39l9.83-.08,4.86,7.68,4.15,6.53,1,1.56A3.72,3.72,0,0,0,62,90.07h5.69a3.11,3.11,0,0,0,.86-.1,3.77,3.77,0,0,0,2.63-2.19L74,80.9l.23-.55,3.42-8.21H82.3A3.79,3.79,0,0,0,85,71.05l.1-.1,3.23-3.25h5.88l.16.17,2.26,2.07.91,1L105,79.12l1.1,1.22L108,82.43l.2.22a3.75,3.75,0,0,0,5.29.29h0l.36-.35.11-.13,1.73-2.09,5.54-6.68a3.83,3.83,0,0,0,.85-2.72,4.82,4.82,0,0,0-.22-1,4,4,0,0,0-.85-1.34l-1-1.12-3.9-4-.15-.15-.56-.57-1.68-1.7h0c.06-.94-.17-2.95,3.67-4.15a3.61,3.61,0,0,0,1.29-.7l.11-.09a5.6,5.6,0,0,0,.41-.43,3.91,3.91,0,0,0,.6-1,3.47,3.47,0,0,0,.24-1.35V33.85l.67-.45,1-.67,2.68-1.81,2.3-1.56.08-.06h0a3.72,3.72,0,0,0,1.56-3V7.18A3,3,0,0,0,128.29,6.76Zm-7.52,17.47-1.43,1-.24.15-1.89,1.29-3.09,2.09-.23.18a3.67,3.67,0,0,0-1.46,2.93V52a16.35,16.35,0,0,0-3,2.69,9.26,9.26,0,0,0-.88,1,2.79,2.79,0,0,0-.34.43A19.52,19.52,0,0,0,105.49,61c-.12.31-.18.5-.18.5a3.26,3.26,0,0,0,.15,1.24,3.13,3.13,0,0,0,.27.72,3.56,3.56,0,0,0,.67.92l3,3,2.4,2.45.33.33.66.68.51.53-2.46,3-.91-1L107.72,71l-3.14-3.46-3.58-4-.68-.75L99,61.36c-.11-.1-.21-.21-.33-.3a3.79,3.79,0,0,0-2.46-.92h-9.5a3.85,3.85,0,0,0-2.5.92l-.17.16-3.35,3.35H75.11a3.75,3.75,0,0,0-3.49,2.35l-.24.56-1,2.45-.42,1-4.5,10.88-.29.7H64.08l-.45-.72L56.77,70.93l-.64-1L54.59,67.5l-.49-.77A3.8,3.8,0,0,0,50.86,65l-19.14.17H31.5L29.4,63.5l-.93-.72H28.2v-.21L26.75,61.5l-.55-.43-5.13-3.94-.33-.25L19.33,55.8l-1.57-1.21-2.43-5.5L9.49,35.89,7.82,32.11,16.15,8.25h4.39l.2.21,3.15,3.35A3.71,3.71,0,0,0,26.75,13a1.41,1.41,0,0,0,.41,0,5.59,5.59,0,0,0,.87-.23l.17-.06,3.27-1.34a3.67,3.67,0,0,0,1.65-1.26l1-1.38.49-.66h3.47L45.22,8l8-.1h2.24a3.43,3.43,0,0,1,1.19-.21H71.74v4.4a3.78,3.78,0,0,0,1.19,2.74,3.45,3.45,0,0,0,1.55.89,1.43,1.43,0,0,0,.42.09h8.91l.92,1.93,2.7,5.63a3.56,3.56,0,0,0,1.3,1.5,4.11,4.11,0,0,0,2.1.64h3.81v-.11l1.22.11h6.59a3.55,3.55,0,0,0,1.87-.5,1.19,1.19,0,0,0,.22-.12l2.94-1.93L112,20l2-1.26,1.56-1,.73-.48,3.16-2,1.43-.94Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Total Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col report-univers-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Report Universe Distribution Penetration "
+                                    data-bs-custom-class="tooltip-dark" style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-2qx_w svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.99 149.22">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="report">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black" class="cls-1"
+                                                      d="M34.11,117v.85S34.12,116.93,34.11,117Z" />
+                                                    <path fill="black"
+                                                      d="M78.21,120.93c0-.11,0-.22,0-.34v-7c0-.12,0-.24,0-.36a3.37,3.37,0,0,1,3.32-3h0a3.37,3.37,0,0,1,3.27,2.71c0,.11,0,.22.05.34s0,.22,0,.34v7a.91.91,0,0,1,0,.17v1.33h68V94.86H104.1a3,3,0,0,1-3-3V91a3,3,0,0,1,2.59-3h52.47a3.41,3.41,0,0,1,3.41,3.41v34a3.41,3.41,0,0,1-3.41,3.4H81.48a3.39,3.39,0,0,1-3.18-2.22,3,3,0,0,1-.09-.73v-.29a2.41,2.41,0,0,1,0-.38Z" />
+                                                    <path fill="black"
+                                                      d="M177,57.44V71.05a3.4,3.4,0,0,1-3.4,3.4h-3.4v71.37a3.41,3.41,0,0,1-3.41,3.4H30.85a3.41,3.41,0,0,1-3.16-2.14l-.09-.26,0-.13a3,3,0,0,1-.1-.52v-32.1a3.33,3.33,0,0,1,2.42-3,2.73,2.73,0,0,1,.41,0h.81a3.25,3.25,0,0,1,2.16,1.07,3.92,3.92,0,0,1,.25.32,3.79,3.79,0,0,1,.2.34l.12.24a3,3,0,0,1,.21.67c0,.11,0,.21,0,.31a1.37,1.37,0,0,1,0,.29v28.24h3.41V114.19c0-.1,0-.21,0-.31a3.34,3.34,0,0,1,3.26-2.68h0a3.15,3.15,0,0,1,1.58.41,1.56,1.56,0,0,1,.28.16L43,112a.85.85,0,0,1,.17.16,3.75,3.75,0,0,1,.51.61c.07.12.14.24.2.37a1.08,1.08,0,0,1,.08.19,1.43,1.43,0,0,1,.09.27,1.63,1.63,0,0,1,.07.3,1.57,1.57,0,0,1,0,.3c0,.11,0,.22,0,.34v27.95H64.58V114.3c0-.12,0-.24,0-.36a3.4,3.4,0,0,1,3.37-3h0a3.4,3.4,0,0,1,3.31,2.71c0,.11,0,.22,0,.34s0,.22,0,.34v28.2h92.12v-68H104.15a2.92,2.92,0,0,1-.83-.12A3,3,0,0,1,101.2,72a4.86,4.86,0,0,1,0-.54v-.82a3,3,0,0,1,2.74-3h66.4V60.86H103.68a3,3,0,0,1-2.85-3V57a3,3,0,0,1,2.85-3h69.91A3.4,3.4,0,0,1,177,57.44Z" />
+                                                    <path fill="black"
+                                                      d="M75.35,78.56a3.57,3.57,0,0,0-3.54-3.19h-3.5V41.22a3.52,3.52,0,0,0-3.5-3.54H45.93a3.53,3.53,0,0,0-3.54,3.54V51.81H27.08a3.53,3.53,0,0,0-3.53,3.53v20H20a3.53,3.53,0,0,0-3.53,3.53,3.57,3.57,0,0,0,1.09,2.55,3.47,3.47,0,0,0,2.44,1H71.84a3.53,3.53,0,0,0,3.53-3.51C75.37,78.79,75.36,78.67,75.35,78.56Zm-33-3.19H30.62V58.88H42.39Zm18.85,0H49.46V44.75H61.24Z" />
+                                                    <path fill="black"
+                                                      d="M24.43,16.48H17.66a3.53,3.53,0,1,0,0,7.06H46a3.52,3.52,0,0,0,0-7H24.43Z" />
+                                                    <path fill="black"
+                                                      d="M35.33,34.15a3.56,3.56,0,0,1-3.53,3.53H17.66a3.54,3.54,0,0,1,0-7.07H31.8A3.54,3.54,0,0,1,35.33,34.15Z" />
+                                                    <path fill="black"
+                                                      d="M82.8,2.25l-.32-.19a17.49,17.49,0,0,0-6.84-2c-.47,0-1-.06-1.45-.06H17.66A17.72,17.72,0,0,0,0,17.66v66a17.69,17.69,0,0,0,17.66,17.67H74.19A17.71,17.71,0,0,0,91.87,83.61V17.66A17.67,17.67,0,0,0,82.8,2.25Zm2,81.36a10.65,10.65,0,0,1-9.59,10.56h0l-7.29,0H17.66a10.62,10.62,0,0,1-10.6-10.6V17.66A10.57,10.57,0,0,1,17.62,7.06H75.19a10.6,10.6,0,0,1,9.61,10.6Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Report Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="availability-col">
+                                  <span class="bg-danger-200 d-none"></span>Availability
+                                </th>
+                                <!--Spririts-->
+                                <th class="sub-col distribution-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Distribution " data-bs-custom-class="tooltip-dark" style="display:none">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-gray-700 m-0">
+                                      <svg style="margin-left: -5px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 178.79 143.57">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="Dis">
+                                              <g id="Layer_1-2-3" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M158,82.35H83.13a3.41,3.41,0,0,0-3.4,3.41v34a3.41,3.41,0,0,0,3.4,3.41H158a3.41,3.41,0,0,0,3.4-3.41v-34A3.41,3.41,0,0,0,158,82.35Zm-3.44,34h-68V89.17h68Z" />
+                                                <path fill="black"
+                                                  d="M175.42,48.33H25.71a3.4,3.4,0,0,0-3.4,3.4v13.6a3.41,3.41,0,0,0,3.4,3.41h3.4v71.44a3.41,3.41,0,0,0,3.41,3.4H168.59a3.4,3.4,0,0,0,3.4-3.4V68.74h3.4a3.41,3.41,0,0,0,3.4-3.41V51.73A3.4,3.4,0,0,0,175.42,48.33Zm-109,88.44H46V96H66.4Zm98.79,0h-92V92.55a3.4,3.4,0,0,0-3.4-3.4H42.59a3.4,3.4,0,0,0-3.4,3.4v44.22H35.92v-68H165.19ZM172,61.93H29.11v-6.8H172Z" />
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Distribution <span class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col total-univers-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Total Universe Distribution Penetration " data-bs-custom-class="tooltip-dark"
+                                    style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx  svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.64 143.81">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="universe">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M175.24,48.56H132.48a3,3,0,0,0-3,3v.82a3,3,0,0,0,3,3h39.36v6.8h-39a3,3,0,0,0-3,3V66a3,3,0,0,0,3,3H165v68H73V101.78a3.41,3.41,0,0,0-2.25-3.2,3.08,3.08,0,0,0-.68-.08h-.82a3,3,0,0,0-3,3V137H45.84V104.18h.07V95.8H49a3,3,0,0,0,3-3V92a3,3,0,0,0-3-3h-6.6a3,3,0,0,0-1.18.25h-.06a3,3,0,0,0-2,2.84v8.07a3.26,3.26,0,0,0-.06.62V137H35.76V108.5a.38.38,0,0,0,0-.15V84.85a3,3,0,0,0-3-3H32a3,3,0,0,0-3,3v55.56a3.4,3.4,0,0,0,3.4,3.4h136a3.41,3.41,0,0,0,3.41-3.4V69h3.4a3.4,3.4,0,0,0,3.4-3.4V52A3.4,3.4,0,0,0,175.24,48.56Z" />
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black"
+                                                      d="M161.05,85.83v34a3.41,3.41,0,0,1-3.41,3.4H82.8a3.4,3.4,0,0,1-3.4-3.4v-34a3.4,3.4,0,0,1,3.4-3.4H97.74a3,3,0,0,1,3,3v.82a3,3,0,0,1-2.7,3H86.4v0l-.1,0h.1v27.22h67.84V89.24H123.58a3,3,0,0,1-3-3v-.82a3,3,0,0,1,2.7-3h34.36A3.41,3.41,0,0,1,161.05,85.83Z" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <path fill="black"
+                                                      d="M128.29,6.76A4.34,4.34,0,0,0,128.1,6a3.83,3.83,0,0,0-3.57-2.54,3.77,3.77,0,0,0-2.06.64l-.35.23L118,6.94l-1.83,1.2-3.59,2.36-1.15.75L108,13.5l-.51.34h0l-6.2,4H93.18l-.09-.21L90,11.22l-.31-.64-.11-.22a3.78,3.78,0,0,0-3.39-2.13H79.28V3.74A3.8,3.8,0,0,0,75.53,0h-.19L68.92.08,62.5.17,53.61.29h-4L43.18.41l-7.92.1H32.7A3.76,3.76,0,0,0,29.7,2L28.18,4l-.48.63h-.1l-.46-.49-.41-.44L24.91,1.77c-.09-.11-.2-.2-.31-.31a3.93,3.93,0,0,0-2.45-.9h-8.7A3.83,3.83,0,0,0,9.91,3.31L.21,31.05A3.79,3.79,0,0,0,.32,33.8L11.25,58.5A3.28,3.28,0,0,0,12.38,60l.94.73,1,.76,5,3.88,7.27,5.62.15.1.41.32.74.56.3.2a3.45,3.45,0,0,0,2,.59H39l9.83-.08,4.86,7.68,4.15,6.53,1,1.56A3.72,3.72,0,0,0,62,90.07h5.69a3.11,3.11,0,0,0,.86-.1,3.77,3.77,0,0,0,2.63-2.19L74,80.9l.23-.55,3.42-8.21H82.3A3.79,3.79,0,0,0,85,71.05l.1-.1,3.23-3.25h5.88l.16.17,2.26,2.07.91,1L105,79.12l1.1,1.22L108,82.43l.2.22a3.75,3.75,0,0,0,5.29.29h0l.36-.35.11-.13,1.73-2.09,5.54-6.68a3.83,3.83,0,0,0,.85-2.72,4.82,4.82,0,0,0-.22-1,4,4,0,0,0-.85-1.34l-1-1.12-3.9-4-.15-.15-.56-.57-1.68-1.7h0c.06-.94-.17-2.95,3.67-4.15a3.61,3.61,0,0,0,1.29-.7l.11-.09a5.6,5.6,0,0,0,.41-.43,3.91,3.91,0,0,0,.6-1,3.47,3.47,0,0,0,.24-1.35V33.85l.67-.45,1-.67,2.68-1.81,2.3-1.56.08-.06h0a3.72,3.72,0,0,0,1.56-3V7.18A3,3,0,0,0,128.29,6.76Zm-7.52,17.47-1.43,1-.24.15-1.89,1.29-3.09,2.09-.23.18a3.67,3.67,0,0,0-1.46,2.93V52a16.35,16.35,0,0,0-3,2.69,9.26,9.26,0,0,0-.88,1,2.79,2.79,0,0,0-.34.43A19.52,19.52,0,0,0,105.49,61c-.12.31-.18.5-.18.5a3.26,3.26,0,0,0,.15,1.24,3.13,3.13,0,0,0,.27.72,3.56,3.56,0,0,0,.67.92l3,3,2.4,2.45.33.33.66.68.51.53-2.46,3-.91-1L107.72,71l-3.14-3.46-3.58-4-.68-.75L99,61.36c-.11-.1-.21-.21-.33-.3a3.79,3.79,0,0,0-2.46-.92h-9.5a3.85,3.85,0,0,0-2.5.92l-.17.16-3.35,3.35H75.11a3.75,3.75,0,0,0-3.49,2.35l-.24.56-1,2.45-.42,1-4.5,10.88-.29.7H64.08l-.45-.72L56.77,70.93l-.64-1L54.59,67.5l-.49-.77A3.8,3.8,0,0,0,50.86,65l-19.14.17H31.5L29.4,63.5l-.93-.72H28.2v-.21L26.75,61.5l-.55-.43-5.13-3.94-.33-.25L19.33,55.8l-1.57-1.21-2.43-5.5L9.49,35.89,7.82,32.11,16.15,8.25h4.39l.2.21,3.15,3.35A3.71,3.71,0,0,0,26.75,13a1.41,1.41,0,0,0,.41,0,5.59,5.59,0,0,0,.87-.23l.17-.06,3.27-1.34a3.67,3.67,0,0,0,1.65-1.26l1-1.38.49-.66h3.47L45.22,8l8-.1h2.24a3.43,3.43,0,0,1,1.19-.21H71.74v4.4a3.78,3.78,0,0,0,1.19,2.74,3.45,3.45,0,0,0,1.55.89,1.43,1.43,0,0,0,.42.09h8.91l.92,1.93,2.7,5.63a3.56,3.56,0,0,0,1.3,1.5,4.11,4.11,0,0,0,2.1.64h3.81v-.11l1.22.11h6.59a3.55,3.55,0,0,0,1.87-.5,1.19,1.19,0,0,0,.22-.12l2.94-1.93L112,20l2-1.26,1.56-1,.73-.48,3.16-2,1.43-.94Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Total Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col report-univers-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Report Universe Distribution Penetration "
+                                    data-bs-custom-class="tooltip-dark" style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-2qx_w svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.99 149.22">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="report">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black" class="cls-1"
+                                                      d="M34.11,117v.85S34.12,116.93,34.11,117Z" />
+                                                    <path fill="black"
+                                                      d="M78.21,120.93c0-.11,0-.22,0-.34v-7c0-.12,0-.24,0-.36a3.37,3.37,0,0,1,3.32-3h0a3.37,3.37,0,0,1,3.27,2.71c0,.11,0,.22.05.34s0,.22,0,.34v7a.91.91,0,0,1,0,.17v1.33h68V94.86H104.1a3,3,0,0,1-3-3V91a3,3,0,0,1,2.59-3h52.47a3.41,3.41,0,0,1,3.41,3.41v34a3.41,3.41,0,0,1-3.41,3.4H81.48a3.39,3.39,0,0,1-3.18-2.22,3,3,0,0,1-.09-.73v-.29a2.41,2.41,0,0,1,0-.38Z" />
+                                                    <path fill="black"
+                                                      d="M177,57.44V71.05a3.4,3.4,0,0,1-3.4,3.4h-3.4v71.37a3.41,3.41,0,0,1-3.41,3.4H30.85a3.41,3.41,0,0,1-3.16-2.14l-.09-.26,0-.13a3,3,0,0,1-.1-.52v-32.1a3.33,3.33,0,0,1,2.42-3,2.73,2.73,0,0,1,.41,0h.81a3.25,3.25,0,0,1,2.16,1.07,3.92,3.92,0,0,1,.25.32,3.79,3.79,0,0,1,.2.34l.12.24a3,3,0,0,1,.21.67c0,.11,0,.21,0,.31a1.37,1.37,0,0,1,0,.29v28.24h3.41V114.19c0-.1,0-.21,0-.31a3.34,3.34,0,0,1,3.26-2.68h0a3.15,3.15,0,0,1,1.58.41,1.56,1.56,0,0,1,.28.16L43,112a.85.85,0,0,1,.17.16,3.75,3.75,0,0,1,.51.61c.07.12.14.24.2.37a1.08,1.08,0,0,1,.08.19,1.43,1.43,0,0,1,.09.27,1.63,1.63,0,0,1,.07.3,1.57,1.57,0,0,1,0,.3c0,.11,0,.22,0,.34v27.95H64.58V114.3c0-.12,0-.24,0-.36a3.4,3.4,0,0,1,3.37-3h0a3.4,3.4,0,0,1,3.31,2.71c0,.11,0,.22,0,.34s0,.22,0,.34v28.2h92.12v-68H104.15a2.92,2.92,0,0,1-.83-.12A3,3,0,0,1,101.2,72a4.86,4.86,0,0,1,0-.54v-.82a3,3,0,0,1,2.74-3h66.4V60.86H103.68a3,3,0,0,1-2.85-3V57a3,3,0,0,1,2.85-3h69.91A3.4,3.4,0,0,1,177,57.44Z" />
+                                                    <path fill="black"
+                                                      d="M75.35,78.56a3.57,3.57,0,0,0-3.54-3.19h-3.5V41.22a3.52,3.52,0,0,0-3.5-3.54H45.93a3.53,3.53,0,0,0-3.54,3.54V51.81H27.08a3.53,3.53,0,0,0-3.53,3.53v20H20a3.53,3.53,0,0,0-3.53,3.53,3.57,3.57,0,0,0,1.09,2.55,3.47,3.47,0,0,0,2.44,1H71.84a3.53,3.53,0,0,0,3.53-3.51C75.37,78.79,75.36,78.67,75.35,78.56Zm-33-3.19H30.62V58.88H42.39Zm18.85,0H49.46V44.75H61.24Z" />
+                                                    <path fill="black"
+                                                      d="M24.43,16.48H17.66a3.53,3.53,0,1,0,0,7.06H46a3.52,3.52,0,0,0,0-7H24.43Z" />
+                                                    <path fill="black"
+                                                      d="M35.33,34.15a3.56,3.56,0,0,1-3.53,3.53H17.66a3.54,3.54,0,0,1,0-7.07H31.8A3.54,3.54,0,0,1,35.33,34.15Z" />
+                                                    <path fill="black"
+                                                      d="M82.8,2.25l-.32-.19a17.49,17.49,0,0,0-6.84-2c-.47,0-1-.06-1.45-.06H17.66A17.72,17.72,0,0,0,0,17.66v66a17.69,17.69,0,0,0,17.66,17.67H74.19A17.71,17.71,0,0,0,91.87,83.61V17.66A17.67,17.67,0,0,0,82.8,2.25Zm2,81.36a10.65,10.65,0,0,1-9.59,10.56h0l-7.29,0H17.66a10.62,10.62,0,0,1-10.6-10.6V17.66A10.57,10.57,0,0,1,17.62,7.06H75.19a10.6,10.6,0,0,1,9.61,10.6Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Report Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="availability-col">
+                                  <span class="bg-warning-200 d-none"></span>Availability
+                                </th>
+                                <!--Spririts-->
+                                <th class="sub-col distribution-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Distribution " data-bs-custom-class="tooltip-dark" style="display:none">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-gray-700 m-0">
+                                      <svg style="margin-left: -5px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 178.79 143.57">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="Dis">
+                                              <g id="Layer_1-2-3" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M158,82.35H83.13a3.41,3.41,0,0,0-3.4,3.41v34a3.41,3.41,0,0,0,3.4,3.41H158a3.41,3.41,0,0,0,3.4-3.41v-34A3.41,3.41,0,0,0,158,82.35Zm-3.44,34h-68V89.17h68Z" />
+                                                <path fill="black"
+                                                  d="M175.42,48.33H25.71a3.4,3.4,0,0,0-3.4,3.4v13.6a3.41,3.41,0,0,0,3.4,3.41h3.4v71.44a3.41,3.41,0,0,0,3.41,3.4H168.59a3.4,3.4,0,0,0,3.4-3.4V68.74h3.4a3.41,3.41,0,0,0,3.4-3.41V51.73A3.4,3.4,0,0,0,175.42,48.33Zm-109,88.44H46V96H66.4Zm98.79,0h-92V92.55a3.4,3.4,0,0,0-3.4-3.4H42.59a3.4,3.4,0,0,0-3.4,3.4v44.22H35.92v-68H165.19ZM172,61.93H29.11v-6.8H172Z" />
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Distribution <span class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col total-univers-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Total Universe Distribution Penetration " data-bs-custom-class="tooltip-dark"
+                                    style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx  svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.64 143.81">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="universe">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M175.24,48.56H132.48a3,3,0,0,0-3,3v.82a3,3,0,0,0,3,3h39.36v6.8h-39a3,3,0,0,0-3,3V66a3,3,0,0,0,3,3H165v68H73V101.78a3.41,3.41,0,0,0-2.25-3.2,3.08,3.08,0,0,0-.68-.08h-.82a3,3,0,0,0-3,3V137H45.84V104.18h.07V95.8H49a3,3,0,0,0,3-3V92a3,3,0,0,0-3-3h-6.6a3,3,0,0,0-1.18.25h-.06a3,3,0,0,0-2,2.84v8.07a3.26,3.26,0,0,0-.06.62V137H35.76V108.5a.38.38,0,0,0,0-.15V84.85a3,3,0,0,0-3-3H32a3,3,0,0,0-3,3v55.56a3.4,3.4,0,0,0,3.4,3.4h136a3.41,3.41,0,0,0,3.41-3.4V69h3.4a3.4,3.4,0,0,0,3.4-3.4V52A3.4,3.4,0,0,0,175.24,48.56Z" />
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black"
+                                                      d="M161.05,85.83v34a3.41,3.41,0,0,1-3.41,3.4H82.8a3.4,3.4,0,0,1-3.4-3.4v-34a3.4,3.4,0,0,1,3.4-3.4H97.74a3,3,0,0,1,3,3v.82a3,3,0,0,1-2.7,3H86.4v0l-.1,0h.1v27.22h67.84V89.24H123.58a3,3,0,0,1-3-3v-.82a3,3,0,0,1,2.7-3h34.36A3.41,3.41,0,0,1,161.05,85.83Z" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <path fill="black"
+                                                      d="M128.29,6.76A4.34,4.34,0,0,0,128.1,6a3.83,3.83,0,0,0-3.57-2.54,3.77,3.77,0,0,0-2.06.64l-.35.23L118,6.94l-1.83,1.2-3.59,2.36-1.15.75L108,13.5l-.51.34h0l-6.2,4H93.18l-.09-.21L90,11.22l-.31-.64-.11-.22a3.78,3.78,0,0,0-3.39-2.13H79.28V3.74A3.8,3.8,0,0,0,75.53,0h-.19L68.92.08,62.5.17,53.61.29h-4L43.18.41l-7.92.1H32.7A3.76,3.76,0,0,0,29.7,2L28.18,4l-.48.63h-.1l-.46-.49-.41-.44L24.91,1.77c-.09-.11-.2-.2-.31-.31a3.93,3.93,0,0,0-2.45-.9h-8.7A3.83,3.83,0,0,0,9.91,3.31L.21,31.05A3.79,3.79,0,0,0,.32,33.8L11.25,58.5A3.28,3.28,0,0,0,12.38,60l.94.73,1,.76,5,3.88,7.27,5.62.15.1.41.32.74.56.3.2a3.45,3.45,0,0,0,2,.59H39l9.83-.08,4.86,7.68,4.15,6.53,1,1.56A3.72,3.72,0,0,0,62,90.07h5.69a3.11,3.11,0,0,0,.86-.1,3.77,3.77,0,0,0,2.63-2.19L74,80.9l.23-.55,3.42-8.21H82.3A3.79,3.79,0,0,0,85,71.05l.1-.1,3.23-3.25h5.88l.16.17,2.26,2.07.91,1L105,79.12l1.1,1.22L108,82.43l.2.22a3.75,3.75,0,0,0,5.29.29h0l.36-.35.11-.13,1.73-2.09,5.54-6.68a3.83,3.83,0,0,0,.85-2.72,4.82,4.82,0,0,0-.22-1,4,4,0,0,0-.85-1.34l-1-1.12-3.9-4-.15-.15-.56-.57-1.68-1.7h0c.06-.94-.17-2.95,3.67-4.15a3.61,3.61,0,0,0,1.29-.7l.11-.09a5.6,5.6,0,0,0,.41-.43,3.91,3.91,0,0,0,.6-1,3.47,3.47,0,0,0,.24-1.35V33.85l.67-.45,1-.67,2.68-1.81,2.3-1.56.08-.06h0a3.72,3.72,0,0,0,1.56-3V7.18A3,3,0,0,0,128.29,6.76Zm-7.52,17.47-1.43,1-.24.15-1.89,1.29-3.09,2.09-.23.18a3.67,3.67,0,0,0-1.46,2.93V52a16.35,16.35,0,0,0-3,2.69,9.26,9.26,0,0,0-.88,1,2.79,2.79,0,0,0-.34.43A19.52,19.52,0,0,0,105.49,61c-.12.31-.18.5-.18.5a3.26,3.26,0,0,0,.15,1.24,3.13,3.13,0,0,0,.27.72,3.56,3.56,0,0,0,.67.92l3,3,2.4,2.45.33.33.66.68.51.53-2.46,3-.91-1L107.72,71l-3.14-3.46-3.58-4-.68-.75L99,61.36c-.11-.1-.21-.21-.33-.3a3.79,3.79,0,0,0-2.46-.92h-9.5a3.85,3.85,0,0,0-2.5.92l-.17.16-3.35,3.35H75.11a3.75,3.75,0,0,0-3.49,2.35l-.24.56-1,2.45-.42,1-4.5,10.88-.29.7H64.08l-.45-.72L56.77,70.93l-.64-1L54.59,67.5l-.49-.77A3.8,3.8,0,0,0,50.86,65l-19.14.17H31.5L29.4,63.5l-.93-.72H28.2v-.21L26.75,61.5l-.55-.43-5.13-3.94-.33-.25L19.33,55.8l-1.57-1.21-2.43-5.5L9.49,35.89,7.82,32.11,16.15,8.25h4.39l.2.21,3.15,3.35A3.71,3.71,0,0,0,26.75,13a1.41,1.41,0,0,0,.41,0,5.59,5.59,0,0,0,.87-.23l.17-.06,3.27-1.34a3.67,3.67,0,0,0,1.65-1.26l1-1.38.49-.66h3.47L45.22,8l8-.1h2.24a3.43,3.43,0,0,1,1.19-.21H71.74v4.4a3.78,3.78,0,0,0,1.19,2.74,3.45,3.45,0,0,0,1.55.89,1.43,1.43,0,0,0,.42.09h8.91l.92,1.93,2.7,5.63a3.56,3.56,0,0,0,1.3,1.5,4.11,4.11,0,0,0,2.1.64h3.81v-.11l1.22.11h6.59a3.55,3.55,0,0,0,1.87-.5,1.19,1.19,0,0,0,.22-.12l2.94-1.93L112,20l2-1.26,1.56-1,.73-.48,3.16-2,1.43-.94Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Total Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col report-univers-col">
+                                  <span class="bg-light-warning d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Report Universe Distribution Penetration "
+                                    data-bs-custom-class="tooltip-dark" style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-2qx_w svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.99 149.22">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="report">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black" class="cls-1"
+                                                      d="M34.11,117v.85S34.12,116.93,34.11,117Z" />
+                                                    <path fill="black"
+                                                      d="M78.21,120.93c0-.11,0-.22,0-.34v-7c0-.12,0-.24,0-.36a3.37,3.37,0,0,1,3.32-3h0a3.37,3.37,0,0,1,3.27,2.71c0,.11,0,.22.05.34s0,.22,0,.34v7a.91.91,0,0,1,0,.17v1.33h68V94.86H104.1a3,3,0,0,1-3-3V91a3,3,0,0,1,2.59-3h52.47a3.41,3.41,0,0,1,3.41,3.41v34a3.41,3.41,0,0,1-3.41,3.4H81.48a3.39,3.39,0,0,1-3.18-2.22,3,3,0,0,1-.09-.73v-.29a2.41,2.41,0,0,1,0-.38Z" />
+                                                    <path fill="black"
+                                                      d="M177,57.44V71.05a3.4,3.4,0,0,1-3.4,3.4h-3.4v71.37a3.41,3.41,0,0,1-3.41,3.4H30.85a3.41,3.41,0,0,1-3.16-2.14l-.09-.26,0-.13a3,3,0,0,1-.1-.52v-32.1a3.33,3.33,0,0,1,2.42-3,2.73,2.73,0,0,1,.41,0h.81a3.25,3.25,0,0,1,2.16,1.07,3.92,3.92,0,0,1,.25.32,3.79,3.79,0,0,1,.2.34l.12.24a3,3,0,0,1,.21.67c0,.11,0,.21,0,.31a1.37,1.37,0,0,1,0,.29v28.24h3.41V114.19c0-.1,0-.21,0-.31a3.34,3.34,0,0,1,3.26-2.68h0a3.15,3.15,0,0,1,1.58.41,1.56,1.56,0,0,1,.28.16L43,112a.85.85,0,0,1,.17.16,3.75,3.75,0,0,1,.51.61c.07.12.14.24.2.37a1.08,1.08,0,0,1,.08.19,1.43,1.43,0,0,1,.09.27,1.63,1.63,0,0,1,.07.3,1.57,1.57,0,0,1,0,.3c0,.11,0,.22,0,.34v27.95H64.58V114.3c0-.12,0-.24,0-.36a3.4,3.4,0,0,1,3.37-3h0a3.4,3.4,0,0,1,3.31,2.71c0,.11,0,.22,0,.34s0,.22,0,.34v28.2h92.12v-68H104.15a2.92,2.92,0,0,1-.83-.12A3,3,0,0,1,101.2,72a4.86,4.86,0,0,1,0-.54v-.82a3,3,0,0,1,2.74-3h66.4V60.86H103.68a3,3,0,0,1-2.85-3V57a3,3,0,0,1,2.85-3h69.91A3.4,3.4,0,0,1,177,57.44Z" />
+                                                    <path fill="black"
+                                                      d="M75.35,78.56a3.57,3.57,0,0,0-3.54-3.19h-3.5V41.22a3.52,3.52,0,0,0-3.5-3.54H45.93a3.53,3.53,0,0,0-3.54,3.54V51.81H27.08a3.53,3.53,0,0,0-3.53,3.53v20H20a3.53,3.53,0,0,0-3.53,3.53,3.57,3.57,0,0,0,1.09,2.55,3.47,3.47,0,0,0,2.44,1H71.84a3.53,3.53,0,0,0,3.53-3.51C75.37,78.79,75.36,78.67,75.35,78.56Zm-33-3.19H30.62V58.88H42.39Zm18.85,0H49.46V44.75H61.24Z" />
+                                                    <path fill="black"
+                                                      d="M24.43,16.48H17.66a3.53,3.53,0,1,0,0,7.06H46a3.52,3.52,0,0,0,0-7H24.43Z" />
+                                                    <path fill="black"
+                                                      d="M35.33,34.15a3.56,3.56,0,0,1-3.53,3.53H17.66a3.54,3.54,0,0,1,0-7.07H31.8A3.54,3.54,0,0,1,35.33,34.15Z" />
+                                                    <path fill="black"
+                                                      d="M82.8,2.25l-.32-.19a17.49,17.49,0,0,0-6.84-2c-.47,0-1-.06-1.45-.06H17.66A17.72,17.72,0,0,0,0,17.66v66a17.69,17.69,0,0,0,17.66,17.67H74.19A17.71,17.71,0,0,0,91.87,83.61V17.66A17.67,17.67,0,0,0,82.8,2.25Zm2,81.36a10.65,10.65,0,0,1-9.59,10.56h0l-7.29,0H17.66a10.62,10.62,0,0,1-10.6-10.6V17.66A10.57,10.57,0,0,1,17.62,7.06H75.19a10.6,10.6,0,0,1,9.61,10.6Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Report Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="availability-col">
+                                  <span class="bg-danger-200 d-none"></span>Availability
+                                </th>
+                                <!--Spririts-->
+                                <th class="sub-col distribution-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Distribution " data-bs-custom-class="tooltip-dark" style="display:none">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-gray-700 m-0">
+                                      <svg style="margin-left: -5px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 178.79 143.57">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="Dis">
+                                              <g id="Layer_1-2-3" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M158,82.35H83.13a3.41,3.41,0,0,0-3.4,3.41v34a3.41,3.41,0,0,0,3.4,3.41H158a3.41,3.41,0,0,0,3.4-3.41v-34A3.41,3.41,0,0,0,158,82.35Zm-3.44,34h-68V89.17h68Z" />
+                                                <path fill="black"
+                                                  d="M175.42,48.33H25.71a3.4,3.4,0,0,0-3.4,3.4v13.6a3.41,3.41,0,0,0,3.4,3.41h3.4v71.44a3.41,3.41,0,0,0,3.41,3.4H168.59a3.4,3.4,0,0,0,3.4-3.4V68.74h3.4a3.41,3.41,0,0,0,3.4-3.41V51.73A3.4,3.4,0,0,0,175.42,48.33Zm-109,88.44H46V96H66.4Zm98.79,0h-92V92.55a3.4,3.4,0,0,0-3.4-3.4H42.59a3.4,3.4,0,0,0-3.4,3.4v44.22H35.92v-68H165.19ZM172,61.93H29.11v-6.8H172Z" />
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Distribution <span class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col total-univers-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Total Universe Distribution Penetration " data-bs-custom-class="tooltip-dark"
+                                    style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx  svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.64 143.81">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="universe">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <path fill="black"
+                                                  d="M175.24,48.56H132.48a3,3,0,0,0-3,3v.82a3,3,0,0,0,3,3h39.36v6.8h-39a3,3,0,0,0-3,3V66a3,3,0,0,0,3,3H165v68H73V101.78a3.41,3.41,0,0,0-2.25-3.2,3.08,3.08,0,0,0-.68-.08h-.82a3,3,0,0,0-3,3V137H45.84V104.18h.07V95.8H49a3,3,0,0,0,3-3V92a3,3,0,0,0-3-3h-6.6a3,3,0,0,0-1.18.25h-.06a3,3,0,0,0-2,2.84v8.07a3.26,3.26,0,0,0-.06.62V137H35.76V108.5a.38.38,0,0,0,0-.15V84.85a3,3,0,0,0-3-3H32a3,3,0,0,0-3,3v55.56a3.4,3.4,0,0,0,3.4,3.4h136a3.41,3.41,0,0,0,3.41-3.4V69h3.4a3.4,3.4,0,0,0,3.4-3.4V52A3.4,3.4,0,0,0,175.24,48.56Z" />
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black"
+                                                      d="M161.05,85.83v34a3.41,3.41,0,0,1-3.41,3.4H82.8a3.4,3.4,0,0,1-3.4-3.4v-34a3.4,3.4,0,0,1,3.4-3.4H97.74a3,3,0,0,1,3,3v.82a3,3,0,0,1-2.7,3H86.4v0l-.1,0h.1v27.22h67.84V89.24H123.58a3,3,0,0,1-3-3v-.82a3,3,0,0,1,2.7-3h34.36A3.41,3.41,0,0,1,161.05,85.83Z" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24" />
+                                                    <path fill="black"
+                                                      d="M128.29,6.76A4.34,4.34,0,0,0,128.1,6a3.83,3.83,0,0,0-3.57-2.54,3.77,3.77,0,0,0-2.06.64l-.35.23L118,6.94l-1.83,1.2-3.59,2.36-1.15.75L108,13.5l-.51.34h0l-6.2,4H93.18l-.09-.21L90,11.22l-.31-.64-.11-.22a3.78,3.78,0,0,0-3.39-2.13H79.28V3.74A3.8,3.8,0,0,0,75.53,0h-.19L68.92.08,62.5.17,53.61.29h-4L43.18.41l-7.92.1H32.7A3.76,3.76,0,0,0,29.7,2L28.18,4l-.48.63h-.1l-.46-.49-.41-.44L24.91,1.77c-.09-.11-.2-.2-.31-.31a3.93,3.93,0,0,0-2.45-.9h-8.7A3.83,3.83,0,0,0,9.91,3.31L.21,31.05A3.79,3.79,0,0,0,.32,33.8L11.25,58.5A3.28,3.28,0,0,0,12.38,60l.94.73,1,.76,5,3.88,7.27,5.62.15.1.41.32.74.56.3.2a3.45,3.45,0,0,0,2,.59H39l9.83-.08,4.86,7.68,4.15,6.53,1,1.56A3.72,3.72,0,0,0,62,90.07h5.69a3.11,3.11,0,0,0,.86-.1,3.77,3.77,0,0,0,2.63-2.19L74,80.9l.23-.55,3.42-8.21H82.3A3.79,3.79,0,0,0,85,71.05l.1-.1,3.23-3.25h5.88l.16.17,2.26,2.07.91,1L105,79.12l1.1,1.22L108,82.43l.2.22a3.75,3.75,0,0,0,5.29.29h0l.36-.35.11-.13,1.73-2.09,5.54-6.68a3.83,3.83,0,0,0,.85-2.72,4.82,4.82,0,0,0-.22-1,4,4,0,0,0-.85-1.34l-1-1.12-3.9-4-.15-.15-.56-.57-1.68-1.7h0c.06-.94-.17-2.95,3.67-4.15a3.61,3.61,0,0,0,1.29-.7l.11-.09a5.6,5.6,0,0,0,.41-.43,3.91,3.91,0,0,0,.6-1,3.47,3.47,0,0,0,.24-1.35V33.85l.67-.45,1-.67,2.68-1.81,2.3-1.56.08-.06h0a3.72,3.72,0,0,0,1.56-3V7.18A3,3,0,0,0,128.29,6.76Zm-7.52,17.47-1.43,1-.24.15-1.89,1.29-3.09,2.09-.23.18a3.67,3.67,0,0,0-1.46,2.93V52a16.35,16.35,0,0,0-3,2.69,9.26,9.26,0,0,0-.88,1,2.79,2.79,0,0,0-.34.43A19.52,19.52,0,0,0,105.49,61c-.12.31-.18.5-.18.5a3.26,3.26,0,0,0,.15,1.24,3.13,3.13,0,0,0,.27.72,3.56,3.56,0,0,0,.67.92l3,3,2.4,2.45.33.33.66.68.51.53-2.46,3-.91-1L107.72,71l-3.14-3.46-3.58-4-.68-.75L99,61.36c-.11-.1-.21-.21-.33-.3a3.79,3.79,0,0,0-2.46-.92h-9.5a3.85,3.85,0,0,0-2.5.92l-.17.16-3.35,3.35H75.11a3.75,3.75,0,0,0-3.49,2.35l-.24.56-1,2.45-.42,1-4.5,10.88-.29.7H64.08l-.45-.72L56.77,70.93l-.64-1L54.59,67.5l-.49-.77A3.8,3.8,0,0,0,50.86,65l-19.14.17H31.5L29.4,63.5l-.93-.72H28.2v-.21L26.75,61.5l-.55-.43-5.13-3.94-.33-.25L19.33,55.8l-1.57-1.21-2.43-5.5L9.49,35.89,7.82,32.11,16.15,8.25h4.39l.2.21,3.15,3.35A3.71,3.71,0,0,0,26.75,13a1.41,1.41,0,0,0,.41,0,5.59,5.59,0,0,0,.87-.23l.17-.06,3.27-1.34a3.67,3.67,0,0,0,1.65-1.26l1-1.38.49-.66h3.47L45.22,8l8-.1h2.24a3.43,3.43,0,0,1,1.19-.21H71.74v4.4a3.78,3.78,0,0,0,1.19,2.74,3.45,3.45,0,0,0,1.55.89,1.43,1.43,0,0,0,.42.09h8.91l.92,1.93,2.7,5.63a3.56,3.56,0,0,0,1.3,1.5,4.11,4.11,0,0,0,2.1.64h3.81v-.11l1.22.11h6.59a3.55,3.55,0,0,0,1.87-.5,1.19,1.19,0,0,0,.22-.12l2.94-1.93L112,20l2-1.26,1.56-1,.73-.48,3.16-2,1.43-.94Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Total Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                                <th class="sub-col report-univers-col">
+                                  <span class="bg-light-danger d-none"></span>
+                                  <div class="icon-view" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Report Universe Distribution Penetration "
+                                    data-bs-custom-class="tooltip-dark" style="display:none;">
+                                    <span class="svg-icon svg-icon-2tx svg-icon-2qx_w svg-icon-gray-700 m-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.99 149.22">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                          <g id="Layer_1-2" data-name="Layer 1">
+                                            <g id="report">
+                                              <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                <g id="Layer_2-2" data-name="Layer 2-2">
+                                                  <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                    <path fill="black" class="cls-1"
+                                                      d="M34.11,117v.85S34.12,116.93,34.11,117Z" />
+                                                    <path fill="black"
+                                                      d="M78.21,120.93c0-.11,0-.22,0-.34v-7c0-.12,0-.24,0-.36a3.37,3.37,0,0,1,3.32-3h0a3.37,3.37,0,0,1,3.27,2.71c0,.11,0,.22.05.34s0,.22,0,.34v7a.91.91,0,0,1,0,.17v1.33h68V94.86H104.1a3,3,0,0,1-3-3V91a3,3,0,0,1,2.59-3h52.47a3.41,3.41,0,0,1,3.41,3.41v34a3.41,3.41,0,0,1-3.41,3.4H81.48a3.39,3.39,0,0,1-3.18-2.22,3,3,0,0,1-.09-.73v-.29a2.41,2.41,0,0,1,0-.38Z" />
+                                                    <path fill="black"
+                                                      d="M177,57.44V71.05a3.4,3.4,0,0,1-3.4,3.4h-3.4v71.37a3.41,3.41,0,0,1-3.41,3.4H30.85a3.41,3.41,0,0,1-3.16-2.14l-.09-.26,0-.13a3,3,0,0,1-.1-.52v-32.1a3.33,3.33,0,0,1,2.42-3,2.73,2.73,0,0,1,.41,0h.81a3.25,3.25,0,0,1,2.16,1.07,3.92,3.92,0,0,1,.25.32,3.79,3.79,0,0,1,.2.34l.12.24a3,3,0,0,1,.21.67c0,.11,0,.21,0,.31a1.37,1.37,0,0,1,0,.29v28.24h3.41V114.19c0-.1,0-.21,0-.31a3.34,3.34,0,0,1,3.26-2.68h0a3.15,3.15,0,0,1,1.58.41,1.56,1.56,0,0,1,.28.16L43,112a.85.85,0,0,1,.17.16,3.75,3.75,0,0,1,.51.61c.07.12.14.24.2.37a1.08,1.08,0,0,1,.08.19,1.43,1.43,0,0,1,.09.27,1.63,1.63,0,0,1,.07.3,1.57,1.57,0,0,1,0,.3c0,.11,0,.22,0,.34v27.95H64.58V114.3c0-.12,0-.24,0-.36a3.4,3.4,0,0,1,3.37-3h0a3.4,3.4,0,0,1,3.31,2.71c0,.11,0,.22,0,.34s0,.22,0,.34v28.2h92.12v-68H104.15a2.92,2.92,0,0,1-.83-.12A3,3,0,0,1,101.2,72a4.86,4.86,0,0,1,0-.54v-.82a3,3,0,0,1,2.74-3h66.4V60.86H103.68a3,3,0,0,1-2.85-3V57a3,3,0,0,1,2.85-3h69.91A3.4,3.4,0,0,1,177,57.44Z" />
+                                                    <path fill="black"
+                                                      d="M75.35,78.56a3.57,3.57,0,0,0-3.54-3.19h-3.5V41.22a3.52,3.52,0,0,0-3.5-3.54H45.93a3.53,3.53,0,0,0-3.54,3.54V51.81H27.08a3.53,3.53,0,0,0-3.53,3.53v20H20a3.53,3.53,0,0,0-3.53,3.53,3.57,3.57,0,0,0,1.09,2.55,3.47,3.47,0,0,0,2.44,1H71.84a3.53,3.53,0,0,0,3.53-3.51C75.37,78.79,75.36,78.67,75.35,78.56Zm-33-3.19H30.62V58.88H42.39Zm18.85,0H49.46V44.75H61.24Z" />
+                                                    <path fill="black"
+                                                      d="M24.43,16.48H17.66a3.53,3.53,0,1,0,0,7.06H46a3.52,3.52,0,0,0,0-7H24.43Z" />
+                                                    <path fill="black"
+                                                      d="M35.33,34.15a3.56,3.56,0,0,1-3.53,3.53H17.66a3.54,3.54,0,0,1,0-7.07H31.8A3.54,3.54,0,0,1,35.33,34.15Z" />
+                                                    <path fill="black"
+                                                      d="M82.8,2.25l-.32-.19a17.49,17.49,0,0,0-6.84-2c-.47,0-1-.06-1.45-.06H17.66A17.72,17.72,0,0,0,0,17.66v66a17.69,17.69,0,0,0,17.66,17.67H74.19A17.71,17.71,0,0,0,91.87,83.61V17.66A17.67,17.67,0,0,0,82.8,2.25Zm2,81.36a10.65,10.65,0,0,1-9.59,10.56h0l-7.29,0H17.66a10.62,10.62,0,0,1-10.6-10.6V17.66A10.57,10.57,0,0,1,17.62,7.06H75.19a10.6,10.6,0,0,1,9.61,10.6Z" />
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="text-view"> Report Universe Distribution Penetration <span
+                                      class="d-block text-gray-600 fs-7"></span>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <div class="text-center">
+                            <button class="view_all_row btn btn-icon btn-light btn-sm mt-3">
+                              <span class="svg-icon svg-icon-muted svg-icon-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                  fill="none">
+                                  <rect opacity="0.5" x="11" y="18" width="13" height="2" rx="1"
+                                    transform="rotate(-90 11 18)" fill="black" />
+                                  <path
+                                    d="M11.4343 15.4343L7.25 11.25C6.83579 10.8358 6.16421 10.8358 5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75L11.2929 18.2929C11.6834 18.6834 12.3166 18.6834 12.7071 18.2929L18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25C17.8358 10.8358 17.1642 10.8358 16.75 11.25L12.5657 15.4343C12.2533 15.7467 11.7467 15.7467 11.4343 15.4343Z"
+                                    fill="black" />
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end::Body-->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 pot-view d-none mt-8 mt-md-0">
+                    <div class="card card-xxl-stretch min-h-100 ">
+                      <!--begin::Header-->
+                      <div class="card-header border-0 pt-5 min-h-auto">
+                        <h3 class="card-title align-items-start flex-column">
+                          <span class="card-label fw-boldest fs-3 text-primary font-family-inter">Performance Over
+                            Time</span>
+                        </h3>
+                        <div class="card-toolbar">
+                          <div class="">
+                            <!--begin::Option-->
+                            <button type="button"
+                              class="btn btn-primary btn-icon btn-active-primary min-w-40px min-h-40px mh-40px mw-40px btn-disabled-light"
+                              id="slide-full-left">
+                              <span class="svg-icon svg-icon-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                  fill="none">
+                                  <path
+                                    d="M14.875 4.375V23.625C14.875 23.8571 14.7828 24.0796 14.6187 24.2437C14.4546 24.4078 14.232 24.5 14 24.5C13.7679 24.5 13.5453 24.4078 13.3812 24.2437C13.2171 24.0796 13.125 23.8571 13.125 23.625V4.375C13.125 4.14294 13.2171 3.92038 13.3812 3.75628C13.5453 3.59219 13.7679 3.5 14 3.5C14.232 3.5 14.4546 3.59219 14.6187 3.75628C14.7828 3.92038 14.875 4.14294 14.875 4.375ZM10.5 13.125H3.86199L5.86902 11.1191C6.0332 10.9549 6.12544 10.7322 6.12544 10.5C6.12544 10.2678 6.0332 10.0451 5.86902 9.88094C5.70483 9.71675 5.48215 9.62451 5.24996 9.62451C5.01776 9.62451 4.79508 9.71675 4.63089 9.88094L1.13089 13.3809C1.04954 13.4622 0.985 13.5587 0.940966 13.6649C0.896932 13.7712 0.874268 13.885 0.874268 14C0.874268 14.115 0.896932 14.2288 0.940966 14.3351C0.985 14.4413 1.04954 14.5378 1.13089 14.6191L4.63089 18.1191C4.79508 18.2832 5.01776 18.3755 5.24996 18.3755C5.48215 18.3755 5.70483 18.2832 5.86902 18.1191C6.0332 17.9549 6.12544 17.7322 6.12544 17.5C6.12544 17.2678 6.0332 17.0451 5.86902 16.8809L3.86199 14.875H10.5C10.732 14.875 10.9546 14.7828 11.1187 14.6187C11.2828 14.4546 11.375 14.2321 11.375 14C11.375 13.7679 11.2828 13.5454 11.1187 13.3813C10.9546 13.2172 10.732 13.125 10.5 13.125ZM26.869 13.3809L23.369 9.88094C23.2048 9.71675 22.9821 9.62451 22.75 9.62451C22.5178 9.62451 22.2951 9.71675 22.1309 9.88094C21.9667 10.0451 21.8745 10.2678 21.8745 10.5C21.8745 10.7322 21.9667 10.9549 22.1309 11.1191L24.1379 13.125H17.5C17.2679 13.125 17.0453 13.2172 16.8812 13.3813C16.7171 13.5454 16.625 13.7679 16.625 14C16.625 14.2321 16.7171 14.4546 16.8812 14.6187C17.0453 14.7828 17.2679 14.875 17.5 14.875H24.1379L22.1309 16.8809C21.9667 17.0451 21.8745 17.2678 21.8745 17.5C21.8745 17.7322 21.9667 17.9549 22.1309 18.1191C22.2951 18.2832 22.5178 18.3755 22.75 18.3755C22.9821 18.3755 23.2048 18.2832 23.369 18.1191L26.869 14.6191C26.9504 14.5378 27.0149 14.4413 27.0589 14.3351C27.103 14.2288 27.1256 14.115 27.1256 14C27.1256 13.885 27.103 13.7712 27.0589 13.6649C27.0149 13.5587 26.9504 13.4622 26.869 13.3809Z"
+                                    fill="white" />
+                                </svg>
+                              </span>
+                            </button>
+                            <!--end::Option-->
+                          </div>
+                        </div>
+                      </div>
+                      <!--end::Header-->
+                      <!--begin::Body-->
+                      <!--column_mw_min_w_50_not_first-->
+                      <div class="card-body pt-5">
+                        <div class="card bg-light border border-gray-200 p-6 pt-2">
+                          <div class="card-header p-0 border-0">
+                            <h3 class="card-title align-items-start flex-column content-card font-family-inter d-none">
+                              <span class="card-label fw-normal fs-5">Performance Over Time for</span>
+                              <span class=" fw-bolder fs-5 mt-1 pot-column-heading">Availability</span>
+                            </h3>
+                            <div class="card-toolbar">
+                              <div class="d-inline-flex" data-kt-buttons="true"
+                                data-kt-buttons-target="[data-kt-button]">
+                                <!--begin::Radio-->
+                                <label
+                                  class="btn btn-sm btn-white btn-color-primary btn-active btn-active-primary fw-bold px-4 active rounded-end-0 border border-primary border-end-0 line-graph-view active "
+                                  data-kt-button="true">
+                                  <!--begin::Input-->
+                                  <input class="btn-check" type="radio" name="method" value="1" id="expand_view"
+                                    checked="">
+                                  <!--end::Input--> Line Graph
+                                </label>
+                                <!--end::Radio-->
+                                <!--begin::Radio-->
+                                <label
+                                  class="btn btn-sm btn-white btn-color-primary btn-active btn-active-primary fw-bold px-4 rounded-start-0 border border-primary bar-graph-view"
+                                  data-kt-button="true">
+                                  <!--begin::Input-->
+                                  <input class="btn-check" type="radio" name="method" value="2" id="compact_view">
+                                  <!--end::Input--> Bar Graph
+                                </label>
+                                <!--end::Radio-->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body p-0">
+                            <div class="d-flex align-items-center flex-wrap mt-3">
+
+                              <div class="flatpickr-daterange  my-2 me-2  ">
+                                <input class="form-control border-0 min-w-250px bg-icon-calendar fs-6 text-gray-600"
+                                  placeholder="Pick a date" id="date_pickr2" />
+                              </div>
+
+                              <!--begin::Select wrapper-->
+                              <div class="my-2 ">
+                                <span class="w-125px min-w-max-content d-inline-block">
+                                  <!--begin::Select-->
+                                  <select id="interval" name="interval" data-control="select2" data-hide-search="true"
+                                    class="form-select bg-body border-body min-h-43px">
+                                    <option value="day">Daily</option>
+                                    <option value="week">Weekly</option>
+                                    <option value="month" selected="selected">Monthly</option>
+                                    <option value="day">Quarterly</option>
+                                    <option value="week">Half-Yearly</option>
+                                    <option value="week">Yearly</option>
+                                  </select>
+                                  <!--end::Select-->
+                                </span>
+                              </div>
+                              <!--end::Select wrapper-->
+                            </div>
+                            <!--chart section satrt-->
+                            <div class="">
+                              <!--loader popup start-->
+                              <div
+                                class="loader-popup min-w-100 position-unset bg-white p-6 rounded mt-5 position-relative border border-gray-300 d-none">
+                                <div class="loader-icon text-center">
+                                  <div class="status draw"></div>
+                                  <img src="images/line-graph-loader.gif" alt="" class="img-fluid">
+                                </div>
+                              </div>
+                              <!--loader popup start-->
+                              <div class="content-chart d-none">
+                                <div class="bg-white p-5 pt-2 rounded mt-4 position-relative border border-gray-300">
+                                  <div
+                                    class="pot-line-chart chart-custom-legend card-rounded-bottom w-100 min-h-auto position-relative">
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-between flex-wrap">
+                                  <div
+                                    class="perf-summary bg-white p-5 pt-4 rounded mt-7 position-relative border border-gray-300 w-100 w-md-auto d-none">
+                                    <p class="fs-7 text-muted mb-3">Performance on <span
+                                        class="text-primary fw-boldest">Feb 24 2024</span>
+                                    </p>
+                                    <div class="d-flex flex-wrap flex-column flex-sm-row">
+                                      <div
+                                        class="rounded p-3 border border-blue-100 me-sm-3 d-flex flex-column justify-content-between text-center text-sm-end">
+                                        <span class="text-gray-400 fs-7 lh-sm">Availability</span>
+                                        <div class="fs-4 fw-bolder text-blue-100 mt-2 text-center">40%</div>
+                                      </div>
+                                      <div
+                                        class="rounded p-3 border border-orange-100 me-sm-3 d-flex flex-column justify-content-between mt-4 mt-sm-0 text-center text-sm-end">
+                                        <span class="text-gray-400 fs-7 lh-sm">Report Dist. <br> Penetration </span>
+                                        <div class="fs-4 fw-bolder text-orange-100 mt-2 text-center">70%</div>
+                                      </div>
+                                      <div
+                                        class="rounded p-3 border border-purple-100 d-flex flex-column justify-content-between mt-4 mt-sm-0 text-center text-sm-end">
+                                        <span class="text-gray-400 fs-7 lh-sm">Distribution</span>
+                                        <div class="fs-4 fw-bolder text-purple-100 mt-2 text-center">20</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div id="legend" class="mt-4 ms-auto mh-160px scroll-y"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--chart section end-->
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end mt-5">
+                          <button
+                            class="btn btn-light fw-bolder p-2 px-4 me-3 d-inline-flex align-items-center reset-chart">
+                            <span class="svg-icon svg-icon-2 me-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M14 8.00009C14.0001 9.57752 13.3791 11.0915 12.2712 12.2145C11.1634 13.3374 9.65791 13.9789 8.08062 14.0001H8C6.46765 14.0039 4.99268 13.4175 3.88125 12.3626C3.83352 12.3174 3.79515 12.2633 3.76833 12.2034C3.74152 12.1434 3.72677 12.0787 3.72494 12.0131C3.72311 11.9474 3.73424 11.882 3.75768 11.8207C3.78112 11.7593 3.81642 11.7031 3.86156 11.6554C3.9067 11.6077 3.9608 11.5693 4.02077 11.5425C4.08074 11.5157 4.14541 11.5009 4.21108 11.4991C4.27675 11.4973 4.34213 11.5084 4.4035 11.5318C4.46487 11.5553 4.52102 11.5906 4.56875 11.6357C5.28362 12.3099 6.1813 12.7585 7.14964 12.9255C8.11799 13.0924 9.11406 12.9704 10.0134 12.5745C10.9128 12.1787 11.6756 11.5266 12.2065 10.6998C12.7375 9.87291 13.013 8.90796 12.9987 7.92543C12.9844 6.9429 12.6809 5.98637 12.1262 5.17532C11.5714 4.36427 10.79 3.73466 9.87944 3.36515C8.96893 2.99564 7.96973 2.90261 7.00665 3.09768C6.04358 3.29275 5.15933 3.76727 4.46438 4.46196C4.45927 4.46749 4.45384 4.4727 4.44812 4.47759L2.78688 6.00009H4.5C4.63261 6.00009 4.75979 6.05277 4.85355 6.14654C4.94732 6.2403 5 6.36748 5 6.50009C5 6.6327 4.94732 6.75987 4.85355 6.85364C4.75979 6.94741 4.63261 7.00009 4.5 7.00009H1.5C1.36739 7.00009 1.24021 6.94741 1.14645 6.85364C1.05268 6.75987 1 6.6327 1 6.50009V3.50009C1 3.36748 1.05268 3.2403 1.14645 3.14654C1.24021 3.05277 1.36739 3.00009 1.5 3.00009C1.63261 3.00009 1.75979 3.05277 1.85355 3.14654C1.94732 3.2403 2 3.36748 2 3.50009V5.36259L3.76562 3.75009C4.60561 2.91336 5.67467 2.34426 6.83783 2.11461C8.001 1.88496 9.20612 2.00507 10.3011 2.45977C11.396 2.91447 12.3317 3.68338 12.9901 4.66943C13.6484 5.65548 13.9998 6.81447 14 8.00009Z"
+                                  fill="#8A8A8A" />
+                              </svg>
+                            </span> Reset </button>
+                          <button
+                            class="btn btn-primary p-2 px-4 fw-bolder d-inline-flex align-items-center save-chart">
+                            <span class="svg-icon svg-icon-2 me-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M13.7069 5.00001L11 2.29313C10.9075 2.19987 10.7973 2.12593 10.676 2.0756C10.5546 2.02528 10.4245 1.99959 10.2931 2.00001H3C2.73478 2.00001 2.48043 2.10536 2.29289 2.2929C2.10536 2.48043 2 2.73479 2 3.00001V13C2 13.2652 2.10536 13.5196 2.29289 13.7071C2.48043 13.8946 2.73478 14 3 14H13C13.2652 14 13.5196 13.8946 13.7071 13.7071C13.8946 13.5196 14 13.2652 14 13V5.70688C14.0004 5.57551 13.9747 5.44537 13.9244 5.32402C13.8741 5.20266 13.8001 5.09253 13.7069 5.00001ZM10.5 13H5.5V9.50001H10.5V13ZM13 13H11.5V9.50001C11.5 9.23479 11.3946 8.98043 11.2071 8.7929C11.0196 8.60536 10.7652 8.50001 10.5 8.50001H5.5C5.23478 8.50001 4.98043 8.60536 4.79289 8.7929C4.60536 8.98043 4.5 9.23479 4.5 9.50001V13H3V3.00001H10.2931L13 5.70688V13ZM10 4.50001C10 4.63261 9.94732 4.75979 9.85355 4.85356C9.75979 4.94733 9.63261 5.00001 9.5 5.00001H6C5.86739 5.00001 5.74021 4.94733 5.64645 4.85356C5.55268 4.75979 5.5 4.63261 5.5 4.50001C5.5 4.3674 5.55268 4.24022 5.64645 4.14645C5.74021 4.05268 5.86739 4.00001 6 4.00001H9.5C9.63261 4.00001 9.75979 4.05268 9.85355 4.14645C9.94732 4.24022 10 4.3674 10 4.50001Z"
+                                  fill="white" />
+                              </svg>
+                            </span> Save </button>
+                        </div>
+                      </div>
+                      <!--end::Body-->
+                    </div>
+                  </div>
+                </div>
+                <!--Content Card End-->
+              </div>
+              <!--========Summary Table Section End========-->
+
+              <!--========Bottom Table Section Start========-->
+              <div class="bottom-section d-none" id="stores" data-kt-scroll-offset="{default: 75, lg: 115}">
+                <!--Skeleton Card Start-->
+                <div class="card card-xxl-stretch skeleton-card mb-8">
+                  <!--begin::Header-->
+                  <div class="card-header">
+                    <div class="row w-100 align-items-center justify-content-between gx-0">
+                      <div class="col-3">
+                        <div class="skeleton-line  min-h-25px min-h-sm-30px"></div>
+                      </div>
+                      <div class="col-5 ms-auto text-end">
+                        <div class="skeleton-line min-h-25px min-h-sm-30px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Header-->
+                  <!--begin::Body-->
+                  <div class="card-body ">
+                    <div class="position-relative min-h-250px ">
+                      <!--skeleton content start-->
+                      <table class="skeleton-table align-middle m-0" style="width:100%; overflow: hidden;">
+                        <col span="1" class="bg-gray-200">
+                        <thead class=" h-35px h-sm-55px bg-gray-200">
+                          <tr class="">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--skeleton content end-->
+                      <!--loader popup start-->
+                      <div class="skeleton-loader-popup bg-white rounded shadow max-w-275px min-w-275px p-5 pb-4">
+                        <div class="mb-3">
+                          <div class="circle-loader">
+                            <div class="status draw"></div>
+                          </div>
+                        </div>
+                        <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-1">Loading...</div>
+                        <div class="progress-message fs-6 text-muted">Please wait while the data loads.</div>
+                      </div>
+                      <!--loader popup start-->
+                    </div>
+                  </div>
+                  <!--end::Body-->
+                </div>
+                <!--Skeleton Card End-->
+                <!--Content Card Start-->
+                <div class="card card-xxl-stretch mb-8 content-card d-none mt-8">
+                  <!--begin::Header-->
+                  <div class="card-header border-0 pt-5">
+                    <h3 class="card-title align-items-start flex-column">
+                      <span class="card-label fw-bolder fs-3 bottom-table-heading">Restock Opportunities</span>
+                    </h3>
+                    <div class="card-toolbar">
+                      <!--begin::Status-->
+                      <div class="d-flex align-items-center fw-bolder me-3 border-end border-gray-300 pe-3 d-none">
+                        <!--begin::Label-->
+                        <div class="text-muted fs-7 me-2">Status</div>
+                        <!--end::Label-->
+                        <!--begin::Select-->
+                        <select
+                          class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bolder py-0 ps-3 w-auto"
+                          data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px"
+                          data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
+                          <option></option>
+                          <option value="Show All">Show All</option>
+                          <option value="out_of_stock" selected="selected">Out of Stock</option>
+                        </select>
+                        <!--end::Select-->
+                      </div>
+                      <!--end::Status-->
+                      <div class="me-3 d-none">
+                        <select class="form-select form-select-solid min-w-200px" data-kt-select2="true"
+                          data-placeholder="Select option" data-allow-clear="false" data-hide-search="true">
+                          <option></option>
+                          <option value="1" selected>Out of Stock Products</option>
+                          <option value="2">All Products</option>
+                        </select>
+                      </div>
+                      <!--begin::Radio group-->
+                      <div class="btn-group me-3 border-end border-gray-300 pe-3" data-kt-buttons="true"
+                        data-kt-buttons-target="[data-kt-button]">
+                        <!--begin::Radio-->
+                        <label
+                          class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-end border-gray-300 d-flex align-items-center justify-content-center active"
+                          data-kt-button="true">
+                          <!--begin::Input-->
+                          <input class="btn-check" type="radio" name="method" value="1" id="out_stock_product" checked>
+                          <!--end::Input--> Out of Stock
+                        </label>
+                        <!--end::Radio-->
+                        <!--begin::Radio-->
+                        <label
+                          class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-start border-gray-300 d-flex align-items-center justify-content-center min-w-sm-100px"
+                          data-kt-button="true">
+                          <!--begin::Input-->
+                          <input class="btn-check" type="radio" name="method" value="2" id="all_product">
+                          <!--end::Input--> Show All
+                        </label>
+                        <!--end::Radio-->
+                      </div>
+                      <!--end::Radio group-->
+                      <div class="d-flex align-items-center position-relative">
+                        <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
+                              transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+                            <path
+                              d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                              fill="black"></path>
+                          </svg>
+                        </span>
+                        <input type="text" id="search-filter" data-kt-filter="search" class="form-control w-250px ps-14"
+                          placeholder="Store Name...">
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Header-->
+                  <!--begin::Body-->
+                  <div class="card-body pt-5">
+                    <!--pre-selected filters-->
+                    <div
+                      class="border px-5 p-4 rounded bg-white fs-6 border border-dashed border-blue bg-light-blue w-100 mb-7 outer-filter d-none">
+                      <ul class="list-inline fs-6 m-0 ">
+                        <li class="d-flex align-items-start flex-column">
+                          <strong class="text-nowrap mb-1 ">Filtered By:</strong>
+                          <ul
+                            class="list-inline d-flex removable-option flex-wrap fs-7 pre-selected-filter scroll-y scroll-color-gray-100 mh-105px mh-md-115px w-100">
+                            <li
+                              class="ms-0 text-start d-flex align-items-center mx-2 my-1 p-2 bg-white text-gray-700 rounded">
+                              <strong class="fw-bold me-2 text-gray-900">Retailers/Marketplaces:</strong> Total Wine &
+                              More
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--pre-secelected filters-->
+                    <div class="datatable-style overflow-hidden">
+                      <table id="store_table"
+                        class="table table-row-dashed thead_span table-row-gray-300 th_border column_mw_200px last_col_second_last_col_w-50px colored__perc_td clickable-cell align-middle fs-6 cellpadding-sm table-scroll fixed_column table_mw_max_content">
+                        <thead>
+                          <tr>
+                            <th rowspan="2">Store</th>
+                            <th rowspan="2">SKU</th>
+                            <th rowspan="2">Address</th>
+                            <th colspan="2" class="text-center">Availability Rate</th>
+                          </tr>
+                          <tr class="text-center">
+                            <th>Over Time Availability</th>
+                            <th>Today's Availability</th>
+                          </tr>
+                        </thead>
+                      </table>
+                      <div class="text-center">
+                        <button class="view_all_row btn btn-icon btn-light btn-sm ">
+                          <span class="svg-icon svg-icon-muted svg-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <rect opacity="0.5" x="11" y="18" width="13" height="2" rx="1"
+                                transform="rotate(-90 11 18)" fill="black" />
+                              <path
+                                d="M11.4343 15.4343L7.25 11.25C6.83579 10.8358 6.16421 10.8358 5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75L11.2929 18.2929C11.6834 18.6834 12.3166 18.6834 12.7071 18.2929L18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25C17.8358 10.8358 17.1642 10.8358 16.75 11.25L12.5657 15.4343C12.2533 15.7467 11.7467 15.7467 11.4343 15.4343Z"
+                                fill="black" />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Body-->
+                </div>
+                <!--Content Card End-->
+              </div>
+              <!--========Bottom Table Section End========-->
+            </div>
+          </div>
+        </div>
+        <!--Main content end-->
+        <footer class="footer bg-white py-4 d-flex flex-lg-column mt-10" id="ktfooter">
+          <div
+            class="container-xl container-xxxl d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <div class="text-dark order-2 order-md-1 fs-6"> © <a class="text-dark-75 text-hover-primary">Jenda
+                Solutions</a> LLC 2022. All rights reserved.
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--end::Wrapper-->
+  </div>
+  <!--end::Page-->
+  </div>
+  <!--end::Root-->
+  <!--end::Main-->
+  <!--begin::Scrolltop-->
+  <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+    <!--begin::Svg Icon-->
+    <span class="svg-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+        <path
+          d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+          fill="black" />
+      </svg>
+    </span>
+    <!--end::Svg Icon-->
+  </div>
+  <!--end::Scrolltop-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <script src="assets/js/JDSelect.js"></script>
+  <script src="js/flatpickr.js"></script>
+  <script src="js/copo.js"></script>
+  <script type="text/javascript">
+    $('.header-menu .menu-nav li').click(function () {
+      if ($(this).not('menu-item-active')) {
+        if ($('.header-menu .menu-nav li').hasClass('menu-item-active')) {
+          $(".header-menu .menu-nav li").removeClass('menu-item-active');
+        }
+        $(this).addClass('menu-item-active');
+      }
+    })
+  </script>
+</body>
+
+</html>

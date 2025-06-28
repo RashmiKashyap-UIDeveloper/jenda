@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SKU Detail Drill Down</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.bundle - admin.css">
+  <link rel="stylesheet" href="css/theme_style.css">
+</head>
+
+<body id="kt_body" class="header-extended header-fixed header-tablet-and-mobile-fixed ">
+  <!--begin::Main-->
+  <!--begin::Root-->
+  <div class="d-flex flex-column flex-root">
+    <!--begin::Page-->
+    <div class="page d-flex flex-row flex-column-fluid">
+      <!--begin::Wrapper-->
+      <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+        <!--begin::Header-->
+          <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header"
+          data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+          <!--begin::Header top-->
+       <div class="header-top d-flex align-items-stretch flex-grow-1">
+            <!--begin::Container-->
+            <div class="d-flex container-xl container-xxxl align-items-stretch">
+              <!--begin::Brand-->
+              <div class="d-flex align-items-center align-items-lg-stretch me-5 flex-row-fluid">
+                <!--begin::Heaeder navs toggle-->
+                <button
+                  class="d-lg-none btn btn-icon btn-color-white bg-hover-white bg-hover-opacity-10 w-35px h-35px h-md-40px w-md-40px ms-n2 me-2"
+                  id="kt_header_navs_toggle">
+                  <span style="position:relative;top:1px" class="svg-icon svg-icon-primary svg-icon-2x">
+                    <!--begin::Svg Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+                        <path
+                          d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z"
+                          fill="#000000" opacity="0.3" />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </button>
+                <!--end::Header navs toggle-->
+                <!--begin::Logo-->
+                <a href="#" class="d-flex align-items-center logo">
+                  <span class="logo text-white">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 83" width="7.5rem">
+                      <path fill="currentColor"
+                        d="M28.54,24.15h35.13v14.16c0,8.12-2.96,15.48-17.56,15.48s-17.56-7.25-17.56-15.48H0c0,26.79,14.49,39.63,46.11,39.63s46.11-12.95,46.11-39.63V0H28.54v24.15Z">
+                      </path>
+                      <polygon fill="currentColor"
+                        points="264.14 45.34 230.99 0 193.66 0 193.66 54.89 130.88 54.89 130.88 47.75 183.58 47.75 183.58 29.09 130.88 29.09 130.88 21.96 183.58 21.96 183.58 0 102.34 0 102.34 76.85 193.66 76.85 197.09 76.85 222.2 76.85 222.2 31.51 255.36 76.85 292.68 76.85 292.68 0 264.14 0 264.14 45.34">
+                      </polygon>
+                      <path fill="currentColor"
+                        d="M359.89,0h-57.09v76.85h57.09c18.55,0,36.01-12.3,36.01-38.42S378.45,0,359.89,0ZM351.11,52.69h-19.76v-28.54h19.76c6.15,0,16.25,0,16.25,14.27s-10.1,14.27-16.25,14.27Z">
+                      </path>
+                      <path fill="currentColor"
+                        d="M468.16,0h-42.38l-31.84,76.85h31.4l5.27-13.83h32.71l5.27,13.83h31.4L468.16,0ZM438.08,43.25l8.89-23.49,8.89,23.49h-17.78Z">
+                      </path>
+                    </svg>
+                  </span>
+                </a>
+                <!--end::Logo-->
+                <!--begin::Tabs wrapper-->
+                <div class="align-self-center overflow-auto" id="kt_brand_tabs">
+                  <!--begin::Header tabs wrapper-->
+                  <div class="header-tabs overflow-auto mx-4 ms-lg-7 mb-5 mb-lg-0" id="kt_header_tabs"
+                    data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                    data-kt-swapper-parent="{default: '#kt_header_navs_wrapper', lg: '#kt_brand_tabs'}">
+                    <!--begin::Header tabs-->
+                    <ul class="nav flex-nowrap text-nowrap fs-6">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_header_navs_tab_1">Price Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_2">Promo Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_3">Brand Command</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_4">Share of Shelf</a>
+                      </li>
+                    </ul>
+                    <!--begin::Header tabs-->
+                  </div>
+                  <!--end::Header tabs wrapper-->
+                </div>
+                <!--end::Tabs wrapper-->
+              </div>
+              <!--end::Brand-->
+              <!--begin::Topbar-->
+              <div class="d-flex align-items-center flex-row-auto">
+                <!--begin::User-->
+                <div class="d-flex align-items-center ms-1" id="kt_header_user_menu_toggle">
+                  <!--begin::User info-->
+                  <div
+                    class="my-2 btn btn-flex btn-color-white align-items-center bg-hover-white bg-hover-opacity-10 py-2 px-2 px-md-3 d-flex align-items-center justify-content-center "
+                    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+                    style="border: 2px solid #ffffff1f; border-radius:100%;width:33px;height:33px;">
+                    <!-- <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-4" ><span class="text-white opacity-75 fs-8 fw-bold lh-1 mb-1">Max</span><span class="text-white fs-8 fw-bolder lh-1">UX Designer</span></div> -->
+                    <!--begin::Symbol-->
+                    <div class="symbol symbol-30px symbol-md-40px ">
+                      <span class="svg-icon svg-icon-4 m-0">
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                          height="24px" viewBox="0 0 24 24" version="1.1">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                            <path
+                              d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                              fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                            <path
+                              d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                              fill="#000000" fill-rule="nonzero"></path>
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                      </span>
+                    </div>
+                    <!--end::Symbol-->
+                  </div>
+                  <!--end::User info-->
+                  <!--begin::User account menu-->
+                  <div
+                    class=" menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fs-6 w-275px fw-bold "
+                    data-kt-menu="true" data-popper-placement="bottom-end"
+                    style="z-index: 105; position: fixed; inset: 0px 0px auto auto; margin: 0px; transform: translate(-134px, 40px);">
+                    <div class="menu-item px-3">
+                      <div class="menu-content d-flex align-items-center px-3 py-4">
+                        <!--begin::Avatar-->
+                        <div class="symbol symbol-50px me-3">
+                          <div class="symbol-label fs-2 fw-bold bg-blue text-inverse-primary "
+                            style="display: flex;align-items: center;justify-content: center;">M</div>
+                        </div>
+                        <!--end::Avatar-->
+                        <!--begin::Username-->
+                        <div class="d-flex flex-column text-break">
+                          <div class="fw-bolder d-flex align-items-center fs-5 lh-sm">Max Smith </div>
+                          <a href="#" class="fw-bold text-muted text-hover-primary fs-7 lh-sm mt-1">max@kt.com</a>
+                        </div>
+                        <!--end::Username-->
+                      </div>
+                    </div>
+                    <div class="separator mb-2"></div>
+                    <div class="menu-item px-3">
+                      <a href="#" onclick="reset_pswd()"
+                        class="menu-link px-5  d-flex justify-content-between text-hover-primary"> Reset Password </a>
+                    </div>
+                    <div class="menu-item px-3 my-1 mb-2">
+                      <a class="menu-link px-5 d-flex justify-content-between text-hover-primary" href="#"> Sign Out
+                      </a>
+                    </div>
+                  </div>
+                  <!--end::User account menu-->
+                </div>
+                <!--end::User -->
+              </div>
+              <!--end::Topbar-->
+            </div>
+            <!--end::Container-->
+          </div
+          <!--end::Header top-->
+          <!--begin::Header navs-->
+          <div class="header-navs d-flex align-items-stretch flex-stack w-100 py-5 py-lg-0 fw-bold" id="kt_header_navs"
+            data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}"
+            data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+            data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_navs_toggle" data-kt-swapper="true"
+            data-kt-swapper-mode="append" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header'}">
+            <!--begin::Container-->
+            <div class="d-lg-flex container-xl container-xxxl w-100">
+              <!--begin::Wrapper-->
+              <div class="d-lg-flex flex-column justify-content-lg-center w-100" id="kt_header_navs_wrapper">
+                <!--begin::Header tab content-->
+                <div class="tab-content" data-kt-scroll="true" data-kt-scroll-activate="{default: true, lg: false}"
+                  data-kt-scroll-height="auto" data-kt-scroll-offset="70px">
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade active show" id="kt_header_navs_tab_1">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-center flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item" aria-haspopup="true">
+                          <a href="copo-report.html" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item menu-item-active">
+                          <a class="menu-link" href="sku-detail.html">
+                            <span class="menu-text">SKU Detail </span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="listing-detail.html">
+                            <span class="menu-text">Listing Detail </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-4 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_2">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Feed</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Reports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_3">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row  px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">SKUs Reports </span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Portfolio Tracker </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_4">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item" aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">My Reports</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Exports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-3 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                </div>
+                <!--end::Header tab content-->
+              </div>
+              <!--end::Wrapper-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header navs-->
+        </div>
+        <!--end::Header-->
+        <!--Main content start-->
+        <div class="content d-flex flex-column flex-column-fluid" id="ktcontent">
+          <!--Content-->
+          <div class="d-flex flex-column-fluid">
+            <div class="container-xl container-xxxl">
+              <!--Daterange start-->
+              <div class="row mb-5 mb-lg-6">
+                <div
+                  class="col-sm-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                  <div class="main-heading border-none w-auto  me-0 me-sm-4 my-2">
+                    <span class="d-flex align-items-start flex-column">
+                      <h1 class="fw-bold p-0 my-2 my-sm-0 text-center text-sm-start">Market Share Analysis of 100
+                        Pipers(1.75L) in TotalWine and More</h1>
+                      <span class="text-muted fw-bold fs-5 mt-1">Source: <a href="#" class="mb-0"
+                          target="_blank">Woodbridge By
+                          Robert Mondavi Cabernet Sauvignon (1.5L)</a></span>
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center justify-content-sm-end flex-wrap ms-sm-auto">
+                    <span class="my-2">
+                      <span class="dropdown custom-dropdown  mw-40px d-inline-block me-2" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Download Report">
+                        <button class="btn btn-white btn-icon  btn-active-primary w-40px h-40px dropdown-toggle my-1 "
+                          type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-display="static"
+                          aria-expanded="true" data-bs-auto-close="outside">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <span class="svg-icon  svg-icon-2">
+                            <!--begin::Svg Icon-->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <rect fill="#000000" opacity="0.3" x="11" y="3" width="2" height="14" rx="1" />
+                                <path
+                                  d="M6.70710678,16.7071068 C6.31658249,17.0976311 5.68341751,17.0976311 5.29289322,16.7071068 C4.90236893,16.3165825 4.90236893,15.6834175 5.29289322,15.2928932 L11.2928932,9.29289322 C11.6714722,8.91431428 12.2810586,8.90106866 12.6757246,9.26284586 L18.6757246,14.7628459 C19.0828436,15.1360383 19.1103465,15.7686056 18.7371541,16.1757246 C18.3639617,16.5828436 17.7313944,16.6103465 17.3242754,16.2371541 L12.0300757,11.3841378 L6.70710678,16.7071068 Z"
+                                  fill="#000000" fill-rule="nonzero"
+                                  transform="translate(12.000003, 12.999999) scale(1, -1) translate(-12.000003, -12.999999) " />
+                                <rect fill="#000000" opacity="0.3" x="3" y="19" width="18" height="2" rx="1" />
+                              </g>
+                            </svg>
+                            <!--end::Svg Icon-->
+                          </span>
+                        </button>
+                        <div class="dropdown-menu p-0 fs-6 dropdown-menu-end">
+                          <div class="top-arrow text-center p-4 position-relative">
+                            <div class="form-check form-check-custom form-check-solid justify-content-between mb-2">
+                              <label class="form-check-label ms-0 me-2 text-start" for="flexCheckDefault1"> December
+                                20,
+                                2021, 05:07 AM </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked />
+                            </div>
+                            <div
+                              class="form-check form-check-custom form-check-solid justify-content-between mb-2 pending">
+                              <label class="form-check-label ms-0 me-2 text-start " data-bs-toggle="tooltip"
+                                data-bs-original-title="Pending" for="flexCheckDefault2"> December 17, 2021, 08:14 AM
+                              </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"
+                                disabled />
+                            </div>
+                            <div
+                              class="form-check form-check-custom form-check-solid justify-content-between mb-2 failed">
+                              <label class="form-check-label ms-0 me-2 text-start " data-bs-toggle="tooltip"
+                                data-bs-original-title="Failed" for="flexCheckDefault3"> December 17, 2021, 02:09 AM
+                              </label>
+                              <input class="form-check-input" type="checkbox" tooltip="Failed" value=""
+                                id="flexCheckDefault3" disabled />
+                            </div>
+                            <div class="form-check form-check-custom form-check-solid justify-content-between ">
+                              <label class="form-check-label ms-0 me-2 text-start" for="flexCheckDefault4"> December
+                                17,
+                                2021, 02:09 AM </label>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" />
+                            </div>
+                          </div>
+                          <div class="footer text-end px-4 py-3 bg-light-primary rounded-bottom">
+                            <button class="btn btn-primary fs-7 py-2 px-4">Download</button>
+                          </div>
+                        </div>
+                      </span>
+                    </span>
+                    <!--Report Config modal start-->
+                    <div class="modal fade" id="report_config" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content overflow-y-auto mw-500px">
+                          <div class="modal-header d-flex align-items-center">
+                            <h3 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Report Configuration
+                            </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row mb-1 mb-sm-5">
+                              <div class="col-sm-12 ms-auto d-flex align-items-center ">
+                                <div
+                                  class="form-check form-check-custom form-check-solid form-check-sm fs-6 align-items-start">
+                                  <input class="form-check-input mt-1" type="checkbox" value="" id="" checked disabled>
+                                  <label class="form-check-label fs-6 p-0 opacity-100" for=""> All
+                                    calculated values and Restock Opportunities in this report will include
+                                    only store<>product combinations that are “in distribution,” meaning that
+                                      the product has been in stock at the store for at least 1 day within the
+                                      past <input type="number"
+                                        class="form-control form-control-sm fs-6 form-control-solid d-inline-block border border-gray-300 w-auto mw-80px mh-25px min-h-25px"
+                                        id="days_num_input" placeholder="" name="" value="10"> days. When you
+                                      review data over a date range (e.g. past 30 days), then the product will
+                                      only be considered “in distribution” at the store if it has been in
+                                      stock at least once from <span class="days_num"></span> days prior to
+                                      the start date through the end date.</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer"> <button type="button" class="btn  btn-primary apply"
+                              data-bs-dismiss="modal">Apply</button> <button type="button" class="btn  btn-light ml-2"
+                              data-bs-dismiss="modal">Close</button> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Report Config Modal end-->
+                    <span class="daterange-picker text-center text-lg-end my-2 me-2 ">
+                      <div data-kt-daterangepicker="true" data-kt-daterangepicker-opens="left"
+                        class="btn btn-white d-inline-flex align-items-center fs-6 btn-active-white py-3"
+                        id="kt_daterangepicker_4">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon  svg-icon-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                              d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z"
+                              fill="black"></path>
+                            <path
+                              d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z"
+                              fill="black"></path>
+                            <path
+                              d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z"
+                              fill="black"></path>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                        <!--begin::Display range-->
+                        <div>30 Mar 2022 - 28 Apr 2022</div>
+                        <!--end::Display range-->
+                      </div>
+                    </span>
+                    <!--begin::Select wrapper-->
+                    <div class="my-2 ">
+                      <span class="w-122px d-inline-block">
+                        <!--begin::Select-->
+                        <select id="interval" name="interval" data-control="select2" data-hide-search="true"
+                          class="form-select bg-body border-body min-h-43px">
+                          <option value="day">Daily</option>
+                          <option value="week">Weekly</option>
+                          <option value="month" selected="selected">Monthly</option>
+                          <option value="day">Quarterly</option>
+                          <option value="week">Half-Yearly</option>
+                          <option value="week">Yearly</option>
+                        </select>
+                        <!--end::Select-->
+                      </span>
+                    </div>
+                    <!--end::Select wrapper-->
+                    <span class="ps-3 ms-3 border-start border-gray-300 my-2">
+                      <button class="btn py-3 fs-6 btn-primary filter-btn " data-bs-toggle="modal"
+                        data-bs-target="#filtertable" id="sku">
+                        <i class="fas fa-filter me-1 fs-7"></i>Filter </button>
+                      <!--Filter Table Modal Start-->
+                      <div class="modal fade " id="filtertable" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content mw-500px">
+                            <div class="modal-header d-flex align-items-center">
+                              <h3 class="modal-title fw-bolder fs-3 " id="exampleModalLabel">Filters</h3>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <form>
+                              <div class="modal-body">
+                                <div class="p-5 rounded bg-gray-100 mb-4">
+                                  <div
+                                    class="row fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid mt-4 mt-sm-0 mb-1 mb-sm-4">
+                                    <div class="col-sm-12 d-flex align-items-center ">
+                                      <div
+                                        class="form-check form-check-custom form-check-solid form-check-sm fs-6 align-items-start">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                          id="exclude_outlier_price" checked="checked">
+                                        <label class="form-check-label fs-6 p-0" for="exclude_outlier_price"> Filter Out
+                                          Outliers </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-1 mb-sm-5 " id="floor-div">
+                                    <label for="floor" class="form-label col-form-label col-sm-12 fs-6">Minimum
+                                      Price:</label>
+                                    <div class=" col-sm-12">
+                                      <span class="position-relative d-inline-block w-100" data-kt-dialer="true"
+                                        data-kt-dialer-step="10" data-kt-dialer-min="0"
+                                        data-kt-dialer-suffix="% of median">
+                                        <!--begin::Decrease control-->
+                                        <button type="button"
+                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                          data-kt-dialer-control="decrease">
+                                          <!--begin::Svg Icon-->
+                                          <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                              viewbox="0 0 24 24" fill="none">
+                                              <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5"
+                                                fill="black" />
+                                              <rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
+                                            </svg>
+                                          </span>
+                                          <!--end::Svg Icon-->
+                                        </button>
+                                        <!--end::Decrease control-->
+                                        <!--begin::Input control-->
+                                        <input type="text" class="form-control  border-0 ps-12  mh-40px min-h-40px lh-1"
+                                          data-kt-dialer-control="input" placeholder="Set Presence" id="floor"
+                                          name="Presence" value="30" />
+                                        <!--end::Input control-->
+                                        <!--begin::Increase control-->
+                                        <button type="button"
+                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0 "
+                                          data-kt-dialer-control="increase">
+                                          <!--begin::Svg Icon-->
+                                          <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                              viewbox="0 0 24 24" fill="none">
+                                              <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5"
+                                                fill="black" />
+                                              <rect x="10.8891" y="17.8033" width="12" height="2" rx="1"
+                                                transform="rotate(-90 10.8891 17.8033)" fill="black" />
+                                              <rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
+                                            </svg>
+                                          </span>
+                                          <!--end::Svg Icon-->
+                                        </button>
+                                        <!--end::Increase control-->
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="row" id="ceiling-div">
+                                    <label for="ceiling" class="form-label col-form-label col-sm-12 fs-6">Maximum
+                                      Price:</label>
+                                    <div class="col-sm-12">
+                                      <span class="position-relative d-inline-block w-100" data-kt-dialer="true"
+                                        data-kt-dialer-min="0" data-kt-dialer-step="10"
+                                        data-kt-dialer-suffix="% of median">
+                                        <!--begin::Decrease control-->
+                                        <button type="button"
+                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                          data-kt-dialer-control="decrease">
+                                          <!--begin::Svg Icon-->
+                                          <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                              viewbox="0 0 24 24" fill="none">
+                                              <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5"
+                                                fill="black" />
+                                              <rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
+                                            </svg>
+                                          </span>
+                                          <!--end::Svg Icon-->
+                                        </button>
+                                        <!--end::Decrease control-->
+                                        <!--begin::Input control-->
+                                        <input type="text" class="form-control border-0 ps-12 mh-40px min-h-40px lh-1"
+                                          data-kt-dialer-control="input" placeholder="Set Presence" id="ceiling"
+                                          name="Presence" value="300" />
+                                        <!--end::Input control-->
+                                        <!--begin::Increase control-->
+                                        <button type="button"
+                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0 "
+                                          data-kt-dialer-control="increase">
+                                          <!--begin::Svg Icon-->
+                                          <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                              viewbox="0 0 24 24" fill="none">
+                                              <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5"
+                                                fill="black" />
+                                              <rect x="10.8891" y="17.8033" width="12" height="2" rx="1"
+                                                transform="rotate(-90 10.8891 17.8033)" fill="black" />
+                                              <rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
+                                            </svg>
+                                          </span>
+                                          <!--end::Svg Icon-->
+                                        </button>
+                                        <!--end::Increase control-->
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb-0 mb-sm-0 row">
+                                  <label for="marketplace_retailer"
+                                    class="form-label col-form-label col-sm-12 fs-6">Retailer/Marketplaces:</label>
+                                  <div class="col-sm-12">
+                                    <select id="marketplace_retailer" class="form-select form-select-solid "
+                                      data-control="select2" name="shelf_page" multiple="multiple"></select>
+                                  </div>
+                                </div>
+                                <div class="mb-0 mb-sm-0 row">
+                                  <label for="marketplace_retailer"
+                                    class="form-label col-form-label col-sm-12 fs-6">States:</label>
+                                  <div class="col-sm-12">
+                                    <select id="state" class="form-select form-select-solid " data-control="select2"
+                                      name="shelf_page" multiple="multiple"></select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" id="filtersApply" class="btn  btn-primary"
+                                  data-bs-dismiss="modal">Apply</button>
+                                <button type="button" class="btn btn-light ml-2" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Filter Table Modal End-->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--Daterange End-->
+
+              <!--SKU detail start-->
+              <div class="sku-detail-section  ">
+                <div class="card card-stretch mb-8">
+                  <div class="card-header border-0 pt-5">
+                    <!--Skeleton Card Start-->
+                    <div class="skeleton-card w-100">
+                      <div class="skeleton-line min-h-30px mw-250px"></div>
+                      <div class="skeleton-line mw-150px mt-2"></div>
+                    </div>
+                    <!--Skeleton Card End-->
+                    <!--Content Card Start-->
+                    <h3 class="card-title align-items-start flex-column content-card d-none">
+                      <span class="card-label fw-bolder fs-3">Distribution Over Time</span>
+                      <span class="text-muted fw-bold fs-6 mt-1">From 3/14/24-4/12/24</span>
+                    </h3>
+                    <!--Content Card end-->
+                  </div>
+                  <div class="card-body">
+
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <!--skeleton content start-->
+                        <div class="skeleton-card position-relative">
+                          <div class="row ">
+                            <div class="col-sm-12 mb-4 mb-lg-6">
+                              <div class="skeleton-line min-h-40px min-h-lg-65px "></div>
+                            </div>
+                            <div class="col-sm-12 mb-4 mb-lg-6">
+                              <div class="skeleton-line min-h-40px min-h-lg-65px"></div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="skeleton-line min-h-40px min-h-lg-65px"></div>
+                            </div>
+
+                          </div>
+                          <!--loader popup start-->
+                          <div
+                            class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                            <div class="mb-2">
+                              <div class="circle-loader">
+                                <div class="status draw"></div>
+                              </div>
+                            </div>
+                            <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...</div>
+                            <div class="progress-message fs-6 text-muted">Please wait while the data loads.</div>
+                          </div>
+                          <!--loader popup start-->
+                        </div>
+                        <!--skeleton content end-->
+                        <!--Content Card Start-->
+                        <div class="row content-card d-none">
+                          <div class="col-sm-12 mb-6">
+                            <div class="">
+                              <!--begin::Option-->
+                              <input type="checkbox" class="btn-check" name="distribution" value="distribution"
+                                id="distribution-input">
+                              <label
+                                class="btn btn-outline btn-outline-dashed btn-outline-default btn-active-blue btn-active-bg-white   p-4 d-flex align-items-center text-start"
+                                for="distribution-input">
+                                <!--begin::Block-->
+                                <div class="d-flex align-items-center flex-grow-1 me-2 me-sm-5">
+                                  <!--begin::Symbol-->
+                                  <div class="symbol symbol-50px me-4 ">
+                                    <span class="symbol-label text-success bg-light-success">
+                                      <span class="svg-icon svg-icon-2hx m-0 ">
+                                        <svg style="    margin-left: -5px;
+                                        margin-top: -6px;" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 178.79 143.57">
+                                          <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                              <g id="Dis">
+                                                <g id="Layer_1-2-3" data-name="Layer 1-2">
+                                                  <path fill="black"
+                                                    d="M158,82.35H83.13a3.41,3.41,0,0,0-3.4,3.41v34a3.41,3.41,0,0,0,3.4,3.41H158a3.41,3.41,0,0,0,3.4-3.41v-34A3.41,3.41,0,0,0,158,82.35Zm-3.44,34h-68V89.17h68Z">
+                                                  </path>
+                                                  <path fill="black"
+                                                    d="M175.42,48.33H25.71a3.4,3.4,0,0,0-3.4,3.4v13.6a3.41,3.41,0,0,0,3.4,3.41h3.4v71.44a3.41,3.41,0,0,0,3.41,3.4H168.59a3.4,3.4,0,0,0,3.4-3.4V68.74h3.4a3.41,3.41,0,0,0,3.4-3.41V51.73A3.4,3.4,0,0,0,175.42,48.33Zm-109,88.44H46V96H66.4Zm98.79,0h-92V92.55a3.4,3.4,0,0,0-3.4-3.4H42.59a3.4,3.4,0,0,0-3.4,3.4v44.22H35.92v-68H165.19ZM172,61.93H29.11v-6.8H172Z">
+                                                  </path>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <!--end::Symbol-->
+                                  <!--begin::Section-->
+                                  <div class="me-2">
+                                    <span
+                                      class="text-gray-800 text-hover-primary fs-5 fw-bolder lh-sm">Distribution</span>
+                                  </div>
+                                  <!--end::Section-->
+                                </div>
+                                <!--end::Block-->
+                                <!--begin::Info-->
+                                <div class="d-flex align-items-center">
+                                  <span class="text-gray-800 fw-boldest fs-2x">5</span>
+                                </div>
+                                <!--end::Info-->
+                              </label>
+                              <!--end::Option-->
+                            </div>
+                          </div>
+                          <div class="col-sm-12 mb-6">
+                            <div class="">
+                              <!--begin::Option-->
+                              <input type="checkbox" class="btn-check" name="distribution" value="distribution"
+                                id="tudp_input">
+                              <label
+                                class="btn btn-outline btn-outline-dashed btn-outline-default btn-active-blue btn-active-bg-white  p-4 d-flex align-items-center text-start"
+                                for="tudp_input">
+                                <!--begin::Block-->
+                                <div class="d-flex align-items-center flex-grow-1 me-2 me-sm-5">
+                                  <!--begin::Symbol-->
+                                  <div class="symbol symbol-50px me-4 ">
+                                    <span class="symbol-label bg-light-blue text-blue">
+                                      <span class="svg-icon svg-icon-2hx m-0 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.64 143.81">
+                                          <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                              <g id="universe">
+                                                <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                  <path fill="black"
+                                                    d="M175.24,48.56H132.48a3,3,0,0,0-3,3v.82a3,3,0,0,0,3,3h39.36v6.8h-39a3,3,0,0,0-3,3V66a3,3,0,0,0,3,3H165v68H73V101.78a3.41,3.41,0,0,0-2.25-3.2,3.08,3.08,0,0,0-.68-.08h-.82a3,3,0,0,0-3,3V137H45.84V104.18h.07V95.8H49a3,3,0,0,0,3-3V92a3,3,0,0,0-3-3h-6.6a3,3,0,0,0-1.18.25h-.06a3,3,0,0,0-2,2.84v8.07a3.26,3.26,0,0,0-.06.62V137H35.76V108.5a.38.38,0,0,0,0-.15V84.85a3,3,0,0,0-3-3H32a3,3,0,0,0-3,3v55.56a3.4,3.4,0,0,0,3.4,3.4h136a3.41,3.41,0,0,0,3.41-3.4V69h3.4a3.4,3.4,0,0,0,3.4-3.4V52A3.4,3.4,0,0,0,175.24,48.56Z">
+                                                  </path>
+                                                  <g id="Layer_2-2" data-name="Layer 2-2">
+                                                    <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                      <path fill="black"
+                                                        d="M161.05,85.83v34a3.41,3.41,0,0,1-3.41,3.4H82.8a3.4,3.4,0,0,1-3.4-3.4v-34a3.4,3.4,0,0,1,3.4-3.4H97.74a3,3,0,0,1,3,3v.82a3,3,0,0,1-2.7,3H86.4v0l-.1,0h.1v27.22h67.84V89.24H123.58a3,3,0,0,1-3-3v-.82a3,3,0,0,1,2.7-3h34.36A3.41,3.41,0,0,1,161.05,85.83Z">
+                                                      </path>
+                                                      <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24">
+                                                      </polygon>
+                                                      <polygon points="86.4 89.24 86.4 89.26 86.3 89.26 86.4 89.24">
+                                                      </polygon>
+                                                      <path fill="black"
+                                                        d="M128.29,6.76A4.34,4.34,0,0,0,128.1,6a3.83,3.83,0,0,0-3.57-2.54,3.77,3.77,0,0,0-2.06.64l-.35.23L118,6.94l-1.83,1.2-3.59,2.36-1.15.75L108,13.5l-.51.34h0l-6.2,4H93.18l-.09-.21L90,11.22l-.31-.64-.11-.22a3.78,3.78,0,0,0-3.39-2.13H79.28V3.74A3.8,3.8,0,0,0,75.53,0h-.19L68.92.08,62.5.17,53.61.29h-4L43.18.41l-7.92.1H32.7A3.76,3.76,0,0,0,29.7,2L28.18,4l-.48.63h-.1l-.46-.49-.41-.44L24.91,1.77c-.09-.11-.2-.2-.31-.31a3.93,3.93,0,0,0-2.45-.9h-8.7A3.83,3.83,0,0,0,9.91,3.31L.21,31.05A3.79,3.79,0,0,0,.32,33.8L11.25,58.5A3.28,3.28,0,0,0,12.38,60l.94.73,1,.76,5,3.88,7.27,5.62.15.1.41.32.74.56.3.2a3.45,3.45,0,0,0,2,.59H39l9.83-.08,4.86,7.68,4.15,6.53,1,1.56A3.72,3.72,0,0,0,62,90.07h5.69a3.11,3.11,0,0,0,.86-.1,3.77,3.77,0,0,0,2.63-2.19L74,80.9l.23-.55,3.42-8.21H82.3A3.79,3.79,0,0,0,85,71.05l.1-.1,3.23-3.25h5.88l.16.17,2.26,2.07.91,1L105,79.12l1.1,1.22L108,82.43l.2.22a3.75,3.75,0,0,0,5.29.29h0l.36-.35.11-.13,1.73-2.09,5.54-6.68a3.83,3.83,0,0,0,.85-2.72,4.82,4.82,0,0,0-.22-1,4,4,0,0,0-.85-1.34l-1-1.12-3.9-4-.15-.15-.56-.57-1.68-1.7h0c.06-.94-.17-2.95,3.67-4.15a3.61,3.61,0,0,0,1.29-.7l.11-.09a5.6,5.6,0,0,0,.41-.43,3.91,3.91,0,0,0,.6-1,3.47,3.47,0,0,0,.24-1.35V33.85l.67-.45,1-.67,2.68-1.81,2.3-1.56.08-.06h0a3.72,3.72,0,0,0,1.56-3V7.18A3,3,0,0,0,128.29,6.76Zm-7.52,17.47-1.43,1-.24.15-1.89,1.29-3.09,2.09-.23.18a3.67,3.67,0,0,0-1.46,2.93V52a16.35,16.35,0,0,0-3,2.69,9.26,9.26,0,0,0-.88,1,2.79,2.79,0,0,0-.34.43A19.52,19.52,0,0,0,105.49,61c-.12.31-.18.5-.18.5a3.26,3.26,0,0,0,.15,1.24,3.13,3.13,0,0,0,.27.72,3.56,3.56,0,0,0,.67.92l3,3,2.4,2.45.33.33.66.68.51.53-2.46,3-.91-1L107.72,71l-3.14-3.46-3.58-4-.68-.75L99,61.36c-.11-.1-.21-.21-.33-.3a3.79,3.79,0,0,0-2.46-.92h-9.5a3.85,3.85,0,0,0-2.5.92l-.17.16-3.35,3.35H75.11a3.75,3.75,0,0,0-3.49,2.35l-.24.56-1,2.45-.42,1-4.5,10.88-.29.7H64.08l-.45-.72L56.77,70.93l-.64-1L54.59,67.5l-.49-.77A3.8,3.8,0,0,0,50.86,65l-19.14.17H31.5L29.4,63.5l-.93-.72H28.2v-.21L26.75,61.5l-.55-.43-5.13-3.94-.33-.25L19.33,55.8l-1.57-1.21-2.43-5.5L9.49,35.89,7.82,32.11,16.15,8.25h4.39l.2.21,3.15,3.35A3.71,3.71,0,0,0,26.75,13a1.41,1.41,0,0,0,.41,0,5.59,5.59,0,0,0,.87-.23l.17-.06,3.27-1.34a3.67,3.67,0,0,0,1.65-1.26l1-1.38.49-.66h3.47L45.22,8l8-.1h2.24a3.43,3.43,0,0,1,1.19-.21H71.74v4.4a3.78,3.78,0,0,0,1.19,2.74,3.45,3.45,0,0,0,1.55.89,1.43,1.43,0,0,0,.42.09h8.91l.92,1.93,2.7,5.63a3.56,3.56,0,0,0,1.3,1.5,4.11,4.11,0,0,0,2.1.64h3.81v-.11l1.22.11h6.59a3.55,3.55,0,0,0,1.87-.5,1.19,1.19,0,0,0,.22-.12l2.94-1.93L112,20l2-1.26,1.56-1,.73-.48,3.16-2,1.43-.94Z">
+                                                      </path>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <!--end::Symbol-->
+                                  <!--begin::Section-->
+                                  <div class="me-2">
+                                    <span class="text-gray-800 text-hover-primary fs-5 fw-bolder lh-sm">Total Universe
+                                      Distribution Penetration</span>
+                                    <span class="text-gray-400 fw-bolder d-block fs-7 mt-1"> <span
+                                        class="badge badge-light fw-bolder">900/6000 Stores</span></span>
+                                  </div>
+                                  <!--end::Section-->
+                                </div>
+                                <!--end::Block-->
+                                <!--begin::Info-->
+                                <div class="d-flex align-items-center flex-column">
+                                  <span class="text-gray-800 fw-boldest fs-2x">
+                                    15%
+                                  </span>
+                                </div>
+                                <!--end::Info-->
+                              </label>
+                              <!--end::Option-->
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="">
+                              <!--begin::Option-->
+                              <input type="checkbox" class="btn-check" name="distribution" value="distribution"
+                                id="rudp_input">
+                              <label
+                                class="btn btn-outline btn-outline-dashed btn-outline-default btn-active-blue btn-active-bg-white  p-4 d-flex align-items-center text-start"
+                                for="rudp_input">
+                                <!--begin::Block-->
+                                <div class="d-flex align-items-center flex-grow-1 me-2 me-sm-5">
+                                  <!--begin::Symbol-->
+                                  <div class="symbol symbol-50px me-4 ">
+                                    <span class="symbol-label bg-light-danger text-danger">
+                                      <span class="svg-icon svg-icon-2hx m-0 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.99 149.22">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                fill: none;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                              <g id="report">
+                                                <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                  <g id="Layer_2-2" data-name="Layer 2-2">
+                                                    <g id="Layer_1-2-2-2" data-name="Layer 1-2-2">
+                                                      <path fill="black" class="cls-1"
+                                                        d="M34.11,117v.85S34.12,116.93,34.11,117Z"></path>
+                                                      <path fill="black"
+                                                        d="M78.21,120.93c0-.11,0-.22,0-.34v-7c0-.12,0-.24,0-.36a3.37,3.37,0,0,1,3.32-3h0a3.37,3.37,0,0,1,3.27,2.71c0,.11,0,.22.05.34s0,.22,0,.34v7a.91.91,0,0,1,0,.17v1.33h68V94.86H104.1a3,3,0,0,1-3-3V91a3,3,0,0,1,2.59-3h52.47a3.41,3.41,0,0,1,3.41,3.41v34a3.41,3.41,0,0,1-3.41,3.4H81.48a3.39,3.39,0,0,1-3.18-2.22,3,3,0,0,1-.09-.73v-.29a2.41,2.41,0,0,1,0-.38Z">
+                                                      </path>
+                                                      <path fill="black"
+                                                        d="M177,57.44V71.05a3.4,3.4,0,0,1-3.4,3.4h-3.4v71.37a3.41,3.41,0,0,1-3.41,3.4H30.85a3.41,3.41,0,0,1-3.16-2.14l-.09-.26,0-.13a3,3,0,0,1-.1-.52v-32.1a3.33,3.33,0,0,1,2.42-3,2.73,2.73,0,0,1,.41,0h.81a3.25,3.25,0,0,1,2.16,1.07,3.92,3.92,0,0,1,.25.32,3.79,3.79,0,0,1,.2.34l.12.24a3,3,0,0,1,.21.67c0,.11,0,.21,0,.31a1.37,1.37,0,0,1,0,.29v28.24h3.41V114.19c0-.1,0-.21,0-.31a3.34,3.34,0,0,1,3.26-2.68h0a3.15,3.15,0,0,1,1.58.41,1.56,1.56,0,0,1,.28.16L43,112a.85.85,0,0,1,.17.16,3.75,3.75,0,0,1,.51.61c.07.12.14.24.2.37a1.08,1.08,0,0,1,.08.19,1.43,1.43,0,0,1,.09.27,1.63,1.63,0,0,1,.07.3,1.57,1.57,0,0,1,0,.3c0,.11,0,.22,0,.34v27.95H64.58V114.3c0-.12,0-.24,0-.36a3.4,3.4,0,0,1,3.37-3h0a3.4,3.4,0,0,1,3.31,2.71c0,.11,0,.22,0,.34s0,.22,0,.34v28.2h92.12v-68H104.15a2.92,2.92,0,0,1-.83-.12A3,3,0,0,1,101.2,72a4.86,4.86,0,0,1,0-.54v-.82a3,3,0,0,1,2.74-3h66.4V60.86H103.68a3,3,0,0,1-2.85-3V57a3,3,0,0,1,2.85-3h69.91A3.4,3.4,0,0,1,177,57.44Z">
+                                                      </path>
+                                                      <path fill="black"
+                                                        d="M75.35,78.56a3.57,3.57,0,0,0-3.54-3.19h-3.5V41.22a3.52,3.52,0,0,0-3.5-3.54H45.93a3.53,3.53,0,0,0-3.54,3.54V51.81H27.08a3.53,3.53,0,0,0-3.53,3.53v20H20a3.53,3.53,0,0,0-3.53,3.53,3.57,3.57,0,0,0,1.09,2.55,3.47,3.47,0,0,0,2.44,1H71.84a3.53,3.53,0,0,0,3.53-3.51C75.37,78.79,75.36,78.67,75.35,78.56Zm-33-3.19H30.62V58.88H42.39Zm18.85,0H49.46V44.75H61.24Z">
+                                                      </path>
+                                                      <path fill="black"
+                                                        d="M24.43,16.48H17.66a3.53,3.53,0,1,0,0,7.06H46a3.52,3.52,0,0,0,0-7H24.43Z">
+                                                      </path>
+                                                      <path fill="black"
+                                                        d="M35.33,34.15a3.56,3.56,0,0,1-3.53,3.53H17.66a3.54,3.54,0,0,1,0-7.07H31.8A3.54,3.54,0,0,1,35.33,34.15Z">
+                                                      </path>
+                                                      <path fill="black"
+                                                        d="M82.8,2.25l-.32-.19a17.49,17.49,0,0,0-6.84-2c-.47,0-1-.06-1.45-.06H17.66A17.72,17.72,0,0,0,0,17.66v66a17.69,17.69,0,0,0,17.66,17.67H74.19A17.71,17.71,0,0,0,91.87,83.61V17.66A17.67,17.67,0,0,0,82.8,2.25Zm2,81.36a10.65,10.65,0,0,1-9.59,10.56h0l-7.29,0H17.66a10.62,10.62,0,0,1-10.6-10.6V17.66A10.57,10.57,0,0,1,17.62,7.06H75.19a10.6,10.6,0,0,1,9.61,10.6Z">
+                                                      </path>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <!--end::Symbol-->
+                                  <!--begin::Section-->
+                                  <div class="me-2">
+                                    <span class="text-gray-800 text-hover-primary fs-5 fw-bolder lh-sm">Report Universe
+                                      Distribution Penetration</span>
+                                    <span class="text-gray-400 fw-bolder d-block fs-7 mt-1"> <span
+                                        class="badge badge-light fw-bolder">150/750 Stores</span></span>
+                                  </div>
+                                  <!--end::Section-->
+                                </div>
+                                <!--end::Block-->
+                                <!--begin::Info-->
+                                <div class="d-flex align-items-center flex-column">
+                                  <span class="text-gray-800 fw-boldest fs-2x">
+                                    20%
+                                  </span>
+                                </div>
+                                <!--end::Info-->
+                              </label>
+                              <!--end::Option-->
+                            </div>
+                          </div>
+                        </div>
+                        <!--Content Card end-->
+                      </div>
+                      <div class="col-lg-8 mt-8 mt-lg-0">
+                        <!--skeleton content start-->
+                        <div class="skeleton-line w-100  min-h-125px min-h-lg-100 skeleton-card">
+                          <!--loader popup start-->
+                          <div
+                            class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                            <div class="mb-2">
+                              <div class="circle-loader">
+                                <div class="status draw"></div>
+                              </div>
+                            </div>
+                            <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...</div>
+                            <div class="progress-message fs-6 text-muted">Please wait while the data loads.</div>
+                          </div>
+                          <!--loader popup start-->
+                        </div>
+                        <!--skeleton content end-->
+
+                        <!--Content Card Start-->
+                        <div class=" border border-gray-200 p-5 pb-1 rounded min-h-100 content-card d-none">
+                          <strong class="mb-0 d-block fs-5 text-gray-700 fw-bold text-center">Progress Over Time from
+                            3/14/24-4/12/24</span>
+                          </strong>
+                          <div
+                            class="mixed-widget-8-chart show_min_max_x-axis_label card-rounded-bottom w-100 min-h-auto position-relative">
+                          </div>
+                        </div>
+                        <!--Content Card end-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--SKU detail end-->
+              <!--Listings by Store Name Start-->
+              <div class="stores-table-section ">
+                <!--Skeleton Card Start-->
+                <div class="card card-xxl-stretch skeleton-card ">
+                  <!--begin::Header-->
+                  <div class="card-header">
+                    <div class="row w-100 align-items-center justify-content-between gx-0">
+                      <div class="col-sm-3">
+                        <div class="skeleton-line min-h-30px my-1"></div>
+                      </div>
+                      <div class="col-sm-5 ms-auto text-end">
+                        <div class="skeleton-line min-h-30px my-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Header-->
+                  <!--begin::Body-->
+                  <div class="card-body ">
+                    <div class="position-relative">
+                      <!--skeleton content start-->
+                      <table class="skeleton-table align-middle m-0" style="width:100%; overflow: hidden;">
+                        <col span="1" class="bg-gray-200">
+                        <thead class=" h-55px bg-gray-200">
+                          <tr class="">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                            <td>
+                              <div class="skeleton-line"></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--skeleton content end-->
+                      <!--loader popup start-->
+                      <div class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4">
+                        <div class="mb-2">
+                          <div class="circle-loader">
+                            <div class="status draw"></div>
+                          </div>
+                        </div>
+                        <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...</div>
+                        <div class="progress-message fs-6 text-muted">Please wait while the data loads.</div>
+                      </div>
+                      <!--loader popup start-->
+                    </div>
+                  </div>
+                  <!--end::Body-->
+                </div>
+                <!--Skeleton Card Start End-->
+
+                <!--Content Card start-->
+                <div class=" content-card d-none ">
+                  <div class="card ">
+                    <div class="card-header border-0 pt-5">
+                      <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-bolder fs-3">All Stores Selling 100 Pipers (1.75L) in Total Wine &
+                          More</span>
+                        <span class="text-muted fw-bold fs-6 mt-1">From 3/14/24-4/12/24</span>
+                      </h3>
+                      <div class="card-toolbar">
+                        <div class="d-flex align-items-center position-relative">
+                          <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
+                                transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+                              <path
+                                d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                fill="black"></path>
+                            </svg>
+                          </span>
+                          <input type="text" id="search-filter" data-kt-filter="search"
+                            class="form-control w-sm-250px ps-14" placeholder="Store Name...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="datatable-style">
+                        <table id="listing_total_universe"
+                          class="table table-row-dashed thead_span table-row-gray-300 column_mw_250px  colored__perc_td  align-middle fs-6  col_last_w_100px  cellpadding-sm table-scroll table_mw_max_content"
+                          style="width:100%">
+                          <thead>
+                            <tr class="border-bottom border-gray-300">
+                              <th>Store </th>
+                              <th>In Distribution <i class="fas fa-exchange-alt fs-8"
+                                  style="transform: rotate(90deg);"></i></th>
+                              <th class="pr_sku_indis">PR SKUs in Distribution <i class="fas fa-exchange-alt fs-8"
+                                  style="transform: rotate(90deg);"></i></th>
+                              <th class="report_sku_indis">Report SKUs in Distribution <i
+                                  class="fas fa-exchange-alt fs-8" style="transform: rotate(90deg);"></i></th>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Content Card end-->
+
+                <!--Table Column Sort Filter start-->
+                <div class="modal fade" id="skus_in_dis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content overflow-y-auto ">
+                      <div class="modal-header d-flex align-items-center">
+                        <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                          <div class="me-2">
+                            <h3 class="modal-title fw-bolder fs-3" id="exampleModalLabel">SKUs in Distrubution</h3>
+                            <span class="text-muted fw-bold fs-6 mt-1"> Drizly - Skyline Liquor 2 (123 Grand Ave, New
+                              York, NY 10004)</span>
+                          </div>
+                          <div class="d-flex align-items-center position-relative">
+                            <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
+                                  transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+                                <path
+                                  d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                  fill="black"></path>
+                              </svg>
+                            </span>
+                            <input type="text" id="search-filter" data-kt-filter="search"
+                              class="form-control w-sm-250px ps-14" placeholder="SKU Name...">
+                          </div>
+                        </div>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+
+                      </div>
+                      <div class="modal-body pe-5 overflow-visible">
+                        <div class="scroll-y mh-250px">
+                          <ul class="skus-indis-list p-0 m-0">
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Bacardi
+                                (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Highland Park
+                                25 Year
+                                Old (750ml)</a></li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">The
+                                Glenrothes 2004
+                                Vintage (750ml)</a></li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Brugal Extra
+                                Viejo (1L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">100 Pipers
+                                (1.75L)</a></li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Bacardi
+                                (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Highland Park
+                                25 Year
+                                Old (750ml)</a></li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">The
+                                Glenrothes 2004
+                                Vintage (750ml)</a></li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">Brugal Extra
+                                Viejo (1L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start me-1 mb-2 px-3 py-2"> <a
+                                href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">100 Pipers
+                                (1.75L)</a></li>
+                          </ul>
+                          <div class="mt-5 d-flex justify-content-center">
+                            <div class="loading-icon lds-ring ">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </div>
+
+                          <ul
+                            class="m-0 p-0 border-left-list list-inline fs-7 fw-bolder text-muted d-flex flex-wrap d-none">
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li class="badge badge-success text-wrap lh-sm text-start mb-2 me-2  text-hover-white">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Bacardi (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Highland Park 25 Year Old (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                The Glenrothes 2004 Vintage (750ml)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                Brugal Extra Viejo (1L)</a>
+                            </li>
+                            <li
+                              class="badge badge-light text-wrap lh-sm text-start mb-2 me-2  text-hover-white border border-gray-200 ">
+                              <a href="https://training.nextgen.jendasolutionssandbox.com/pricepulse/listings/absolut-citron-vodka-750ml-abc-fine-wine-spirits-17th-street-causeway/details/"
+                                target="_blank" class="text-hover-white">
+                                100 Pipers (1.75L)</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="modal-footer ">
+                        <a data-kt-scroll-toggle="" href="#stores">
+                          <!-- <button type="button" class="btn btn-primary apply me-1 py-3" data-bs-dismiss="modal"
+                    id="columnFilterApply">Apply</button> -->
+                          <button type="button" class="btn btn-light py-3" data-bs-dismiss="modal">Close</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Table Column Sort Filter end-->
+              </div>
+              <!--Listings by Store Name End-->
+            </div>
+          </div>
+          <!--End Content-->
+        </div>
+        <!--Main content end-->
+        <footer class="footer bg-white py-4 d-flex flex-lg-column mt-10" id="ktfooter">
+          <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <div class="text-dark order-2 order-md-1 fs-6"> © <a class="text-dark-75 text-hover-primary">Jenda
+                Solutions</a> LLC 2022. All rights reserved. </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--end::Wrapper-->
+  </div>
+  <!--end::Page-->
+  </div>
+  <!--end::Root-->
+  <!--end::Main-->
+  <!--begin::Scrolltop-->
+  <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+    <!--begin::Svg Icon-->
+    <span class="svg-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+        <path
+          d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+          fill="black" />
+      </svg>
+    </span>
+    <!--end::Svg Icon-->
+  </div>
+  <!--end::Scrolltop-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <script src="assets/plugins/custom/plotly-latest.min.js"></script>
+  <script src="assets/js/JDSelect.js"></script>
+  <script src="js/sku-detail.js"></script>
+  <script type="text/javascript">
+    $('.header-menu .menu-nav li').click(function () {
+      if ($(this).not('menu-item-active')) {
+        if ($('.header-menu .menu-nav li').hasClass('menu-item-active')) {
+          $(".header-menu .menu-nav li").removeClass('menu-item-active');
+        }
+        $(this).addClass('menu-item-active');
+      }
+    })
+  </script>
+</body>
+
+</html>

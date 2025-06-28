@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Listing Detail</title>
+   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap"
+      rel="stylesheet">
+   <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+   <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="assets/css/style.bundle - admin.css">
+   <link rel="stylesheet" href="css/theme_style.css">
+</head>
+
+<body id="kt_body" class="header-extended header-fixed header-tablet-and-mobile-fixed ">
+   <!--begin::Main-->
+   <!--begin::Root-->
+   <div class="d-flex flex-column flex-root">
+      <!--begin::Page-->
+      <div class="page d-flex flex-row flex-column-fluid">
+         <!--begin::Wrapper-->
+         <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+            <!--begin::Header-->
+               <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header"
+          data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+          <!--begin::Header top-->
+       <div class="header-top d-flex align-items-stretch flex-grow-1">
+            <!--begin::Container-->
+            <div class="d-flex container-xl container-xxxl align-items-stretch">
+              <!--begin::Brand-->
+              <div class="d-flex align-items-center align-items-lg-stretch me-5 flex-row-fluid">
+                <!--begin::Heaeder navs toggle-->
+                <button
+                  class="d-lg-none btn btn-icon btn-color-white bg-hover-white bg-hover-opacity-10 w-35px h-35px h-md-40px w-md-40px ms-n2 me-2"
+                  id="kt_header_navs_toggle">
+                  <span style="position:relative;top:1px" class="svg-icon svg-icon-primary svg-icon-2x">
+                    <!--begin::Svg Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+                        <path
+                          d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z"
+                          fill="#000000" opacity="0.3" />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </button>
+                <!--end::Header navs toggle-->
+                <!--begin::Logo-->
+                <a href="#" class="d-flex align-items-center logo">
+                  <span class="logo text-white">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 83" width="7.5rem">
+                      <path fill="currentColor"
+                        d="M28.54,24.15h35.13v14.16c0,8.12-2.96,15.48-17.56,15.48s-17.56-7.25-17.56-15.48H0c0,26.79,14.49,39.63,46.11,39.63s46.11-12.95,46.11-39.63V0H28.54v24.15Z">
+                      </path>
+                      <polygon fill="currentColor"
+                        points="264.14 45.34 230.99 0 193.66 0 193.66 54.89 130.88 54.89 130.88 47.75 183.58 47.75 183.58 29.09 130.88 29.09 130.88 21.96 183.58 21.96 183.58 0 102.34 0 102.34 76.85 193.66 76.85 197.09 76.85 222.2 76.85 222.2 31.51 255.36 76.85 292.68 76.85 292.68 0 264.14 0 264.14 45.34">
+                      </polygon>
+                      <path fill="currentColor"
+                        d="M359.89,0h-57.09v76.85h57.09c18.55,0,36.01-12.3,36.01-38.42S378.45,0,359.89,0ZM351.11,52.69h-19.76v-28.54h19.76c6.15,0,16.25,0,16.25,14.27s-10.1,14.27-16.25,14.27Z">
+                      </path>
+                      <path fill="currentColor"
+                        d="M468.16,0h-42.38l-31.84,76.85h31.4l5.27-13.83h32.71l5.27,13.83h31.4L468.16,0ZM438.08,43.25l8.89-23.49,8.89,23.49h-17.78Z">
+                      </path>
+                    </svg>
+                  </span>
+                </a>
+                <!--end::Logo-->
+                <!--begin::Tabs wrapper-->
+                <div class="align-self-center overflow-auto" id="kt_brand_tabs">
+                  <!--begin::Header tabs wrapper-->
+                  <div class="header-tabs overflow-auto mx-4 ms-lg-7 mb-5 mb-lg-0" id="kt_header_tabs"
+                    data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                    data-kt-swapper-parent="{default: '#kt_header_navs_wrapper', lg: '#kt_brand_tabs'}">
+                    <!--begin::Header tabs-->
+                    <ul class="nav flex-nowrap text-nowrap fs-6">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_header_navs_tab_1">Price Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_2">Promo Pulse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_3">Brand Command</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_4">Share of Shelf</a>
+                      </li>
+                    </ul>
+                    <!--begin::Header tabs-->
+                  </div>
+                  <!--end::Header tabs wrapper-->
+                </div>
+                <!--end::Tabs wrapper-->
+              </div>
+              <!--end::Brand-->
+              <!--begin::Topbar-->
+              <div class="d-flex align-items-center flex-row-auto">
+                <!--begin::User-->
+                <div class="d-flex align-items-center ms-1" id="kt_header_user_menu_toggle">
+                  <!--begin::User info-->
+                  <div
+                    class="my-2 btn btn-flex btn-color-white align-items-center bg-hover-white bg-hover-opacity-10 py-2 px-2 px-md-3 d-flex align-items-center justify-content-center "
+                    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+                    style="border: 2px solid #ffffff1f; border-radius:100%;width:33px;height:33px;">
+                    <!-- <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-4" ><span class="text-white opacity-75 fs-8 fw-bold lh-1 mb-1">Max</span><span class="text-white fs-8 fw-bolder lh-1">UX Designer</span></div> -->
+                    <!--begin::Symbol-->
+                    <div class="symbol symbol-30px symbol-md-40px ">
+                      <span class="svg-icon svg-icon-4 m-0">
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                          height="24px" viewBox="0 0 24 24" version="1.1">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                            <path
+                              d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                              fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                            <path
+                              d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                              fill="#000000" fill-rule="nonzero"></path>
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                      </span>
+                    </div>
+                    <!--end::Symbol-->
+                  </div>
+                  <!--end::User info-->
+                  <!--begin::User account menu-->
+                  <div
+                    class=" menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fs-6 w-275px fw-bold "
+                    data-kt-menu="true" data-popper-placement="bottom-end"
+                    style="z-index: 105; position: fixed; inset: 0px 0px auto auto; margin: 0px; transform: translate(-134px, 40px);">
+                    <div class="menu-item px-3">
+                      <div class="menu-content d-flex align-items-center px-3 py-4">
+                        <!--begin::Avatar-->
+                        <div class="symbol symbol-50px me-3">
+                          <div class="symbol-label fs-2 fw-bold bg-blue text-inverse-primary "
+                            style="display: flex;align-items: center;justify-content: center;">M</div>
+                        </div>
+                        <!--end::Avatar-->
+                        <!--begin::Username-->
+                        <div class="d-flex flex-column text-break">
+                          <div class="fw-bolder d-flex align-items-center fs-5 lh-sm">Max Smith </div>
+                          <a href="#" class="fw-bold text-muted text-hover-primary fs-7 lh-sm mt-1">max@kt.com</a>
+                        </div>
+                        <!--end::Username-->
+                      </div>
+                    </div>
+                    <div class="separator mb-2"></div>
+                    <div class="menu-item px-3">
+                      <a href="#" onclick="reset_pswd()"
+                        class="menu-link px-5  d-flex justify-content-between text-hover-primary"> Reset Password </a>
+                    </div>
+                    <div class="menu-item px-3 my-1 mb-2">
+                      <a class="menu-link px-5 d-flex justify-content-between text-hover-primary" href="#"> Sign Out
+                      </a>
+                    </div>
+                  </div>
+                  <!--end::User account menu-->
+                </div>
+                <!--end::User -->
+              </div>
+              <!--end::Topbar-->
+            </div>
+            <!--end::Container-->
+          </div
+          <!--end::Header top-->
+          <!--begin::Header navs-->
+          <div class="header-navs d-flex align-items-stretch flex-stack w-100 py-5 py-lg-0 fw-bold" id="kt_header_navs"
+            data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}"
+            data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+            data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_navs_toggle" data-kt-swapper="true"
+            data-kt-swapper-mode="append" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header'}">
+            <!--begin::Container-->
+            <div class="d-lg-flex container-xl container-xxxl w-100">
+              <!--begin::Wrapper-->
+              <div class="d-lg-flex flex-column justify-content-lg-center w-100" id="kt_header_navs_wrapper">
+                <!--begin::Header tab content-->
+                <div class="tab-content" data-kt-scroll="true" data-kt-scroll-activate="{default: true, lg: false}"
+                  data-kt-scroll-height="auto" data-kt-scroll-offset="70px">
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade active show" id="kt_header_navs_tab_1">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-center flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item" aria-haspopup="true">
+                          <a href="copo-report.html" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="sku-detail.html">
+                            <span class="menu-text">SKU Detail </span>
+                          </a>
+                        </li>
+                        <li class="menu-item menu-item-active">
+                          <a class="menu-link" href="listing-detail.html">
+                            <span class="menu-text">Listing Detail </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                      <!-- <button class="btn btn-sm btn-danger py-1 px-4">Create Report</button> -->
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon | path: assets/media/icons/duotune/arrows/arr075.svg-->
+                        <span class="svg-icon svg-icon-4 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_2">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Feed</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Reports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_3">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row  px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item " aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">SKUs Reports </span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Portfolio Tracker </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                  <!--begin::Tab panel-->
+                  <div class="tab-pane fade" id="kt_header_navs_tab_4">
+                    <!--begin::Menu wrapper-->
+                    <div class="header-menu flex-column align-items-stretch flex-lg-row px-4 px-lg-0">
+                      <!--begin::Menu-->
+                      <ul class="menu-nav d-flex flex-column flex-lg-row gap-2 m-0 p-0 ">
+                        <li class="menu-item" aria-haspopup="true">
+                          <a href="#" class="menu-link">
+                            <span class="menu-text">My Reports</span>
+                          </a>
+                        </li>
+                        <li class="menu-item ">
+                          <a class="menu-link" href="#">
+                            <span class="menu-text">Exports </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-sm btn-flex btn-primary btn-color-white fw-bold mt-4 mt-lg-0">
+                        <!--begin::Svg Icon-->
+                        <span class="svg-icon svg-icon-3 me-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                              transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"></rect>
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->Create Report
+                      </button>
+                      <!--end::Menu-->
+                    </div>
+                    <!--end::Menu wrapper-->
+                  </div>
+                  <!--end::Tab panel-->
+                </div>
+                <!--end::Header tab content-->
+              </div>
+              <!--end::Wrapper-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header navs-->
+        </div>
+            <!--end::Header-->
+            <!--Main content start-->
+            <div class="content d-flex flex-column flex-column-fluid" id="ktcontent">
+               <div class="d-flex flex-column-fluid">
+                  <div class="container-xl container-xxxl">
+                     <!--Daterange start-->
+                     <div class="row mb-1 mb-lg-3">
+                        <div
+                           class="col-sm-12 d-flex justify-content-start justify-content-md-end align-items-center flex-wrap  min-h-70px ">
+                           <span class="daterange-picker text-center text-lg-end mb-3 me-2 ">
+                              <div data-kt-daterangepicker="true" data-kt-daterangepicker-opens="left"
+                                 class="btn btn-white d-inline-flex align-items-center fs-6 btn-active-white py-3">
+                                 <!--begin::Svg Icon-->
+                                 <span class="svg-icon  svg-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                       fill="none">
+                                       <path opacity="0.3"
+                                          d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z"
+                                          fill="black"></path>
+                                       <path
+                                          d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z"
+                                          fill="black"></path>
+                                       <path
+                                          d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z"
+                                          fill="black"></path>
+                                    </svg>
+                                 </span>
+                                 <!--end::Svg Icon-->
+                                 <!--begin::Display range-->
+                                 <div>30 Mar 2022 - 28 Apr 2022</div>
+                                 <!--end::Display range-->
+                              </div>
+                           </span>
+                           <!--begin::Select wrapper-->
+                           <div class="mb-3 ">
+                              <span class="w-100px d-inline-block">
+                                 <!--begin::Select-->
+                                 <select name="status" data-control="select2" data-hide-search="true"
+                                    class="form-select bg-body border-body min-h-43px">
+                                    <option value="1" selected="selected">Daily</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="3">Monthly</option>
+                                 </select>
+                                 <!--end::Select-->
+                              </span>
+                           </div>
+                           <!--end::Select wrapper-->
+                        </div>
+                     </div>
+                     <!--Daterange End-->
+
+                     <!--SKU detail start-->
+                     <div class="sku-detail-section  ">
+                        <div class="row">
+                           <div class="col-sm-12 col-lg-7">
+                              <!--listing detail start-->
+                              <!--Skeleton Card Start-->
+                              <div class="card card-stretch skeleton-card">
+                                 <div class="card-body">
+                                    <div class="d-flex align-items-center w-100">
+                                       <div class="skeleton-line me-4 mw-85px min-w-85px mh-85px min-h-85px"></div>
+                                       <div class="flex-grow-1">
+                                          <div class="skeleton-line mw-350px w-100  min-h-25px"></div>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center my-8">
+                                       <!--begin::Item-->
+                                       <div class=" text-start pe-8 mt-1">
+                                          <div class="skeleton-line min-w-100px"></div>
+                                          <div class="skeleton-line min-w-50px mw-50px min-h-10px mt-3"></div>
+                                       </div>
+                                       <!--end::Item-->
+                                       <!--begin::Item-->
+                                       <div class=" text-start  pe-8 mt-1">
+                                          <div class="skeleton-line min-w-100px"></div>
+                                          <div class="skeleton-line min-w-50px mw-50px min-h-10px mt-3"></div>
+                                       </div>
+                                       <!--end::Item-->
+                                    </div>
+                                    <div class="skeleton-line min-h-50px min-h-sm-90px"></div>
+                                    <!--loader popup start-->
+                                    <div
+                                       class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                                       <div class="mb-2">
+                                          <div class="circle-loader">
+                                             <div class="status draw"></div>
+                                          </div>
+                                       </div>
+                                       <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...</div>
+                                       <div class="progress-message fs-6 text-muted">Please wait while the data loads.
+                                       </div>
+                                    </div>
+                                    <!--loader popup start-->
+                                 </div>
+                              </div>
+                              <!--Skeleton Card End-->
+
+                              <!--Content Card Start-->
+                              <div class="card card-stretch content-card d-none">
+                                 <div class="card-body">
+                                    <div class="listing-detail fs-5">
+                                       <div class="main-heading border-none w-auto me-0 me-sm-4 mb-3">
+                                          <span class="d-flex align-items-center">
+                                             <div
+                                                class="img-wrapper rounded border me-3 mw-85px min-w-85px mh-85px min-h-85px"
+                                                id="imgWrapper"><img
+                                                   src="./images/sku.png"
+                                                   alt="" class="img-fluid p-2"></div>
+                                             <h1 class="fs-1 fw-bold p-0 my-2 my-sm-0 text-start"
+                                                id="marketplaceNameContainer">1800 Anejo (750ml)</h1>
+                                          </span>
+                                       </div>
+
+                                       <div class="d-flex flex-wrap align-items-center  my-8">
+                                          <!--begin::Item-->
+                                          <div
+                                             class="border-end-dashed border-1 border-gray-300 text-start pe-6 me-6 my-2">
+                                             <!--begin::Statistics-->
+                                             <div class="d-flex mb-1">
+                                                <span class="fs-2 fw-bolder text-gray-800 me-2 lh-1">1.6ml</span>
+                                             </div>
+                                             <!--end::Statistics-->
+                                             <!--begin::Description-->
+                                             <span class="fs-6 fw-bold text-gray-400">Unit Size</span>
+                                             <!--end::Description-->
+                                          </div>
+                                          <!--end::Item-->
+                                          <!--begin::Item-->
+                                          <div
+                                             class="border-end-dashed border-1 border-gray-300 text-start pe-6 me-6 my-2">
+                                             <!--begin::Statistics-->
+                                             <div class="d-flex mb-1">
+                                                <div class="d-flex align-items-center ">
+                                                   <span class="fs-5 fw-bold text-gray-400 me-1 mt-n1">$</span>
+                                                   <span class="fs-2 fw-bolder text-gray-800 me-2 lh-1 ">45.49</span>
+                                                </div>
+                                             </div>
+                                             <!--end::Statistics-->
+                                             <!--begin::Description-->
+                                             <span class="fs-6 fw-bold text-gray-400">Last Price</span>
+                                             <!--end::Description-->
+                                          </div>
+                                          <!--end::Item-->
+                                          <!--begin::Item-->
+                                          <div
+                                             class="border-end-dashed border-1 border-gray-300 text-start pe-6 me-6 my-2">
+                                             <a href="#localized-avg-price" data-kt-scroll-toggle
+                                                id="toggle-neighbour-avg-price">
+                                                <!--begin::Statistics-->
+                                                <div class="d-flex mb-1">
+                                                   <div class="d-flex align-items-center ">
+                                                      <span class="fs-5 fw-bold text-gray-400 me-1 mt-n1">$</span>
+                                                      <span class="fs-2 fw-bolder text-gray-800 me-2 lh-1 ">25.50</span>
+                                                   </div>
+                                                </div>
+                                                <!--end::Statistics-->
+                                                <!--begin::Description-->
+                                                <span class="fs-6 fw-bold text-gray-400">Avg Price <span
+                                                      class="fs-7">(Neighbourhood)</span></span>
+                                                <!--end::Description-->
+                                             </a>
+                                          </div>
+                                          <!--end::Item-->
+                                          <!--begin::Item-->
+                                          <div
+                                             class="border-end-dashed border-1 border-gray-300 text-start pe-6 me-6 my-2 position-relative show-edit-icon">
+                                             <span
+                                                class="text-hover-primary cursor-pointer position-absolute top-0 edit-icon mt-n1"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"
+                                                class=" " style="right:5px">
+                                                <span data-bs-toggle='popover' data-bs-html='true'
+                                                   data-bs-trigger='hover' data-bs-placement='top' title=''
+                                                   data-bs-content='Edit Boundary Limit'>
+                                                   <!--begin::Svg Icon -->
+                                                   <span class="svg-icon svg-icon-muted svg-icon-4 m-0">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                         viewBox="0 0 24 24" fill="none">
+                                                         <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z"
+                                                            fill="black" />
+                                                         <path
+                                                            d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z"
+                                                            fill="black" />
+                                                         <path
+                                                            d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z"
+                                                            fill="black" />
+                                                      </svg>
+                                                   </span>
+                                                   <!--end::Svg Icon-->
+                                                </span>
+                                             </span>
+                                             <!--begin::Menu 1-->
+                                             <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px"
+                                                data-kt-menu="true">
+                                                <!--begin::Form-->
+                                                <div class="px-7 py-5">
+                                                   <!--begin::Input group-->
+                                                   <div class="mb-8">
+                                                      <!--begin::Options-->
+                                                      <div class="boundary_numb">
+                                                         <label for="" class="form-label fw-bold ">Enter Boundary
+                                                            Limit</label>
+                                                         <span class="position-relative d-inline-block w-100"
+                                                            data-kt-dialer="true" data-kt-dialer-step="5"
+                                                            data-kt-dialer-min="0" data-kt-dialer-suffix=" miles"
+                                                            data-kt-dialer-decimals="2">
+                                                            <!--begin::Decrease control-->
+                                                            <button type="button"
+                                                               class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                                               data-kt-dialer-control="decrease">
+                                                               <!--begin::Svg Icon-->
+                                                               <span class="svg-icon svg-icon-2">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                     height="24" viewbox="0 0 24 24" fill="none">
+                                                                     <rect opacity="0.3" x="2" y="2" width="20"
+                                                                        height="20" rx="5" fill="black" />
+                                                                     <rect x="6.0104" y="10.9247" width="12" height="2"
+                                                                        rx="1" fill="black" />
+                                                                  </svg>
+                                                               </span>
+                                                               <!--end::Svg Icon-->
+                                                            </button>
+                                                            <!--end::Decrease control-->
+                                                            <!--begin::Input control-->
+                                                            <input type="text"
+                                                               class="form-control form-control-solid  border-0 ps-12 rounded-end-0 mh-40px min-h-40px lh-1"
+                                                               data-kt-dialer-control="input" placeholder="" id="floor"
+                                                               name="boundary" value="5" />
+                                                            <!--end::Input control-->
+                                                            <!--begin::Increase control-->
+                                                            <button type="button"
+                                                               class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0 "
+                                                               data-kt-dialer-control="increase">
+                                                               <!--begin::Svg Icon-->
+                                                               <span class="svg-icon svg-icon-2">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                     height="24" viewbox="0 0 24 24" fill="none">
+                                                                     <rect opacity="0.3" x="2" y="2" width="20"
+                                                                        height="20" rx="5" fill="black" />
+                                                                     <rect x="10.8891" y="17.8033" width="12" height="2"
+                                                                        rx="1" transform="rotate(-90 10.8891 17.8033)"
+                                                                        fill="black" />
+                                                                     <rect x="6.01041" y="10.9247" width="12" height="2"
+                                                                        rx="1" fill="black" />
+                                                                  </svg>
+                                                               </span>
+                                                               <!--end::Svg Icon-->
+                                                            </button>
+                                                            <!--end::Increase control-->
+                                                         </span>
+                                                      </div>
+                                                      <!--end::Options-->
+                                                   </div>
+                                                   <!--end::Input group-->
+
+                                                   <!--begin::Actions-->
+                                                   <div class="d-flex justify-content-end">
+                                                      <button type="submit" class="btn btn-sm btn-primary"
+                                                         data-kt-menu-dismiss="true" id="edit-boundary">Apply</button>
+                                                   </div>
+                                                   <!--end::Actions-->
+                                                </div>
+                                                <!--end::Form-->
+                                             </div>
+                                             <!--end::Menu 1-->
+                                             <a href="#localized-avg-price" data-kt-scroll-toggle
+                                                id="toggle-boundary-avg-price">
+                                                <!--begin::Statistics-->
+                                                <div class="d-flex mb-1">
+                                                   <div class="d-flex align-items-center ">
+                                                      <span class="fs-5 fw-bold text-gray-400 me-1 mt-n1">$</span>
+                                                      <span class="fs-2 fw-bolder text-gray-800 me-2 lh-1 ">27.33</span>
+                                                   </div>
+                                                </div>
+                                                <!--end::Statistics-->
+
+                                                <!--begin::Description-->
+                                                <span class="fs-6 fw-bold text-gray-400">Avg Price
+                                                   <span class="fs-7">(<span class="boundary_count">5.00 miles</span>
+                                                      boundary)
+                                                   </span>
+                                                </span>
+                                                <!--end::Description-->
+                                             </a>
+                                          </div>
+                                          <!--end::Item-->
+                                          <!--begin::Item-->
+                                          <div class="text-start my-2">
+                                             <!--begin::Statistics-->
+                                             <div class="d-flex mb-1">
+                                                <span class="fs-2 fw-bolder text-gray-800 me-2 lh-1">1800 Tequila
+                                                </span>
+                                             </div>
+                                             <!--end::Statistics-->
+                                             <!--begin::Description-->
+                                             <span class="fs-6 fw-bold text-gray-400">Brand</span>
+                                             <!--end::Description-->
+                                          </div>
+                                          <!--end::Item-->
+                                       </div>
+
+                                       <div class="row">
+                                          <div class=" col-sm-12 col-md-12">
+                                             <div
+                                                class="d-flex  rounded border border-blue border-dashed p-5 p-md-6 bg-light-blue">
+                                                <!--begin::Svg Icon-->
+                                                <span class="svg-icon svg-icon-blue svg-icon-2x me-4"><svg
+                                                      xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                      viewBox="0 0 24 24" fill="none">
+                                                      <path opacity="0.3"
+                                                         d="M18.4 5.59998C18.7766 5.9772 18.9881 6.48846 18.9881 7.02148C18.9881 7.55451 18.7766 8.06577 18.4 8.44299L14.843 12C14.466 12.377 13.9547 12.5887 13.4215 12.5887C12.8883 12.5887 12.377 12.377 12 12C11.623 11.623 11.4112 11.1117 11.4112 10.5785C11.4112 10.0453 11.623 9.53399 12 9.15698L15.553 5.604C15.9302 5.22741 16.4415 5.01587 16.9745 5.01587C17.5075 5.01587 18.0188 5.22741 18.396 5.604L18.4 5.59998ZM20.528 3.47205C20.0614 3.00535 19.5074 2.63503 18.8977 2.38245C18.288 2.12987 17.6344 1.99988 16.9745 1.99988C16.3145 1.99988 15.661 2.12987 15.0513 2.38245C14.4416 2.63503 13.8876 3.00535 13.421 3.47205L9.86801 7.02502C9.40136 7.49168 9.03118 8.04568 8.77863 8.6554C8.52608 9.26511 8.39609 9.91855 8.39609 10.5785C8.39609 11.2384 8.52608 11.8919 8.77863 12.5016C9.03118 13.1113 9.40136 13.6653 9.86801 14.132C10.3347 14.5986 10.8886 14.9688 11.4984 15.2213C12.1081 15.4739 12.7616 15.6039 13.4215 15.6039C14.0815 15.6039 14.7349 15.4739 15.3446 15.2213C15.9543 14.9688 16.5084 14.5986 16.975 14.132L20.528 10.579C20.9947 10.1124 21.3649 9.55844 21.6175 8.94873C21.8701 8.33902 22.0001 7.68547 22.0001 7.02551C22.0001 6.36555 21.8701 5.71201 21.6175 5.10229C21.3649 4.49258 20.9947 3.93867 20.528 3.47205Z"
+                                                         fill="black" />
+                                                      <path
+                                                         d="M14.132 9.86804C13.6421 9.37931 13.0561 8.99749 12.411 8.74695L12 9.15698C11.6234 9.53421 11.4119 10.0455 11.4119 10.5785C11.4119 11.1115 11.6234 11.6228 12 12C12.3766 12.3772 12.5881 12.8885 12.5881 13.4215C12.5881 13.9545 12.3766 14.4658 12 14.843L8.44699 18.396C8.06999 18.773 7.55868 18.9849 7.02551 18.9849C6.49235 18.9849 5.98101 18.773 5.604 18.396C5.227 18.019 5.0152 17.5077 5.0152 16.9745C5.0152 16.4413 5.227 15.93 5.604 15.553L8.74701 12.411C8.28705 11.233 8.28705 9.92498 8.74701 8.74695C8.10159 8.99737 7.5152 9.37919 7.02499 9.86804L3.47198 13.421C2.52954 14.3635 2.00009 15.6417 2.00009 16.9745C2.00009 18.3073 2.52957 19.5855 3.47202 20.528C4.41446 21.4704 5.69269 21.9999 7.02551 21.9999C8.35833 21.9999 9.63656 21.4704 10.579 20.528L14.132 16.975C14.5987 16.5084 14.9689 15.9544 15.2215 15.3447C15.4741 14.735 15.6041 14.0815 15.6041 13.4215C15.6041 12.7615 15.4741 12.108 15.2215 11.4983C14.9689 10.8886 14.5987 10.3347 14.132 9.86804Z"
+                                                         fill="black" />
+                                                   </svg></span>
+                                                <!--end::Svg Icon-->
+                                                <!--begin::Content-->
+                                                <div class=" fw-bold text-truncate">
+                                                   <h4 class="text-gray-900 fw-bolder">URL</h4>
+                                                   <div class="fs-6 text-gray-700 "><a href="
+                                                            https://www.abcfws.com/1800-anejo-tequila/515805"
+                                                         class="text-gray-700 text-hover-primary text-truncate d-block ">
+                                                         https://www.abcfws.com/1800-anejo-tequila/515805</a>
+                                                   </div>
+                                                </div>
+                                                <!--end::Content-->
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--Content Card End-->
+                              <!--listing detail end-->
+                           </div>
+                           <div class="col-sm-12 col-lg-5 mt-8 mt-lg-0">
+                              <!--listing detail start-->
+                              <!--Skeleton Card Start-->
+                              <div class="card card-stretch min-h-100 skeleton-card">
+                                 <div class="card-body d-flex align-items-stretch">
+                                    <div class="skeleton-line min-h-100 min-w-100"></div>
+                                    <!--loader popup start-->
+                                    <div
+                                       class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                                       <div class="mb-2">
+                                          <div class="circle-loader">
+                                             <div class="status draw"></div>
+                                          </div>
+                                       </div>
+                                       <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...</div>
+                                       <div class="progress-message fs-6 text-muted">Please wait while the data loads.
+                                       </div>
+                                    </div>
+                                    <!--loader popup start-->
+                                 </div>
+                              </div>
+                              <!--Skeleton Card End-->
+
+                              <!--Content Card Start-->
+                              <div class="card card-stretch min-h-100 content-card d-none">
+                                 <div class="card-body">
+                                    <div class="screenshot border rounded scroll min-h-100" style="max-height: 340px;">
+                                       <div class="img-wrapper ">
+                                          <img src="images/screenshot.png" alt="" class="img-fluid p-2">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--Content Card End-->
+                              <!--listing detail end-->
+                           </div>
+                        </div>
+
+                     </div>
+                     <!--SKU detail end-->
+
+                     <!--Price history start-->
+                     <div class="price-history-section">
+                        <div class="card card-flush card-stretch  mt-8 pt-2">
+                           <div class="card-header d-flex align-items-center justify-content-sm-end">
+                              <div class="card-toolbar">
+                                 <!--Skeleton Card Start-->
+                                 <div class="skeleton-line min-h-40px min-w-150px min-w-sm-250px skeleton-card"></div>
+                                 <!--Skeleton Card End-->
+                                 <!--Content Card Start-->
+                                 <div class=" content-card d-none">
+                                    <span class="dropdown d-inline-block me-2">
+                                       <button class="btn fs-6  btn-light dropdown-toggle btn-sm py-3" type="button"
+                                          data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                          <!--begin::Svg Icon-->
+                                          <span class="svg-icon svg-icon-3 m-0">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1"
+                                                   transform="rotate(-90 11.364 20.364)" fill="black"></rect>
+                                                <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black">
+                                                </rect>
+                                             </svg>
+                                          </span>
+                                          <!--end::Svg Icon-->Add SKU
+                                       </button>
+
+                                       <div class="dropdown-menu dropdown-menu-end border px-7 py-5 min-w-400px"
+                                          id="select-dropdown">
+                                          <div class="mb-3">
+                                             <!--begin::Label-->
+                                             <label class="form-label fw-bold">SKU:</label>
+                                             <!--end::Label-->
+                                             <!--begin::Input-->
+                                             <div>
+                                                <select id="sku" class="form-select  form-select-solid"
+                                                   data-control="select2" data-dropdown-parent="#select-dropdown"
+                                                   multiple="multiple">
+                                                </select>
+                                             </div>
+                                             <!--end::Input-->
+                                          </div>
+                                       </div>
+                                    </span>
+                                    <button type="submit" class="btn py-3 fs-6 btn-primary close_dropdown"
+                                       id="apply-sku" aria-label="Close" disabled>Apply</button>
+                                 </div>
+                                 <!--Content Card End-->
+                              </div>
+                           </div>
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <!--Skeleton Card Start-->
+                                    <div class="skeleton-card position-relative">
+                                       <div class="row ">
+                                          <div class="col-sm-12">
+                                             <div class="skeleton-line mw-50  mx-auto"></div>
+                                          </div>
+                                          <div class="col-sm-8 col-lg-9 col-xxxl2-10 col-xxxl4-11">
+                                             <div class="skeleton-line min-h-150px min-h-sm-175px mt-8"></div>
+                                          </div>
+                                          <div class="col-sm-4 col-lg-3 col-xxxl2-2 col-xxxl4-1">
+                                             <div class="skeleton-line min-h-150px min-h-sm-175px mt-8"></div>
+                                          </div>
+                                       </div>
+                                       <!--loader popup start-->
+                                       <div
+                                          class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                                          <div class="mb-2">
+                                             <div class="circle-loader">
+                                                <div class="status draw"></div>
+                                             </div>
+                                          </div>
+                                          <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...
+                                          </div>
+                                          <div class="progress-message fs-6 text-muted">Please wait while the data
+                                             loads.</div>
+                                       </div>
+                                       <!--loader popup start-->
+                                    </div>
+                                    <!--Skeleton Card End-->
+                                    <!--Content Card Start-->
+                                    <div class="row gx-1 content-card d-none">
+                                       <div class="col-sm-12">
+                                          <h4 class="mb-0 fw-bold mt-5 text-center ">Availability Status of 1800 Anejo
+                                             (750ml) at ABC Fine Wine & Spirits - 34th Blvd
+                                          </h4>
+                                       </div>
+                                       <div class="col-sm-12 col-md-8 col-lg-9 col-xxxl2-10 col-xxxl4-11">
+                                          <div class="mt-1">
+                                             <div id="chart"
+                                                class="show_min_max_x-axis_label tooltip-bg-transparent overlap-yaxis">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-12 col-md-4 col-lg-3 col-xxxl2-2 col-xxxl4-1">
+                                          <div class="mt-1">
+                                             <div id="chart2" class="bg-perc"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--Content Card End-->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Price history end-->
+
+                     <!--Nieghbourhood Average Price start-->
+                     <div class="neighbourhodd-price-section">
+                        <div class="card card-flush card-stretch  mt-10" id="localized-avg-price"
+                           data-kt-scroll-offset="95">
+                           <div class="card-header">
+                              <!--Skeleton Card Start-->
+                              <div class="skeleton-card d-flex align-items-center">
+                                 <div class="skeleton-line min-h-30px min-w-200px min-w-sm-300px"></div>
+                              </div>
+                              <!--Skeleton Card End-->
+                              <!--Content Card Start-->
+                              <div class="d-flex align-items-center content-card d-none">
+                                 <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bolder fs-3 localized-avg-price-title">Avg Price
+                                       (Neighbourhood) in each store for 1800
+                                       Anejo (750ml) at ABC Fine Wine & Spirits</span>
+                                 </h3>
+                              </div>
+                              <!--Content Card End-->
+                              <div class="card-toolbar">
+                                 <!--Skeleton Card Start-->
+                                 <div class="skeleton-card">
+                                    <div class="skeleton-line min-h-30px min-w-250px"></div>
+                                 </div>
+                                 <!--Skeleton Card End-->
+                                 <!--Content Card Start-->
+                                 <div class="content-card d-none">
+                                    <div class="d-flex align-items-center position-relative">
+                                       <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                             <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
+                                                rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+                                             <path
+                                                d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                fill="black"></path>
+                                          </svg>
+                                       </span>
+                                       <input type="text" id="search-filter" data-kt-filter="search"
+                                          class="form-control w-sm-250px ps-14" placeholder="Store Name...">
+                                    </div>
+                                 </div>
+                                 <!--Content Card End-->
+                              </div>
+                           </div>
+                           <div class="card-body pt-5">
+                              <div class="d-flex justify-content-end mb-5">
+                                 <!--Skeleton Card Start-->
+                                 <div class="skeleton-line min-h-40px min-w-200px min-w-sm-300px skeleton-card"></div>
+                                 <!--Skeleton Card End-->
+
+                                 <!--Content Card Start-->
+                                 <div class="d-flex content-card d-none">
+                                    <!--begin::Radio group-->
+                                    <div class="btn-group " data-kt-buttons="true"
+                                       data-kt-buttons-target="[data-kt-button]">
+                                       <!--begin::Radio-->
+                                       <label
+                                          class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-end border-gray-300 d-flex align-items-center justify-content-center active"
+                                          data-kt-button="true" for="neighbourhood_avg_price_checkbox">
+                                          <!--begin::Input-->
+                                          <input class="btn-check" type="radio" name="m_method" value="1"
+                                             id="neighbourhood_avg_price_checkbox" checked>
+                                          <!--end::Input-->
+                                          Neighbourhood Avg Price
+                                       </label>
+                                       <!--end::Radio-->
+
+                                       <!--begin::Radio-->
+                                       <label
+                                          class="btn btn-sm fw-bolder btn-light btn-active-primary border-hover-primary border-active-primary px-4 py-2 min-h-40px border-start border-gray-300 d-flex align-items-center justify-content-center min-w-sm-100px rounded rounded-start-0"
+                                          data-kt-button="true" for="boundary_avg_price_checkbox"
+                                          data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                          <!--begin::Input-->
+                                          <input class="btn-check" type="radio" name="m_method" value="2"
+                                             id="boundary_avg_price_checkbox">
+                                          <!--end::Input-->
+                                          Boundary Average Price
+                                       </label>
+                                       <!--begin::Menu 1-->
+                                       <div class="menu menu-sub menu-sub-dropdown w-250px w-md-350px"
+                                          data-kt-menu="true" id="kt_menu_6220ee064de67">
+                                          <!--begin::Form-->
+                                          <div class="px-7 py-5">
+                                             <!--begin::Input group-->
+                                             <div class="mb-8">
+                                                <!--begin::Options-->
+                                                <div class="">
+                                                   <label for="" class="form-label fw-bold ">Enter Boundary
+                                                      Limit</label>
+                                                   <span class="position-relative d-inline-block w-100"
+                                                      data-kt-dialer="true" data-kt-dialer-step="5"
+                                                      data-kt-dialer-min="0" data-kt-dialer-max="15"
+                                                      data-kt-dialer-suffix=" miles" data-kt-dialer-decimals="2">
+                                                      <!--begin::Decrease control-->
+                                                      <button type="button"
+                                                         class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                                         data-kt-dialer-control="decrease">
+                                                         <!--begin::Svg Icon-->
+                                                         <span class="svg-icon svg-icon-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                               height="24" viewbox="0 0 24 24" fill="none">
+                                                               <rect opacity="0.3" x="2" y="2" width="20" height="20"
+                                                                  rx="5" fill="black" />
+                                                               <rect x="6.0104" y="10.9247" width="12" height="2" rx="1"
+                                                                  fill="black" />
+                                                            </svg>
+                                                         </span>
+                                                         <!--end::Svg Icon-->
+                                                      </button>
+                                                      <!--end::Decrease control-->
+                                                      <!--begin::Input control-->
+                                                      <input type="text"
+                                                         class="form-control form-control-solid  border-0 ps-12 mh-40px min-h-40px lh-1"
+                                                         data-kt-dialer-control="input" placeholder="" id="floor2"
+                                                         name="Presence" value="5" />
+                                                      <!--end::Input control-->
+                                                      <!--begin::Increase control-->
+                                                      <button type="button"
+                                                         class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0 "
+                                                         data-kt-dialer-control="increase">
+                                                         <!--begin::Svg Icon-->
+                                                         <span class="svg-icon svg-icon-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                               height="24" viewbox="0 0 24 24" fill="none">
+                                                               <rect opacity="0.3" x="2" y="2" width="20" height="20"
+                                                                  rx="5" fill="black" />
+                                                               <rect x="10.8891" y="17.8033" width="12" height="2"
+                                                                  rx="1" transform="rotate(-90 10.8891 17.8033)"
+                                                                  fill="black" />
+                                                               <rect x="6.01041" y="10.9247" width="12" height="2"
+                                                                  rx="1" fill="black" />
+                                                            </svg>
+                                                         </span>
+                                                         <!--end::Svg Icon-->
+                                                      </button>
+                                                      <!--end::Increase control-->
+                                                   </span>
+                                                </div>
+                                                <!--end::Options-->
+                                             </div>
+                                             <!--end::Input group-->
+
+                                             <!--begin::Actions-->
+                                             <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-sm btn-primary"
+                                                   data-kt-menu-dismiss="true"
+                                                   id="show_boundary_avg_price">Apply</button>
+                                             </div>
+                                             <!--end::Actions-->
+                                          </div>
+                                          <!--end::Form-->
+                                       </div>
+                                       <!--end::Menu 1-->
+                                       <!--end::Radio-->
+                                    </div>
+                                    <!--end::Radio group-->
+                                 </div>
+                                 <!--Content Card End-->
+                              </div>
+
+                              <div class="row gx-10 " id="neighbourhood_avg_price_content">
+                                 <div class="col-sm-12 col-lg-6">
+                                    <!--Skeleton Card Start-->
+                                    <div class="position-relative skeleton-card">
+                                       <!--skeleton content start-->
+                                       <table class="skeleton-table col-first-w-xl-350 align-middle m-0"
+                                          style="width:100%; overflow: hidden;">
+                                          <col span="1" class="bg-gray-200">
+                                          <thead class=" h-55px bg-gray-200">
+                                             <tr class="">
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             <tr>
+                                                <td></td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                                <td>
+                                                   <div class="skeleton-line"></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <!--skeleton content end-->
+                                       <!--loader popup start-->
+                                       <div
+                                          class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                                          <div class="mb-2">
+                                             <div class="circle-loader">
+                                                <div class="status draw"></div>
+                                             </div>
+                                          </div>
+                                          <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...
+                                          </div>
+                                          <div class="progress-message fs-6 text-muted">Please wait while the data
+                                             loads.</div>
+                                       </div>
+                                       <!--loader popup start-->
+                                    </div>
+                                    <!--Skeleton Card End-->
+                                    <!--Content Card Start-->
+                                    <div class="content-card d-none">
+                                       <div class="datatable-style overflow-hidden position-relative">
+                                          <table
+                                             class="table table-row-dashed table-row-gray-300 table-hover-gray clickable-cell td_center_not_first table-hover-border  column_mw_250px col-border-right  align-middle fs-6 table-scroll fixed_column table_mw_max_content cellpadding-sm"
+                                             id="neighbourhood_table"></table>
+                                          <div class="text-center">
+                                             <button class="view_all_row btn btn-icon btn-light btn-sm mt-5"
+                                                style="display: none;">
+                                                <span class="svg-icon svg-icon-muted svg-icon-2">
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                      viewBox="0 0 24 24" fill="none">
+                                                      <rect opacity="0.5" x="11" y="18" width="13" height="2" rx="1"
+                                                         transform="rotate(-90 11 18)" fill="black"></rect>
+                                                      <path
+                                                         d="M11.4343 15.4343L7.25 11.25C6.83579 10.8358 6.16421 10.8358 5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75L11.2929 18.2929C11.6834 18.6834 12.3166 18.6834 12.7071 18.2929L18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25C17.8358 10.8358 17.1642 10.8358 16.75 11.25L12.5657 15.4343C12.2533 15.7467 11.7467 15.7467 11.4343 15.4343Z"
+                                                         fill="black"></path>
+                                                   </svg>
+                                                </span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--Content Card End-->
+                                 </div>
+                                 <div class="col-sm-12 col-lg-6 mt-8 mt-lg-0">
+                                    <!--Skeleton Card Start-->
+                                    <div class="d-flex align-items-stretch min-h-100 skeleton-card position-relative">
+                                       <div class="skeleton-line min-h-150px min-h-sm-200px min-w-100 mh-400px">
+                                          <!--loader popup start-->
+                                          <div
+                                             class="skeleton-loader-popup bg-white rounded shadow max-w-250px min-w-250px p-5 pb-4 d-none">
+                                             <div class="mb-2">
+                                                <div class="circle-loader">
+                                                   <div class="status draw"></div>
+                                                </div>
+                                             </div>
+                                             <div class="progress-heading fw-bolder fs-3 text-gray-900 mb-0">Loading...
+                                             </div>
+                                             <div class="progress-message fs-6 text-muted">Please wait while the data
+                                                loads.</div>
+                                          </div>
+                                          <!--loader popup start-->
+
+                                       </div>
+                                    </div>
+                                    <!--Skeleton Card End-->
+
+                                    <!--Content Card Start-->
+                                    <div
+                                       class="avg-price-chart border border-gray-200 p-7 py-10 rounded min-h-100 content-card d-none">
+                                       <h4 class="mb-4 fw-bold text-center px-8">Daily Price for 1800 Anejo (750ml) at
+                                          <span class="stores-name">ABC Fine Wine & Spirits - 34th Blvd</span>
+                                       </h4>
+                                       <div id="sku_comparison"
+                                          class="show_min_max_x-axis_label mixed-widget-8-chart-neighbouhood card-rounded-bottom w-100 min-h-auto position-relative"
+                                          data-kt-chart-color="primary">
+                                       </div>
+                                    </div>
+                                    <!--Content Card End-->
+                                 </div>
+                              </div>
+                              <div class="row gx-10 d-none" id="boundary_avg_price_content">
+                                 <div class="col-sm-12 col-lg-6">
+                                    <div class="datatable-style overflow-hidden position-relative">
+                                       <table
+                                          class="table table-row-dashed table-row-gray-300 table-hover-gray clickable-cell td_center_not_first table-hover-border  column_mw_250px col-border-right  align-middle fs-6 table-scroll fixed_column table_mw_max_content cellpadding-sm"
+                                          id="boundary_table"></table>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-lg-6 mt-8 mt-lg-0">
+                                    <div class="avg-price-chart border border-gray-200 p-7 pt-10 rounded min-h-100">
+                                       <h4 class="mb-4 fw-bold text-center px-8">Daily Price for 1800 Anejo (750ml) at
+                                          <span class="stores-name">ABC Fine Wine & Spirits - 34th Blvd</span>
+                                       </h4>
+                                       <div id="sku_comparison"
+                                          class="show_min_max_x-axis_label mixed-widget-8-chart-boundary card-rounded-bottom w-100 min-h-auto position-relative"
+                                          data-kt-chart-color="primary">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Nieghbourhood Average Price end-->
+                  </div>
+               </div>
+            </div>
+            <!--Main content end-->
+            <footer class="footer bg-white py-4 d-flex flex-lg-column mt-10" id="ktfooter">
+               <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+                  <div class="text-dark order-2 order-md-1 fs-6">
+                     © <a class="text-dark-75 text-hover-primary">Jenda Solutions</a> LLC 2022. All rights reserved.
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+      <!--end::Wrapper-->
+   </div>
+   <!--end::Page-->
+   </div>
+   <!--end::Root-->
+   <!--end::Main-->
+   <!--begin::Scrolltop-->
+   <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+      <!--begin::Svg Icon-->
+      <span class="svg-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+            <path
+               d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+               fill="black" />
+         </svg>
+      </span>
+      <!--end::Svg Icon-->
+   </div>
+   <!--end::Scrolltop-->
+   <script src="assets/plugins/global/plugins.bundle.js"></script>
+   <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+   <script src="assets/js/scripts.bundle.js"></script>
+   <script src="assets/js/JDSelect.js"></script>
+   <script src="js/listing-detail.js"></script>
+   <script type="text/javascript">
+      $('.header-menu .menu-nav li').click(function () {
+         if ($(this).not('menu-item-active')) {
+            if ($('.header-menu .menu-nav li').hasClass('menu-item-active')) {
+               $(".header-menu .menu-nav li").removeClass('menu-item-active');
+            }
+            $(this).addClass('menu-item-active');
+         }
+      })
+   </script>
+</body>
+
+</html>
